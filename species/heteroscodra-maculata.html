@@ -14,7 +14,10 @@
 <body>
 
 <header>
-<h1>Heteroscodra maculata</h1>
+  <h1 class="speciesHeader">
+    <img src="../img/logos/h.maculata-logo.png" alt="Heteroscodra maculata logo levý">
+    <img src="../img/logos/h.maculata-logo3.png" alt="Heteroscodra maculata logo pravý">
+  </h1>
 </header>
 
 <!-- HORNÍ 3 SLOUPCE -->
@@ -42,18 +45,56 @@
 
 <h3>Charakteristika</h3>
 
-<p><b>Náročnost:</b> 🔴 zkušený chovatel</p>
-<p><b>Rychlost:</b> ⚡⚡⚡⚡⚡</p>
-<p><b>Jed:</b> ☠️☠️☠️</p>
-<p><b>Temperament:</b> 🕷️🕷️🕷️🕷️</p>
+<div class="rating">
+🔴 zkušený chovatel
+<div class="tooltip">
+<b>Náročnost</b><br>
+🟢 začátečník<br>
+🟡 středně pokročilý chovatel<br>
+<span class="active">🔴 zkušený chovatel</span>
+</div>
+</div>
+
+<div class="rating">
+⚡⚡⚡⚡⚡ extrémně rychlý
+<div class="tooltip">
+<b>Rychlost</b><br>
+⚡ pomalý<br>
+⚡⚡ spíše pomalý<br>
+⚡⚡⚡ středně rychlý<br>
+⚡⚡⚡⚡ velmi rychlý<br>
+<span class="active">⚡⚡⚡⚡⚡ extrémně rychlý</span>
+</div>
+</div>
+
+<div class="rating">
+☠️☠️☠️ silný jed
+<div class="tooltip">
+<b>Toxicita</b><br>
+☠️ slabý jed<br>
+☠️☠️ středně silný jed<br>
+<span class="active">☠️☠️☠️ silný jed</span>
+</div>
+</div>
+
+<div class="rating">
+🕷️🕷️🕷️🕷️ velmi obranný
+<div class="tooltip">
+<b>Temperament</b><br>
+🕷️ klidný<br>
+🕷️🕷️ spíše klidný<br>
+🕷️🕷️🕷️ defenzivní<br>
+<span class="active">🕷️🕷️🕷️🕷️ velmi obranný</span>
+</div>
+</div>
 
 </div>
 
-<!-- OBRÁZEK -->
-
+<!-- OBRÁZEK s modálem -->
 <img src="../img/spiders/heteroscodra-maculata.jpg" 
-class="speciesPhoto"
-alt="Heteroscodra maculata">
+class="speciesPhoto" 
+alt="Heteroscodra maculata"
+onclick="openModal(this)">
 
 
 </section>
@@ -93,6 +134,66 @@ Mladí jedinci přijímají potravu častěji, dospělci obvykle jednou za 7–1
 <a href="../index.html">← zpět na nabídku</a>
 
 </section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+// při načtení stránky zajistí, že modal je zavřený
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+
+  // zobraz modal
+  modal.style.display = "flex";
+
+  // malé zpoždění, aby se transition spustila
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  // odstraníme třídu show → animace zpět
+  modal.classList.remove('show');
+
+  // po animaci skryjeme modal
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350); // odpovídá CSS transition
+}
+
+// zavření kliknutím mimo obrázek
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+// zavření klávesou ESC
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+</script>
 
 </body>
 </html>

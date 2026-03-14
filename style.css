@@ -8,6 +8,8 @@ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
 
 margin:0;
 
+padding: 0;
+
 }
 
 
@@ -436,7 +438,7 @@ line-height:1.6;
 .speciesDetailTop{
 display:grid;
 grid-template-columns: 1.2fr 1fr 1fr;
-gap:40px;
+gap:20px;
 
 max-width:1200px;
 margin:50px auto;
@@ -551,3 +553,159 @@ max-width:380px;
 
 }
 
+
+.rating{
+position:relative;
+margin-bottom:10px;
+cursor:help;
+}
+
+.tooltip{
+position:absolute;
+
+left:240px;   /* vzdálenost od textu */
+top:-5px;
+
+background:#1c1c21;
+padding:12px 14px;
+border-radius:10px;
+
+font-size:14px;
+line-height:1.6;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+
+opacity:0;
+pointer-events:none;
+
+transition:0.2s;
+
+min-width:220px;
+
+z-index:100;
+}
+
+.active{
+color:#9ec5ff;
+font-weight:600;
+
+background:#2a2a35;
+padding:2px 6px;
+border-radius:6px;
+}
+
+.rating:hover .tooltip{
+opacity:1;
+}
+
+
+
+
+
+
+/* kurzor nad obrázkem */
+.speciesPhoto {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+.speciesPhoto:hover {
+  transform: scale(1.02);
+}
+
+/* MODAL */
+.modal {
+  display: none; /* skryto defaultně */
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* MODAL OBSAH */
+.modal-content {
+  max-width: 95%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-content:hover {
+  transform: scale(1.03); /* lehké zvětšení při hover */
+}
+
+/* close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #ff6666;
+}
+
+/* caption skryto */
+#caption {
+  display: none;
+}
+
+
+
+
+/* nadpis/záhlaví s dvěma obrázky vedle sebe */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centrování banneru horizontálně */
+  background: transparent; /* průhledné pozadí */
+  padding: 0; /* žádné vnitřní odsazení */
+  margin: 0;  /* odstraní případný margin nad a pod */
+}
+
+.speciesHeader {
+  display: flex;
+  flex-direction: row; /* obrázky vedle sebe */
+  align-items: center; /* vertikální zarovnání */
+  margin: 0;
+  padding: 0;
+  gap: 0; /* žádná mezera mezi obrázky */
+}
+
+.speciesHeader img {
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* zmenšit levý obrázek */
+.speciesHeader img:first-child {
+  max-height: 320px;  /* menší než pravý obrázek */
+  max-width: 380px;   /* zachování proporcí */
+}
+
+.speciesHeader img:last-child {
+  max-height: 420px;
+  max-width: 500px;
+}
