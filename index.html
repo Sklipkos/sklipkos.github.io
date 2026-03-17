@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
-<meta charset="UTF-8">
-<title>Sklípkoš</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/sklipkos-favicon.ico" type="image/x-icon">
-
-<style>
-/* Záhlaví přes celou šířku bez textu */
-header {
-  width: 100%;
-  background: url('img/sklipkos-zahlavi.png') no-repeat center center;
-  background-size: cover;       /* obrázek vyplní celou šířku */
-  height: 375px;                /* výška záhlaví = 35% šířky obrazovky */
-  max-height: 400px;            /* nepřekročí 400px na desktopu */
-  min-height: 200px;            /* alespoň 200px na malých obrazovkách */
-}
-
-/* Pokud chceš, aby se celý obrázek vždy vešel, i když se okraje ořežou, můžeš zkusit místo cover: */
-/*
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-*/
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sklípkoš</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/sklipkos-favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-<header></header>
+  <header class="siteHeader"></header>
 
-<section class="offer">
-  <h2>Aktuální nabídka 🕷️</h2>
-  <div id="spiderList"></div>
-</section>
+  <main class="pageLayout">
 
+    <aside class="sidebar">
+      <div class="sidebarBox">
+        <h2>Chované druhy</h2>
 
+<nav class="categoryNav">
+  <div class="categoryLinks">
+   <a href="coming-soon.html">Afrika</a>
+<a href="coming-soon.html">Amerika</a>
+<a href="coming-soon.html">Asie</a>
+<a href="coming-soon.html">Austrálie</a>
+  </div>
+</nav>
+
+      </div>
+    </aside>
+
+    <section class="offer">
+      <div class="sectionCard">
+        <h2>Aktuální nabídka <span style="opacity:0.7;">🕷️</span></h2>
+        <div id="spiderList"></div>
+      </div>
+    </section>
+
+  </main>
 
 <section class="contact">
   <h2>Kontakt</h2>
-  <p>📩 sklipkos@gmail.com</p>
-  <p>📱 <a href="https://www.facebook.com/sustr.dominik/" target="_blank">Facebook</a></p>
-  <p>📞 +420 728 696 227</p>
+
+  <div class="contactGrid">
+    <a href="mailto:sklipkos@gmail.com" class="contactBox">
+      <span class="contactIcon">📩</span>
+      <span class="contactLabel">E-mail</span>
+      <span class="contactValue">sklipkos@gmail.com</span>
+    </a>
+
+    <a href="https://www.facebook.com/sustr.dominik/" target="_blank" class="contactBox">
+      <span class="contactIcon">📱</span>
+      <span class="contactLabel">Facebook</span>
+      <span class="contactValue">Otevřít profil</span>
+    </a>
+
+    <div class="contactBox phoneBox">
+      <span class="contactIcon">📞</span>
+      <span class="contactLabel">Telefon</span>
+      <span class="contactValue">+420 728 696 227</span>
+
+      <div class="phoneActions">
+        <a href="tel:+420728696227" class="phoneBtn">Zavolat</a>
+        <a href="sms:+420728696227" class="phoneBtn">SMS</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© Sklípkoš 🕷️</p>
-</footer>
+  <footer>
+    <p>© Sklípkoš 🕷️</p>
+  </footer>
 
-<script>
-container.innerHTML += `
-<div class="spider">
-  <img src="${spider.image}" class="thumb">
-  <div>
-    <a href="${spider.link}">${spider.name}</a>
-    <div class="info">${spider.size}</div>
-  </div>
-  <div class="price">${spider.price}</div>
-</div>
-`
-</script>
-<script src="spiders.js"></script>
-
+  <script src="spiders.js"></script>
 </body>
 </html>

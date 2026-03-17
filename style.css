@@ -1,610 +1,365 @@
-body{
+body {
+  background: #0b0b0d;
+  color: white;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-background:#0b0b0d;
+a {
+  color: inherit;
+}
 
-color:white;
+/* HLAVNÍ BANNER */
+.siteHeader {
+  width: 100%;
+  background: url('img/sklipkos-zahlavi.png') no-repeat center center;
+  background-size: cover;
+  height: 375px;
+  max-height: 400px;
+  min-height: 200px;
+}
 
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+/* LAYOUT HOMEPAGE */
+.pageLayout {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
 
-margin:0;
+/* SIDEBAR */
+.sidebarBox,
+.sectionCard {
+  background: #121214;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
 
-padding: 0;
+.sidebarBox h2,
+.sectionCard h2 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
 }
 
 
-
-header{
-
-text-align:center;
-
+.categoryLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-
-
-.logo{
-
-width:120px;
-
-margin-bottom:10px;
-
+.categoryLinks a {
+  display: block;
+  background: #17171b;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
-
-
-h1{
-
-font-size:48px;
-
-letter-spacing:1px;
-
-margin:10px 0;
-
+.categoryLinks a:hover {
+  background: #1d1d22;
+  color: #ffffff;
 }
 
-
-
-.subtitle{
-
-color:#888;
-
-font-size:18px;
-
-}
-
-
-
-.offer{
-
-max-width:900px;
-
-margin:auto;
-
-padding:20px;
-
-}
-
-
-
-.spider{
-
-background:#151518;
-
-border-radius:14px;
-
-padding:22px;
-
-margin:15px 0;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-transition:0.25s;
-
-}
-
-
-
-.spider:hover{
-
-transform:translateY(-3px);
-
-background:#1c1c21;
-
-}
-
-
-
-.spider a{
-
-color:#7fb2ff;
-
-font-size:18px;
-
-font-weight:600;
-
-text-decoration:none;
-
-}
-
-
-
-.info{
-
-color:#9a9a9a;
-
-}
-
-
-
-.price{
-
-color:#66ffa6;
-
-font-weight:bold;
-
-}
-
-
-
-.species{
-
-margin-top:80px;
-
-text-align:center;
-
-}
-
-
-
-.speciesGrid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-
-gap:20px;
-
-max-width:900px;
-
-margin:auto;
-
-margin-top:30px;
-
-}
-
-
-
-.speciesGrid div{
-
-background:#151518;
-
-padding:18px;
-
-border-radius:12px;
-
-transition:0.2s;
-
-}
-
-
-
-.speciesGrid div:hover{
-
-background:#1c1c21;
-
-}
-
-
-
-.contact{
-
-margin-top:80px;
-
-background:#121214;
-
-text-align:center;
-
-padding:60px;
-
-}
-
-
-
-footer{
-
-text-align:center;
-
-padding:30px;
-
-color:#666;
-
-}
-
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:15px;
-
-margin-top:30px;
-
-}
-
-.gallery img{
-
-width:100%;
-
-border-radius:12px;
-
-transition:0.3s;
-
-cursor:pointer;
-
-}
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
-}
-
-.spiderAnimation{
-
-font-size:40px;
-
-margin-top:20px;
-
-animation:spiderDrop 4s infinite ease-in-out;
-
-}
-
-@keyframes spiderDrop{
-
-0%{
-
-transform:translateY(-20px);
-
-}
-
-50%{
-
-transform:translateY(10px);
-
-}
-
-100%{
-
-transform:translateY(-20px);
-
-}
-
-}
-
-
-.thumb{
-
-width:60px;
-
-height:60px;
-
-object-fit:cover;
-
-border-radius:8px;
-
-margin-right:15px;
-
-}
-
-
-.brand{
-
-display:flex;
-gap:15px;
-
-}
-
-.logo{
-
-height:200px;
-width: 200px;
-
-}
-
-.brandText h1{
-
-margin:0;
-font-size:60px;
-
-}
-
-.brandText p{
-
-margin:0;
-opacity:0.7;
-display:flex;
-gap:15px;
-}
-
-
-.speciesDetail{
-
-display:flex;
-gap:40px;
-align-items:flex-start;
-margin-top:40px;
-
-}
-
-.speciesPhoto{
-width:320px;
-border-radius:12px;
-margin-top:0;
-}
-
-.speciesInfo{
-
-
-
-background:#151518;
-
-padding:25px;
-
-border-radius:14px;
-
-box-shadow:0 8px 20px rgba(0,0,0,0.4);
-
-height:fit-content;
-
-font-size:16px;
-line-height:1.7;
-
-
-}
-
-.speciesInfo h2{
-color:#9ec5ff;
-margin-top:0;
-margin-bottom:15px;
-}
-
-.speciesPhoto{
-
-width:320px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-
-}
-
-
-h3{
-margin-top:30px;
-margin-bottom:10px;
-}
-
-p{
-
-margin-bottom:12px;
-line-height:1.6;
-
-}
-
-/* Zarovnat celý blok vlevo, aby text byl vlevo stránky */
+/* NABÍDKA */
 .offer {
-    max-width: 900px;  /* můžeš ponechat, aby blok nebyl příliš široký */
-    margin-left: 0 !important;   /* úplně vlevo */
-    margin-right: auto !important;
-    text-align: left !important; /* vše uvnitř vlevo */
-    padding: 20px;
+  margin: 0 0 80px 0;
+  padding: 0;
 }
 
-/* Nadpis a text popisu chovu */
-.offer h3,
-.offer .care {
-    text-align: left !important;  /* zarovná text a nadpis vlevo */
-    margin-left: 0 !important;    /* odstraní jakýkoli posun */
-}
-
-
-/* kontejner pavouků */
 #spiderList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* řádek pavouka jako odkaz */
-.spider {
+
+.offerGroup {
+  margin-bottom: 18px;
+}
+
+.offerGroup:last-child {
+  margin-bottom: 0;
+}
+
+.offerGroupTitle {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #8fb2e0;
+}
+
+.offerGroupList {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  text-decoration: none; /* odstraní podtržení odkazu */
-  color: inherit;        /* text stejné barvy jako okolí */
-  transition: background 0.2s;
+  gap: 14px;
+  background: #17171b;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .spider:hover {
-  background: rgba(0,0,0,0.05); /* lehce šedý overlay, téměř neviditelný */
+  transform: translateY(-2px);
+  background: #1c1c21;
+  border-color: rgba(158, 197, 255, 0.25);
 }
 
 .spider .name {
-  flex: 2;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  min-width: 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sexIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sexIcon.female {
+  color: #ff6bb3;
+}
+
+.sexIcon.male {
+  color: #63a9ff;
+}
+
+.sexIcon.unknown {
+  color: #b8b8b8; /* neutrální šedá */
 }
 
 .spider .info {
-  flex: 1;
+  font-size: 15px;
+  color: #aeb4bd;
   text-align: center;
+  white-space: nowrap;
+  transform: translateX(16px);
 }
 
 .spider .price {
-  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: #71e6a6;
   text-align: right;
+  white-space: nowrap;
 }
 
+.spider:hover .price {
+  color: #8fffc1;
+}
 
+/* KONTAKT */
+.contact {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact h2 {
+  margin: 0 0 18px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.contactBox {
+  background: #121214;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.contactBox:hover {
+  transform: translateY(-2px);
+  background: #17171b;
+  border-color: rgba(158, 197, 255, 0.22);
+}
+
+.contactIcon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.contactLabel {
+  font-size: 14px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contactValue {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.phoneActions {
+  display: none;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.phoneBtn {
+  display: inline-block;
+  background: #1d1d22;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.phoneBtn:hover {
+  background: #25252b;
+  border-color: rgba(158, 197, 255, 0.22);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px 40px;
+  color: #666;
+}
 
 /* DETAIL STRÁNKY DRUHU */
 
-/* horní 3 sloupce */
-
-.speciesDetailTop{
-display:grid;
-grid-template-columns: 1.2fr 1fr 1fr;
-gap:20px;
-
-max-width:1200px;
-margin:50px auto;
-padding:0 20px;
-
-align-items:start;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-
-/* levý sloupec */
-
-
-.speciesInfo h2{
-margin-bottom:15px;
+.speciesHeader {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
-
-/* prostřední blok */
-
-.characteristics{
-
-background:#151518;
-
-padding:25px;
-
-border-radius:14px;
-
-height:fit-content;
-
-box-shadow:0 8px 20px rgba(0,0,0,0.4);
-
+.speciesHeader img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin-top: -70px;
+  margin-bottom: -100px;
 }
 
-.characteristics h3{
-margin-top:0;
-color:#9ec5ff;
+section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-
-/* obrázek */
-
-.speciesPhoto{
-
-width:100%;
-
-max-width:340px;
-
-border-radius:14px;
-
-box-shadow:0 15px 40px rgba(0,0,0,0.6);
-
-align-self:start;
+section:first-of-type h2 {
+  margin-top: 0;
 }
 
-
-
-/* spodní text */
-
-.speciesText{
-
-max-width:1000px;
-
-margin:40px auto;
-
-padding:0 20px;
-
-line-height:1.7;
-
+.speciesDetailTop {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  align-items: start;
 }
 
-.speciesText h3{
-
-margin-top:35px;
-
-color:#9ec5ff;
-
+.speciesInfo {
+  background: #151518;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  height: fit-content;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-
-/* box textu */
-
-.care{
-
-background:#151518;
-
-padding:18px;
-
-border-radius:12px;
-
-border-left:4px solid #7fb2ff;
-
-margin-bottom:15px;
-
+.speciesInfo h2 {
+  color: #9ec5ff;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-
-/* mobil */
-
-@media (max-width:900px){
-
-.speciesDetailTop{
-
-grid-template-columns:1fr;
-
+.characteristics {
+  background: #151518;
+  padding: 25px;
+  border-radius: 14px;
+  height: fit-content;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-.speciesPhoto{
-
-max-width:380px;
-
+.characteristics h3 {
+  margin-top: 0;
+  color: #9ec5ff;
 }
 
-}
-
-
-.rating{
-position:relative;
-margin-bottom:10px;
-cursor:help;
-}
-
-.tooltip{
-position:absolute;
-
-left:240px;   /* vzdálenost od textu */
-top:-5px;
-
-background:#1c1c21;
-padding:12px 14px;
-border-radius:10px;
-
-font-size:14px;
-line-height:1.6;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.6);
-
-opacity:0;
-pointer-events:none;
-
-transition:0.2s;
-
-min-width:220px;
-
-z-index:100;
-}
-
-.active{
-color:#9ec5ff;
-font-weight:600;
-
-background:#2a2a35;
-padding:2px 6px;
-border-radius:6px;
-}
-
-.rating:hover .tooltip{
-opacity:1;
-}
-
-
-
-
-
-
-/* kurzor nad obrázkem */
 .speciesPhoto {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  align-self: start;
   cursor: zoom-in;
   transition: transform 0.2s;
 }
@@ -613,9 +368,64 @@ opacity:1;
   transform: scale(1.02);
 }
 
+.speciesText {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.speciesText h3 {
+  margin-top: 35px;
+  color: #9ec5ff;
+}
+
+.care {
+  background: #151518;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 4px solid #7fb2ff;
+  margin-bottom: 15px;
+}
+
+.rating {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: help;
+}
+
+.tooltip {
+  position: absolute;
+  left: 240px;
+  top: -5px;
+  background: #1c1c21;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  min-width: 220px;
+  z-index: 100;
+}
+
+.active {
+  color: #9ec5ff;
+  font-weight: 600;
+  background: #2a2a35;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.rating:hover .tooltip {
+  opacity: 1;
+}
+
 /* MODAL */
 .modal {
-  display: none; /* skryto defaultně */
+  display: none;
   position: fixed;
   z-index: 200;
   left: 0;
@@ -623,18 +433,15 @@ opacity:1;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.85);
-
   justify-content: center;
   align-items: center;
 }
 
-/* MODAL OBSAH */
 .modal-content {
   max-width: 95%;
   max-height: 90%;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.9);
-
   transform: scale(0.7);
   opacity: 0;
   transition: transform 0.35s ease, opacity 0.35s ease;
@@ -646,10 +453,9 @@ opacity:1;
 }
 
 .modal-content:hover {
-  transform: scale(1.03); /* lehké zvětšení při hover */
+  transform: scale(1.03);
 }
 
-/* close button */
 .close {
   position: absolute;
   top: 20px;
@@ -665,49 +471,60 @@ opacity:1;
   color: #ff6666;
 }
 
-/* caption skryto */
 #caption {
   display: none;
 }
 
+/* MOBIL */
+@media (max-width: 900px) {
+  .pageLayout {
+    grid-template-columns: 1fr;
+  }
+    .contactGrid {
+    grid-template-columns: 1fr;
+  }
 
+  .contactValue {
+    font-size: 18px;
+  }
 
+  .phoneActions {
+    display: flex;
+  }
 
-/* záhlaví stránky */
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  overflow:hidden;
+ .spider {
+  grid-template-columns: 1fr;
+  gap: 4px;
 }
 
-/* wrapper nadpisu */
-.speciesHeader {
-  margin: 0;   /* odstraní mezeru h1 */
-  padding: 0;
-  line-height: 0; /* odstraní i malou mezeru pod obrázkem */
+.spider .info {
+  text-align: left;
+  transform: translateX(0);
 }
 
-/* banner obrázek */
-.speciesHeader img {
-  display: block;
-width:100%;
-max-width:900px;
-margin-top:-70px;
-margin-bottom:-100px;
+.spider .price {
+  text-align: left;
+  font-size: 18px;
 }
 
-/* odstraní mezeru mezi bannerem a prvním obsahem */
-section:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
-}
+  .speciesDetailTop {
+    grid-template-columns: 1fr;
+  }
 
-section:first-of-type h2 {
-  margin-top: 0;
+  .speciesPhoto {
+    max-width: 380px;
+  }
+
+  .tooltip {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 8px;
+    min-width: auto;
+  }
+
+  .rating {
+    cursor: default;
+  }
 }
 

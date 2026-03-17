@@ -1,41 +1,83 @@
 const spiders = [
   {
-    name:"Heteroscodra maculata",
-    size:"samice • 3 cm",
-    price:"700 Kč",
-    image:"img/spiders/heteroscodra-maculata.jpg",
-    link:"species/heteroscodra-maculata.html"
+    name: "Heteroscodra maculata",
+    sex: "Samice",
+    size: "3 cm",
+    price: "700 Kč",
+    link: "species/heteroscodra-maculata.html",
+    continent: "Afrika"
   },
   {
-    name:"Pterinochilus murinus RCF",
-    size:"samice • adult",
-    price:"1000 Kč",
-    link:"species/pterinochilus-murinus-rcf.html"
+    name: "Pterinochilus murinus RCF",
+    sex: "Samice",
+    size: "adult",
+    price: "1000 Kč",
+    link: "species/pterinochilus-murinus-rcf.html",
+    continent: "Afrika"
   },
   {
-    name:"Lasiodora parahybana",
-    size:"samec • 4 cm",
-    price:"300 Kč",
-    link:"species/lasiodora-parahybana.html"
+    name: "Lasiodora parahybana",
+    sex: "Samec",
+    size: "4 cm",
+    price: "300 Kč",
+    link: "species/lasiodora-parahybana.html",
+    continent: "Amerika"
   },
-
   {
-    name:"Psalmopoeus cambridgei",
-    size:"neurčené • 1.svlek",
-    price:"70 Kč",
-    link:"species/psalmopoeus-cambridgei.html"
+    name: "Psalmopoeus cambridgei",
+    sex: "Neurčené",
+    size: "1. svlek",
+    price: "70 Kč",
+    link: "species/psalmopoeus-cambridgei.html",
+    continent: "Amerika"
   }
-]
-
+];
 
 const container = document.getElementById("spiderList");
 
+const groups = {
+  "Samice": [],
+  "Samec": [],
+  "Neurčené": []
+};
+
 spiders.forEach(spider => {
-  container.innerHTML += `
-  <a href="${spider.link}" class="spider">
-    <div class="name">${spider.name}</div>
-    <div class="info">${spider.size}</div>
-    <div class="price">${spider.price}</div>
-  </a>
+  if (groups[spider.sex]) {
+    groups[spider.sex].push(spider);
+  }
+});
+
+Object.keys(groups).forEach(groupName => {
+  if (groups[groupName].length > 0) {
+    container.innerHTML += `
+      <div class="offerGroup">
+        <h3 class="offerGroupTitle">${groupName}</h3>
+        <div class="offerGroupList">
+          ${groups[groupName].map(spider => {
+  let sexSymbol = "?";
+  let sexClass = "unknown";
+
+  if (spider.sex === "Samice") {
+    sexSymbol = "♀";
+    sexClass = "female";
+  } else if (spider.sex === "Samec") {
+    sexSymbol = "♂";
+    sexClass = "male";
+  }
+
+  return `
+    <a href="${spider.link}" class="spider">
+      <div class="name">
+        <span class="sexIcon ${sexClass}">${sexSymbol}</span>
+        <span>${spider.name}</span>
+      </div>
+      <div class="info">${spider.size}</div>
+      <div class="price">${spider.price}</div>
+    </a>
   `;
+}).join("")}
+        </div>
+      </div>
+    `;
+  }
 });
