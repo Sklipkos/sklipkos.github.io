@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Phormictopus | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Phormictopus" data-genus-page="genera/amerika/phormictopus.html">
+
+  <header class="siteHeader generaHeader phormictopusHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Phormictopus</p>
+      <p><b>Běžný název:</b> Caribbean Giant Tarantulas</p>
+      <p><b>Původ:</b> Karibik (Kuba, Hispaniola)</p>
+      <p><b>Typ:</b> terestriální až polohabavý</p>
+      <p><b>Velikost:</b> přibližně 18–22 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální s dostatkem prostoru</p>
+      <p><b>Substrát:</b> mírně vlhčí, hrabavý (min. 10–15 cm)</p>
+      <p><b>Teplota:</b> přibližně 24–27 °C</p>
+      <p><b>Vlhkost:</b> střední až vyšší (60–75 %)</p>
+      <p><b>Úkryty:</b> vhodné – korek, kameny, kořeny</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Phormictopus je rod velkých sklípkanů pocházejících z Karibiku, především z Kuby a Hispanioly. V přírodě obývají tropické a subtropické oblasti s vyšší vlhkostí, kde se ukrývají pod kameny, kořeny nebo v mělkých norách.
+    </p>
+
+    <p class="care">
+      Jedná se o převážně terestriální druhy, které jsou aktivní hlavně v noci. Přes den zůstávají ukryté a na lov vyrážejí po setmění. Jsou to typičtí predátoři ze zálohy – čekají u úkrytu a bleskově reagují na pohyb kořisti.
+    </p>
+
+    <p class="care">
+      Tento rod je známý rychlým růstem, robustní stavbou těla a silnou krmnou reakcí. Zástupci rodu mají obranné chloupky, které používají jako hlavní obranný mechanismus. Při vyrušení mohou být nervózní a rychlí, ale obvykle dávají přednost úniku před útokem.
+    </p>
+
+    <p class="care">
+      V rámci rodu se často projevuje výrazný pohlavní dimorfismus – samci bývají barevnější a mohou mít kovové odlesky, zatímco samice jsou tmavší, robustnější a méně nápadné.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Phormictopus patří mezi málo rodů sklípkanů, kteří dokážou vydávat slyšitelný zvuk pomocí stridulace – třením částí těla o sebe. Tento zvuk slouží jako obranný signál.
+    </p>
+
+    <p class="care">
+      Některé druhy, například Phormictopus auratus, vynikají neobvyklým zlatavým zbarvením, zatímco Phormictopus atrichomatus patří mezi největší zástupce rodu. Naopak Phormictopus cancerides je typický svou robustností a silnými chelicerami.
+    </p>
+
+    <p class="care">
+      Rod Phormictopus je taxonomicky poměrně složitý a některé druhy jsou stále předmětem revizí, což znamená, že jejich zařazení se může v budoucnu měnit.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Phormictopus jsou velmi žraví predátoři s rychlou reakcí na kořist. Přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

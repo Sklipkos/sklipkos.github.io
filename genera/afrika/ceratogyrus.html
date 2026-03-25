@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ceratogyrus | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Ceratogyrus" data-genus-page="genera/afrika/ceratogyrus.html">
+
+  <header class="siteHeader generaHeader ceratogyrusHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Ceratogyrus</p>
+      <p><b>Běžný název:</b> Horned Baboon Tarantulas</p>
+      <p><b>Původ:</b> jižní Afrika</p>
+      <p><b>Typ:</b> fosoriální (hrabavý rod)</p>
+      <p><b>Velikost:</b> přibližně 12–15 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s dostatkem prostoru pro hrabání</p>
+      <p><b>Substrát:</b> suchý, pevný (min. 10–20 cm pro tvorbu nor)</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> spíše nižší, lokálně vlhčí část substrátu</p>
+      <p><b>Úkryty:</b> není nutný – sklípkani si vytváří vlastní nory</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Ceratogyrus je rod afrických sklípkanů patřící mezi tzv. „baboon tarantulas“, který se vyskytuje převážně v suchých a polopouštních oblastech jižní Afriky. Většina druhů tohoto rodu je přizpůsobena životu v tvrdé, suché půdě, kde si vyhrabává hluboké podzemní nory.
+    </p>
+
+    <p class="care">
+      Typickým znakem tohoto rodu je výrůstek na karapaxu, označovaný jako „roh“. Tento útvar je unikátní právě pro rod Ceratogyrus a jeho tvar i velikost se liší mezi jednotlivými druhy. U některých druhů je výrazný a dobře patrný, u jiných může být menší nebo méně nápadný.
+    </p>
+
+    <p class="care">
+      Jedná se o rychlé, velmi reaktivní a silně defenzivní sklípkany, kteří při vyrušení spoléhají především na útěk nebo obranný postoj. Na rozdíl od amerických druhů nemají obranné chloupky, a proto mohou v krajním případě přistoupit k kousnutí. Z tohoto důvodu jsou vhodní především pro zkušenější chovatele.
+    </p>
+
+    <p class="care">
+      V přírodě tráví většinu času ukrytí v norách, odkud v noci loví kořist. Jsou to typičtí „ambush“ predátoři – čekají na kořist u vstupu do nory a bleskově útočí.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Funkce charakteristického „rohu“ na karapaxu není dodnes zcela jednoznačně vysvětlena. Předpokládá se, že může sloužit jako zásobárna tekutin a živin nebo jako prostor pro úpony svalů, což by mohlo zlepšovat schopnost přijímat potravu.
+    </p>
+
+    <p class="care">
+      Mezi zajímavé druhy patří například Ceratogyrus marshalli, který má jeden z nejvýraznějších rohů v rámci rodu, nebo Ceratogyrus darlingi, u kterého je roh zahnutý dozadu. Naopak některé druhy mají roh méně výrazný nebo téměř neznatelný.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Ceratogyrus jsou žraví predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+
+</body>
+</html>

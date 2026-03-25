@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Pterinochilus | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Pterinochilus" data-genus-page="genera/afrika/pterinochilus.html">
+
+<header class="siteHeader generaHeader pterinochilusHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Pterinochilus</p>
+<p><b>Běžný název:</b> Baboon Tarantulas (OBT)</p>
+<p><b>Původ:</b> Afrika (východní, střední i jižní)</p>
+<p><b>Typ:</b> terestriální až fosoriální</p>
+<p><b>Velikost:</b> přibližně 10–15 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s možností úkrytů a pavučin</p>
+<p><b>Substrát:</b> suchý až mírně vlhký (min. 10–15 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> spíše nižší, lokálně vlhčí část substrátu</p>
+<p><b>Úkryty:</b> nory, kůra nebo pavučinové tunely</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Pterinochilus je rod afrických sklípkanů rozšířený napříč suchými oblastmi Afriky, jako jsou savany a křovinaté oblasti. Zástupci tohoto rodu jsou přizpůsobeni životu v sušším prostředí, kde využívají nory i pavučinové úkryty na povrchu.
+</p>
+
+<p class="care">
+Jednotlivé druhy mohou být více hrabavé nebo naopak více „webbing“ – vytvářejí husté pavučinové struktury, které pokrývají okolí úkrytu. Často kombinují oba způsoby života a vytvářejí komplexní systémy tunelů a pavučin.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu patří mezi nejrychlejší a nejreaktivnější sklípkany vůbec. Při vyrušení často okamžitě přecházejí do obranného postoje a jsou známí svou ochotou zaútočit bez výrazného varování.
+</p>
+
+<p class="care">
+Jako typičtí „Old World“ sklípkani nemají obranné chloupky a spoléhají především na rychlost a silný jed. Z tohoto důvodu jsou vhodní pouze pro zkušené chovatele.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Pterinochilus je v chovatelském hobby známý především díky druhu Pterinochilus murinus, který má přezdívku „OBT“ (Orange Baboon Tarantula nebo také Orange Bitey Thing). Tento druh je považován za jeden z nejdefenzivnějších sklípkanů vůbec.
+</p>
+
+<p class="care">
+Zajímavostí je také výrazná barevná variabilita – některé druhy i populace se liší zbarvením od oranžové přes červenou až po hnědou, často v závislosti na lokalitě.
+</p>
+
+<p class="care">
+Navzdory své pověsti jsou tito sklípkani velmi efektivní predátoři a v přírodě hrají důležitou roli při regulaci hmyzu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Pterinochilus jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní podle velikosti kořisti.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+
+</body>
+</html>

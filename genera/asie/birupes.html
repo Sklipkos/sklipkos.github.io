@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Birupes | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Birupes" data-genus-page="genera/asie/birupes.html">
+
+<header class="siteHeader generaHeader birupesHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Birupes</p>
+<p><b>Běžný název:</b> Bornean Blue Tarantula</p>
+<p><b>Původ:</b> jihovýchodní Asie (Borneo – Malajsie)</p>
+<p><b>Typ:</b> fosoriální (hrabavý, částečně variabilní)</p>
+<p><b>Velikost:</b> přibližně 12–13 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Selenocosmiinae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s možností hlubšího substrátu</p>
+<p><b>Substrát:</b> vlhký, měkký (min. 10–15 cm pro norování)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší (70–85 %)</p>
+<p><b>Úkryty:</b> vhodné – korek, kořeny, možnost vytvoření nory</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Birupes je relativně nově popsaný rod asijských sklípkanů pocházející z tropických oblastí Bornea. Obývá vlhké nížinné deštné lesy, kde se vyskytuje v měkké půdě nebo v rozkládajícím se dřevě.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu jsou primárně fosoriální, vytvářejí si nory v substrátu, ve kterých tráví většinu času. Zajímavostí je, že jejich způsob života není čistě podzemní – mohou částečně využívat i struktury nad zemí, například dutiny ve dřevě.
+</p>
+
+<p class="care">
+Jedná se o typické „Old World“ sklípkany – jsou velmi rychlí, lekaví a při vyrušení spoléhají především na útěk. Nemají obranné chloupky, a proto v krajním případě mohou přistoupit k obrannému kousnutí.
+</p>
+
+<p class="care">
+Lov probíhá převážně v noci. Sklípkani čekají u vstupu do nory a bleskově útočí na kořist, kterou následně stáhnou dovnitř.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Birupes je monotypický, obsahuje pouze jediný druh – Birupes simoroxigorum. To je mezi sklípkany poměrně vzácné.
+</p>
+
+<p class="care">
+Tento druh je známý svým výrazným modrým zbarvením končetin, zejména v juvenilním stádiu. Takto intenzivní modrá barva je u fosoriálních sklípkanů velmi neobvyklá.
+</p>
+
+<p class="care">
+Rod byl vědecky popsán teprve v roce 2019, což z něj činí jeden z novějších rodů v chovu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Birupes jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní podle velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+</body>
+</html>

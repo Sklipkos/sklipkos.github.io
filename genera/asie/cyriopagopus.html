@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Cyriopagopus | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Cyriopagopus" data-genus-page="genera/asie/cyriopagopus.html">
+
+<header class="siteHeader generaHeader cyriopagopusHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 3 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Cyriopagopus</p>
+<p><b>Běžný název:</b> Asian Earth Tiger Tarantulas</p>
+<p><b>Původ:</b> jihovýchodní Asie (Thajsko, Vietnam, Myanmar, Čína, Malajsie, Filipíny)</p>
+<p><b>Typ:</b> fosoriální (hrabavý rod)</p>
+<p><b>Velikost:</b> přibližně 12–18 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Selenocosmiinae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s dostatkem prostoru pro hrabání</p>
+<p><b>Substrát:</b> vlhký, pevný (min. 10–20 cm pro tvorbu nor)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší (70–85 %)</p>
+<p><b>Úkryty:</b> vhodné – např. kůra nebo kořen pro začátek nory</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Cyriopagopus je rod asijských sklípkanů, který obývá tropické oblasti jihovýchodní Asie. Tito pavouci se vyskytují především v deštných lesích a vlhkých lesních biotopech, kde vyžadují stabilní teplotu a vysokou vlhkost. Patří mezi typické „Old World“ druhy bez obranných chloupků.
+</p>
+
+<p class="care">
+Většina druhů tohoto rodu je fosoriální – vyhrabávají si hluboké nory v substrátu, často u kořenů stromů nebo ve svazích. Nory bývají vystlané hustou pavučinou, která slouží jako detekční systém pro zachycení vibrací kořisti.
+</p>
+
+<p class="care">
+Jedná se o velmi rychlé, reaktivní a defenzivní sklípkany. Při vyrušení se snaží okamžitě ukrýt, ale v případě ohrožení mohou zaujmout výstražný postoj a bránit se kousnutím. Kvůli absenci obranných chloupků spoléhají především na rychlost a sílu jedu, proto jsou vhodní spíše pro zkušené chovatele.
+</p>
+
+<p class="care">
+Jsou to typičtí noční predátoři. Většinu dne tráví ukrytí ve svých norách a v noci vyčkávají na kořist u vstupu, odkud bleskově útočí.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Cyriopagopus je známý tím, že zahrnuje i dříve samostatný rod Haplopelma. V hobby se proto stále můžeš setkat se staršími názvy, což může být pro začátečníky matoucí.
+</p>
+
+<p class="care">
+Typickým znakem rodu jsou stridulační orgány na chelicerách, díky kterým mohou vydávat zvuky třením částí těla. Dalším znakem je výrazný oční hrbolek na karapaxu.
+</p>
+
+<p class="care">
+Mezi nejznámější druhy patří například Cyriopagopus lividus („Cobalt Blue“), který je proslulý intenzivně modrým zbarvením nohou, nebo Cyriopagopus schmidti, jeden z větších druhů s medicínsky studovaným jedem.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Cyriopagopus jsou aktivní a žraví predátoři. Přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

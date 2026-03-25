@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Detail druhu | Sklípkoš</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <h1 class="speciesHeader" id="speciesHeader"></h1>
+  </header>
+
+  <section class="speciesDetailTop">
+    <div class="speciesInfo">
+      <h2>Informace o druhu</h2>
+      <div id="speciesInfoContent"></div>
+    </div>
+
+    <div class="characteristics">
+      <h3>Charakteristika</h3>
+      <div id="characteristicsContent"></div>
+    </div>
+
+    <img id="speciesPhoto"
+         class="speciesPhoto"
+         alt=""
+         onclick="openModal(this)">
+  </section>
+
+  <section class="speciesText">
+    <h3>Popis druhu</h3>
+    <div id="descriptionContent"></div>
+
+    <h3>Podmínky chovu</h3>
+    <div id="careContent"></div>
+
+    <h3>Krmení</h3>
+    <div id="feedingContent"></div>
+
+    <a id="backLink" href="index.html">← zpět</a>
+  </section>
+
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="js/species-data.js"></script>
+  <script src="js/species-detail.js"></script>
+</body>
+</html>

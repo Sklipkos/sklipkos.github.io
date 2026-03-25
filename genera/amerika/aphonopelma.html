@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aphonopelma | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Aphonopelma" data-genus-page="genera/amerika/aphonopelma.html">
+
+  <header class="siteHeader generaHeader aphonopelmaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Aphonopelma</p>
+      <p><b>Běžný název:</b> North American Tarantulas</p>
+      <p><b>Původ:</b> Severní a Střední Amerika (USA, Mexiko)</p>
+      <p><b>Typ:</b> terestriální (pozemní, částečně hrabavý rod)</p>
+      <p><b>Velikost:</b> přibližně 10–16 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s dostatkem prostoru</p>
+      <p><b>Substrát:</b> sušší, možnost lehkého vlhčení (5–10 cm)</p>
+      <p><b>Teplota:</b> přibližně 22–28 °C</p>
+      <p><b>Vlhkost:</b> nízká až střední</p>
+      <p><b>Úkryty:</b> vhodné (kůra, kameny), některé druhy si hrabou nory</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Aphonopelma je rozsáhlý rod sklípkanů pocházejících ze Severní a Střední Ameriky, především z území USA a Mexika. Patří mezi nejznámější a nejčastěji studované sklípkany v těchto oblastech. Většina druhů obývá suché biotopy, jako jsou pouště, polopouště a travnaté oblasti, kde si vytváří nory nebo využívá přirozené úkryty.
+    </p>
+
+    <p class="care">
+      Jedná se o převážně terestriální druhy s robustním tělem a spíše nenápadným zbarvením v odstínech hnědé, šedé nebo černé. Oproti mnoha jiným rodům nejsou výrazně barevní, ale působí velmi „klasickým“ vzhledem typického sklípka.
+    </p>
+
+    <p class="care">
+      Aphonopelma je známá svým klidným a málo agresivním chováním. Při vyrušení se většinou snaží ustoupit nebo využívají obranné chloupky. Kousnutí je spíše výjimečné, což z nich dělá ideální rod pro začínající chovatele.
+    </p>
+
+    <p class="care">
+      V přírodě jsou aktivní především v noci, kdy loví kořist v okolí svých nor. Přes den zůstávají ukrytí a vyčkávají na vhodné podmínky.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Samice tohoto rodu patří mezi nejdéle žijící sklípkany vůbec. Není výjimkou, že se dožívají 20–30 let, v některých případech i déle. Naopak samci po dospění žijí výrazně kratší dobu a aktivně vyhledávají samice.
+    </p>
+
+    <p class="care">
+      Rod Aphonopelma je známý tím, že jednotlivé druhy jsou si velmi podobné a jejich přesné určení bývá složité i pro odborníky. Taxonomie tohoto rodu je proto dlouhodobě komplikovaná a stále se vyvíjí.
+    </p>
+
+    <p class="care">
+      Mezi zajímavé druhy patří například Aphonopelma chalcodes, který je považován za jeden z nejklidnějších sklípkanů vůbec, nebo Aphonopelma anax, který patří mezi největší zástupce tohoto rodu.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Aphonopelma přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–14 dní. Jedná se o pomaleji rostoucí druhy s nižšími nároky na krmení.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

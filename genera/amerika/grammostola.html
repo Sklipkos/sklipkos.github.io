@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grammostola | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Grammostola" data-genus-page="genera/amerika/grammostola.html">
+
+  <header class="siteHeader generaHeader grammostolaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Grammostola</p>
+      <p><b>Běžný název:</b> South American Ground Tarantulas</p>
+      <p><b>Původ:</b> Jižní Amerika (Chile, Argentina, Uruguay, Brazílie)</p>
+      <p><b>Typ:</b> terestriální (pozemní rod)</p>
+      <p><b>Velikost:</b> přibližně 12–20 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s dostatkem prostoru</p>
+      <p><b>Substrát:</b> spíše sušší až mírně vlhký, možnost úkrytu a mělké nory</p>
+      <p><b>Teplota:</b> přibližně 22–28 °C</p>
+      <p><b>Vlhkost:</b> nízká až střední</p>
+      <p><b>Úkryty:</b> vhodné – kůra, kameny nebo jednoduchý úkryt</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Grammostola je rod jihoamerických sklípkanů, který zahrnuje středně velké až velké pozemní druhy pocházející především z oblastí Chile, Argentiny, Uruguaye a Brazílie. Většina zástupců tohoto rodu obývá sušší až polopouštní oblasti, savany a travnaté pláně, kde využívá mělké nory nebo přirozené úkryty.
+    </p>
+
+    <p class="care">
+      Typickým znakem rodu Grammostola je klidné a pomalé chování. Tito sklípkani jsou známí tím, že spíše ustupují než útočí, a proto patří mezi nejoblíbenější rody pro začínající chovatele.
+    </p>
+
+    <p class="care">
+      Jedná se o typické „New World“ sklípkany s obrannými chloupky, které používají jako hlavní obranu. Kousnutí je u tohoto rodu poměrně vzácné a většina jedinců reaguje na vyrušení spíše pasivně.
+    </p>
+
+    <p class="care">
+      Zástupci tohoto rodu jsou robustní, často v nenápadných zemitých barvách, jako je hnědá, šedá nebo černá. Některé druhy však vynikají výraznějším vzhledem, například sytě černým tělem nebo kontrastním zlatým zbarvením nohou.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Grammostola je známý extrémně pomalým růstem a mimořádně dlouhým životem. Samice se mohou dožít 15 až 30 let i více, což z nich dělá jedny z nejdéle žijících sklípkanů v chovu.
+    </p>
+
+    <p class="care">
+      Pro tento rod jsou typické i delší hladovky, které mohou trvat týdny až měsíce. Pro začínající chovatele to bývá často překvapení, ale u Grammostol jde o běžné chování.
+    </p>
+
+    <p class="care">
+      Mezi známé druhy patří například Grammostola pulchra, která je ceněná pro své sametově černé zbarvení, nebo Grammostola pulchripes se zlatými pruhy na nohách. Naopak Grammostola iheringi je výjimkou v rámci rodu, protože bývá rychlejší, nervóznější a celkově reaktivnější než ostatní druhy.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Grammostola přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí přibližně každé 3–5 dní, dospělci jednou za 7–14 dní. Díky pomalejšímu metabolismu nepotřebují časté krmení.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

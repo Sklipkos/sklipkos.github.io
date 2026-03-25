@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Poecilotheria | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Poecilotheria" data-genus-page="genera/asie/poecilotheria.html">
+
+<header class="siteHeader generaHeader poecilotheriaHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 3 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Poecilotheria</p>
+<p><b>Běžný název:</b> Ornamental Tarantulas</p>
+<p><b>Původ:</b> Indie, Srí Lanka</p>
+<p><b>Typ:</b> stromový (arboreální rod)</p>
+<p><b>Velikost:</b> přibližně 12–20 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Poecilotheriinae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> vertikální typ s dostatkem prostoru pro lezení</p>
+<p><b>Substrát:</b> mírně vlhký, spíše doplňkový (není hlavní)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> střední až vyšší (60–80 %)</p>
+<p><b>Úkryty:</b> nutné – kůra, dutiny, korková kůra</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Poecilotheria je rod asijských sklípkanů známý svým výrazným zbarvením a stromovým způsobem života. Tito sklípkani se vyskytují především v tropických lesích Indie a Srí Lanky, kde obývají dutiny stromů a štěrbiny v kůře.
+</p>
+
+<p class="care">
+Jedná se o čistě arboreální druhy, které tráví většinu života ve výškách. Vytváří si pavučinové úkryty v dutinách stromů a aktivní jsou převážně v noci, kdy vyrážejí lovit.
+</p>
+
+<p class="care">
+Poecilotheria patří mezi velmi rychlé, agilní a reaktivní sklípkany. Při vyrušení se snaží primárně uniknout, ale v případě ohrožení mohou zaujmout obranný postoj a bránit se kousnutím. Nemají obranné chloupky, což je typické pro asijské druhy.
+</p>
+
+<p class="care">
+Typickým znakem rodu je výrazná kontrastní kresba na těle a nohách. Spodní strana nohou bývá často barevně odlišná a slouží jako výstražný signál predátorům.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Poecilotheria patří mezi nejikoničtější sklípkany vůbec a je známý jako „ornamental“ díky své výrazné kresbě. Většina druhů je chráněna a jejich výskyt v přírodě je ohrožen především ztrátou přirozeného prostředí.
+</p>
+
+<p class="care">
+Zajímavostí je, že některé druhy mohou tolerovat přítomnost více jedinců na jednom místě, což je u sklípkanů poměrně neobvyklé chování.
+</p>
+
+<p class="care">
+Mezi nejznámější druhy patří například Poecilotheria metallica, která je známá svým intenzivním modrým zbarvením, nebo Poecilotheria ornata, která patří mezi největší stromové sklípkany vůbec.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Poecilotheria jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Větší jedinci mohou ulovit i drobné obratlovce. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

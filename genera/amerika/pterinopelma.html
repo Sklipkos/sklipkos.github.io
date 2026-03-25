@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pterinopelma | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Pterinopelma" data-genus-page="genera/amerika/pterinopelma.html">
+
+  <header class="siteHeader generaHeader pterinopelmaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Pterinopelma</p>
+      <p><b>Běžný název:</b> Brazilian Ground Tarantulas</p>
+      <p><b>Původ:</b> Brazílie (Jižní Amerika)</p>
+      <p><b>Typ:</b> terestriální</p>
+      <p><b>Velikost:</b> přibližně 12–15 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální s dostatkem prostoru</p>
+      <p><b>Substrát:</b> spíše sušší, hrabavý (min. 8–12 cm)</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> nižší až střední (50–65 %)</p>
+      <p><b>Úkryty:</b> vhodné – korek, kameny</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Pterinopelma je menší rod sklípkanů pocházejících z Jižní Ameriky, především z Brazílie. Obývají spíše sušší tropické oblasti, jako jsou savany a otevřenější lesní porosty, kde se ukrývají pod kameny, kořeny nebo v mělkých norách.
+    </p>
+
+    <p class="care">
+      Jedná se o převážně terestriální druhy, které tráví většinu času na zemi a aktivní jsou především v noci. Nejsou hluboce hrabaví, ale často využívají přirozené úkryty nebo si vytvářejí jednoduché nory.
+    </p>
+
+    <p class="care">
+      Zástupci rodu mají obranné chloupky, které používají jako hlavní obranný mechanismus. Obvykle jsou klidnější než větší jihoamerické rody, ale při vyrušení mohou reagovat obranně nebo se snaží uniknout.
+    </p>
+
+    <p class="care">
+      Růst těchto sklípkanů je středně rychlý a celkově se jedná o dobře zvládnutelné druhy vhodné i pro méně zkušené chovatele, kteří již mají základní zkušenosti s chovem sklípkanů.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Pterinopelma je známý především díky druhu Pterinopelma sazimai, který má výrazné modré zbarvení. Tento druh patří mezi málo amerických sklípkanů s takto intenzivní barvou, což ho činí velmi populárním v chovu.
+    </p>
+
+    <p class="care">
+      Na rozdíl od většiny tropických sklípkanů nevyžadují zástupci tohoto rodu extrémně vysokou vlhkost a dobře se přizpůsobují sušším podmínkám, podobně jako některé druhy rodu Grammostola.
+    </p>
+
+    <p class="care">
+      Ostatní druhy rodu bývají méně výrazně zbarvené a mají spíše klasický vzhled, což dělá z Pterinopelma sazimai výraznou výjimku v rámci celého rodu.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Pterinopelma jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

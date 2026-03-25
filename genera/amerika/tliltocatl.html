@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tliltocatl | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Tliltocatl" data-genus-page="genera/amerika/tliltocatl.html">
+
+  <header class="siteHeader generaHeader tliltocatlHeader"></header>
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Tliltocatl</p>
+      <p><b>Běžný název:</b> Mexican Red Rump / Curly Hair Tarantulas</p>
+      <p><b>Původ:</b> Střední Amerika (Mexiko, Guatemala, Belize, Kostarika)</p>
+      <p><b>Typ:</b> terestriální až mírně hrabavý</p>
+      <p><b>Velikost:</b> přibližně 12–16 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s možností úkrytu</p>
+      <p><b>Substrát:</b> mírně vlhký až suchý (5–10 cm, možnost hrabání)</p>
+      <p><b>Teplota:</b> přibližně 22–26 °C</p>
+      <p><b>Vlhkost:</b> střední (cca 60–70 %)</p>
+      <p><b>Úkryty:</b> vhodné (kůra, dutiny, kořeny)</p>
+    </div>
+
+  </section>
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Tliltocatl je rod sklípkanů Nového světa pocházející ze Střední Ameriky, který byl v roce 2020 oddělen od rodu Brachypelma na základě vědeckých studií. Zástupci tohoto rodu obývají různorodá prostředí od sušších oblastí až po tropické lesy a jsou velmi dobře přizpůsobiví různým podmínkám.
+    </p>
+
+    <p class="care">
+      Jedná se o převážně terestriální až mírně hrabavé sklípkany, kteří si v přírodě vytvářejí nory nebo využívají přirozené úkryty, jako jsou kořeny či kameny. Aktivní jsou hlavně v noci, kdy loví kořist ze zálohy.
+    </p>
+
+    <p class="care">
+      Vzhledově jsou typicky tmavě zbarvení (černí až hnědí) a na rozdíl od rodu Brachypelma postrádají výrazné červené nebo oranžové zbarvení končetin. Často však mají nápadné chloupky na zadečku, které mohou být světlejší nebo načervenalé.
+    </p>
+
+    <p class="care">
+      Z hlediska chování patří mezi klidnější a méně agresivní sklípkany, kteří při vyrušení spíše ustupují nebo používají obranné chloupky. Díky tomu jsou velmi oblíbení v chovu a vhodní i pro začínající chovatele.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Název Tliltocatl pochází z jazyka Nahuatl a znamená „černý pavouk“. Tento název dobře vystihuje typické zbarvení většiny druhů tohoto rodu.
+    </p>
+
+    <p class="care">
+      Rod Tliltocatl vznikl rozdělením rodu Brachypelma, přičemž hlavním rozdílem je méně výrazné zbarvení a odlišné morfologické znaky. Přesto jsou si oba rody velmi podobné a často bývají zaměňovány.
+    </p>
+
+    <p class="care">
+      Mezi známé druhy patří například Tliltocatl albopilosus, který je známý svým „chlupatým“ vzhledem a velmi klidnou povahou, nebo Tliltocatl vagans, který může být naopak o něco rychlejší a nervóznější než ostatní zástupci rodu.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Tliltocatl jsou nenároční predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

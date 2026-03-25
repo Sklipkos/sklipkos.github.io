@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Chilobrachys | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Chilobrachys" data-genus-page="genera/asie/chilobrachys.html">
+
+<header class="siteHeader generaHeader chilobrachysHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Chilobrachys</p>
+<p><b>Běžný název:</b> Asian Earth Tigers</p>
+<p><b>Původ:</b> jihovýchodní Asie (Indie, Srí Lanka, Thajsko, Vietnam, Malajsie, Čína)</p>
+<p><b>Typ:</b> fosoriální (hrabavý rod)</p>
+<p><b>Velikost:</b> přibližně 12–18 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Selenocosmiinae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s hlubokým substrátem</p>
+<p><b>Substrát:</b> vlhký, pevný (min. 15–25 cm pro norování)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší (70–85 %)</p>
+<p><b>Úkryty:</b> vhodné – kořeny nebo začátek nory</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Chilobrachys je rozsáhlý rod asijských sklípkanů, který se vyskytuje v tropických a subtropických oblastech jihovýchodní Asie. Obývá především vlhké lesy, kde si vyhrabává hluboké nory v půdě nebo ve svazích.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu jsou typicky fosoriální a vytvářejí rozsáhlé podzemní tunely, které jsou hustě vystlané pavučinou. Tyto struktury slouží nejen jako úkryt, ale i jako detekční systém pro zachycení vibrací kořisti.
+</p>
+
+<p class="care">
+Jedná se o velmi rychlé a silně defenzivní sklípkany. Při vyrušení reagují okamžitým únikem nebo výstražným postojem. Vzhledem k absenci obranných chloupků mohou v krajním případě přistoupit ke kousnutí, a proto jsou vhodní především pro zkušené chovatele.
+</p>
+
+<p class="care">
+Lov probíhá převážně v noci. Sklípkani čekají u vstupu do nory a bleskově útočí na kořist, kterou následně stáhnou dovnitř.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Chilobrachys patří mezi nejvýraznější „webbing“ rody sklípkanů – jejich nory a okolí bývají pokryté silnou vrstvou pavučin.
+</p>
+
+<p class="care">
+Některé druhy dokážou vydávat zvuky pomocí stridulačních orgánů, což je obranný mechanismus typický pro tento rod.
+</p>
+
+<p class="care">
+Zajímavým druhem je například Chilobrachys natanicharum, který je známý svým intenzivním modrým zbarvením a životem v mangrovových lesích – což je u sklípkanů velmi neobvyklé prostředí.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Chilobrachys jsou žraví predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní podle velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

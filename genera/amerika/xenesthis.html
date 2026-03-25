@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Xenesthis | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Xenesthis" data-genus-page="genera/amerika/xenesthis.html">
+
+  <header class="siteHeader generaHeader xenesthisHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Xenesthis</p>
+      <p><b>Běžný název:</b> South American Giant Tarantulas</p>
+      <p><b>Původ:</b> sever Jižní Ameriky (Kolumbie, Venezuela)</p>
+      <p><b>Typ:</b> terestriální až částečně hrabavý rod</p>
+      <p><b>Velikost:</b> přibližně 20–23 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> větší horizontální typ s možností úkrytu</p>
+      <p><b>Substrát:</b> vlhčí, dostatečně hluboký pro mělkou noru</p>
+      <p><b>Teplota:</b> přibližně 24–27 °C</p>
+      <p><b>Vlhkost:</b> vyšší (70–80 %)</p>
+      <p><b>Úkryty:</b> korek, kořeny nebo předpřipravený úkryt</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Xenesthis je rod velkých sklípkanů Nového světa pocházející ze severní části Jižní Ameriky, především z Kolumbie a Venezuely. Tito sklípkani obývají vlhké tropické oblasti, kde žijí převážně na zemi a využívají přirozené úkryty nebo mělké nory v lesní půdě.
+    </p>
+
+    <p class="care">
+      Jedná se o robustní a výrazně stavěné sklípkany, kteří patří mezi největší terestriální druhy v chovu. Typickým znakem rodu je atraktivní zbarvení – často v kombinaci černé, modré, fialové nebo růžové – a u některých druhů i kovový lesk.
+    </p>
+
+    <p class="care">
+      Zástupci rodu Xenesthis mají velmi silnou krmnou reakci, rychle rostou a bývají aktivnější než klidnější rody jako Grammostola nebo Brachypelma. Při vyrušení se mohou chovat defenzivněji a ochotně používají obranné chloupky, proto jsou vhodnější spíše pro zkušenější chovatele.
+    </p>
+
+    <p class="care">
+      Většinu času tráví na zemi v okolí úkrytu, odkud v noci vyrážejí lovit. Jsou to typičtí oportunní predátoři s rychlou reakcí na pohyb kořisti.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Xenesthis patří mezi nejvýraznější velké americké sklípkany v chovu. Zatímco většina obřích terestriálních druhů bývá spíše tmavá a nenápadná, u Xenesthis se často objevují velmi atraktivní barevné odlesky a kontrasty.
+    </p>
+
+    <p class="care">
+      Velkou zajímavostí je druh Xenesthis immanis, u kterého byl pozorován neobvyklý vztah s malými žábami. Ty mohou sdílet noru se sklípkany a pomáhat jim tím, že požírají drobné predátory nebo mravence v okolí kokonu.
+    </p>
+
+    <p class="care">
+      Mezi nejznámější druhy patří například Xenesthis intermedia s výrazným modrým zbarvením nebo Xenesthis immanis, který je ceněný pro svou velikost a robustnost.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Xenesthis jsou velmi žraví predátoři a přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Díky své velikosti a síle mají velmi výraznou krmnou reakci. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

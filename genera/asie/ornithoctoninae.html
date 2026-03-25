@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ornithoctoninae | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Ornithoctoninae" data-genus-page="genera/asie/ornithoctoninae.html">
+
+  <header class="siteHeader generaHeader ornithoctoninaeHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy této skupiny</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O SKUPINĚ -->
+    <div class="speciesInfo">
+      <h2>Informace o skupině</h2>
+
+      <p><b>Latinský název:</b> Ornithoctoninae</p>
+      <p><b>Taxonomická úroveň:</b> podčeleď (nejde o rod)</p>
+      <p><b>Běžné označení:</b> Earth Tigers</p>
+      <p><b>Původ:</b> jihovýchodní Asie</p>
+      <p><b>Typ:</b> převážně fosoriální až částečně stromové druhy</p>
+      <p><b>Čeleď:</b> Theraphosidae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> většinou horizontální typ s dostatkem prostoru pro norování</p>
+      <p><b>Substrát:</b> hluboký, vlhčí a dobře držící tvar (často 15–25 cm i více)</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> střední až vyšší, vždy s dobrou ventilací</p>
+      <p><b>Úkryty:</b> vhodné, ale většina druhů si vytváří vlastní nory a tunely</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis skupiny</h3>
+
+    <p class="care">
+      Ornithoctoninae je podčeleď asijských sklípkanů z čeledi Theraphosidae, která zahrnuje řadu známých a mezi chovateli velmi oblíbených rodů. Nejde tedy o jeden konkrétní rod, ale o širší skupinu příbuzných sklípkanů, kteří sdílejí podobné znaky, chování i nároky na chov.
+    </p>
+
+    <p class="care">
+      Zástupci této podčeledi se vyskytují především v jihovýchodní Asii, kde obývají tropické lesy, vlhké půdy a další prostředí vhodná pro norování. Většina druhů je fosoriální, tedy hrabavá, a tráví většinu života ukrytá v hlubokých norách. Existují však i druhy, které jsou více přechodné nebo částečně stromové.
+    </p>
+
+    <p class="care">
+      Pro Ornithoctoninae je typická extrémní rychlost, velmi silná obranná reakce a výrazný temperament. Na rozdíl od amerických sklípkanů nemají obranné chloupky, a proto se při vyrušení spoléhají na útěk, obranný postoj nebo případné kousnutí. Z tohoto důvodu se jedná o skupinu vhodnou především pro zkušené chovatele.
+    </p>
+
+    <p class="care">
+      Mnoho zástupců této podčeledi si vytváří hustě vypavučinované tunely a vchody do nor. Většinu času zůstávají skrytí a aktivní jsou hlavně v noci, kdy vyrážejí lovit kořist v okolí úkrytu.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Podčeleď Ornithoctoninae bývá v chovatelském světě označována jako „Earth Tigers“. Tento název odkazuje na jejich rychlost, dravost a převážně zemní způsob života.
+    </p>
+
+    <p class="care">
+      Typickým znakem této skupiny jsou také stridulační orgány, díky kterým mohou někteří zástupci vytvářet zvuk třením částí těla o sebe. Tento zvuk slouží jako obranný signál při vyrušení.
+    </p>
+
+    <p class="care">
+      Zajímavostí je, že ačkoliv je většina druhů typicky hrabavá, existují i výjimky se specializovaným způsobem života – například druhy žijící v bambusu, ve stromových dutinách nebo dokonce v jeskynních systémech.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci podčeledi Ornithoctoninae jsou velmi rychlí a efektivní predátoři s výraznou krmnou reakcí. Přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji, dospělci přibližně jednou za 7–10 dní podle velikosti a aktivity.
+    </p>
+
+    <a href="../../continents/asie.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

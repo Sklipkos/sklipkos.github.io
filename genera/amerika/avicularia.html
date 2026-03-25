@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Avicularia | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Avicularia" data-genus-page="genera/amerika/avicularia.html">
+
+  <header class="siteHeader generaHeader aviculariaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Avicularia</p>
+      <p><b>Běžný název:</b> Pinktoe Tarantulas</p>
+      <p><b>Původ:</b> Střední a Jižní Amerika, Karibik</p>
+      <p><b>Typ:</b> stromový (arboreální rod)</p>
+      <p><b>Velikost:</b> přibližně 10–15 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Aviculariinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> vertikální typ s dostatkem prostoru pro šplhání</p>
+      <p><b>Substrát:</b> lehce vlhký, dobře větraný</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> střední (důležitá je ventilace)</p>
+      <p><b>Úkryty:</b> větve, kůra nebo rostliny pro tvorbu pavučinových úkrytů</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Avicularia je rod stromových sklípkanů pocházejících z tropických oblastí Střední a Jižní Ameriky a Karibiku. Tito sklípkani obývají především deštné pralesy, kde žijí vysoko v korunách stromů a vytvářejí si charakteristické pavučinové úkryty v dutinách, mezi větvemi nebo v listech.
+    </p>
+
+    <p class="care">
+      Jedná se o štíhlejší a velmi lehké sklípkany s dlouhými nohami, kteří jsou přizpůsobeni životu ve výškách. Typickým znakem rodu jsou barevné špičky nohou, často v odstínech růžové, oranžové nebo červené, díky čemuž jsou známí pod názvem „pinktoe“.
+    </p>
+
+    <p class="care">
+      Avicularia patří mezi klidnější a méně agresivní rody, avšak jsou velmi rychlí a při vyrušení často reagují útěkem nebo skokem. Manipulace je proto riziková především kvůli možnosti pádu, který může být pro sklípkana fatální.
+    </p>
+
+    <p class="care">
+      V přírodě jsou aktivní převážně v noci, kdy opouštějí své úkryty a loví kořist v okolí. Přes den zůstávají ukrytí ve svých pavučinových tunelech.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Na rozdíl od většiny sklípkanů dokážou zástupci rodu Avicularia poměrně dobře skákat, což je přizpůsobení jejich stromovému způsobu života. Tento pohyb jim umožňuje rychle uniknout predátorům nebo se přesouvat mezi větvemi.
+    </p>
+
+    <p class="care">
+      Při ohrožení mohou místo klasické obrany vystřikovat tekutý trus směrem k predátorovi. Tento způsob obrany je u sklípkanů poměrně unikátní a typický právě pro tento rod.
+    </p>
+
+    <p class="care">
+      Mezi známé druhy patří například Avicularia avicularia, který je jedním z nejčastěji chovaných stromových sklípkanů, nebo Avicularia minatrix, který je menší a výrazně plachější než většina ostatních druhů.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Avicularia přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní. Díky rychlému metabolismu reagují dobře na pravidelné, ale přiměřené krmení.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

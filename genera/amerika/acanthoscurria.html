@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Acanthoscurria | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Acanthoscurria" data-genus-page="genera/amerika/acanthoscurria.html">
+
+  <header class="siteHeader generaHeader acanthoscurriaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Acanthoscurria</p>
+      <p><b>Běžný název:</b> South American Tarantulas</p>
+      <p><b>Původ:</b> Jižní Amerika</p>
+      <p><b>Typ:</b> terestriální (pozemní rod)</p>
+      <p><b>Velikost:</b> přibližně 12–20 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s dostatkem prostoru na zemi</p>
+      <p><b>Substrát:</b> středně vlhký, možnost hrabání (10–20 cm)</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> střední až vyšší (dle druhu)</p>
+      <p><b>Úkryty:</b> vhodné – kůra, nora, úkryt</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Acanthoscurria je rod jihoamerických sklípkanů, který zahrnuje převážně větší pozemní druhy obývající široké spektrum prostředí od tropických deštných lesů až po otevřené savany. Tito sklípkani se vyskytují v oblasti Amazonie i v jižnějších částech Jižní Ameriky.
+    </p>
+
+    <p class="care">
+      Jedná se o terestriální druhy, které si často vyhrabávají nory nebo využívají přirozené úkryty. Aktivní jsou především v noci, kdy loví ze země a reagují na kořist rychlým výpadem.
+    </p>
+
+    <p class="care">
+      Acanthoscurria patří mezi typické „New World“ sklípkany. Při vyrušení se brání především vyčesáváním obranných chloupků, které mohou být pro člověka nepříjemné. Kousnutí využívají spíše až jako poslední možnost.
+    </p>
+
+    <p class="care">
+      Většina druhů má robustní stavbu těla a husté ochlupení. Zbarvení bývá spíše tmavé, ale některé druhy mají výrazné kontrastní vzory, díky kterým patří mezi velmi atraktivní sklípkany.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Acanthoscurria patří mezi velmi oblíbené v chovu díky své odolnosti a dobré přizpůsobivosti. Mnoho druhů je známých rychlým růstem a silným apetýtem.
+    </p>
+
+    <p class="care">
+      Některé druhy vykazují výraznou mateřskou péči o kokon a mláďata, což je u sklípkanů zajímavé chování. Samice aktivně chrání kokon a reagují na jeho ohrožení.
+    </p>
+
+    <p class="care">
+      Mezi nejznámější druhy patří Acanthoscurria geniculata, která je známá svým kontrastním černo-bílým zbarvením a extrémní žravostí. Naopak některé jiné druhy mohou být klidnější a méně defenzivní.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Acanthoscurria jsou aktivní a žraví predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Větší jedinci mohou příležitostně ulovit i drobné obratlovce. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -13,12 +13,217 @@ a {
 /* HLAVNÍ BANNER */
 .siteHeader {
   width: 100%;
-  background: url('img/sklipkos-zahlavi.png') no-repeat center center;
+  background: url('img/sklipkos-zahlavi.webp') no-repeat center center;
   background-size: cover;
   height: 375px;
   max-height: 400px;
   min-height: 200px;
 }
+
+/* Afrika */
+.africaHeader {
+  width: 100%;
+  height: 375px;
+  min-height: 200px;
+  max-height: 400px;
+  background-image: url('img/afrika-zahlavi.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 44%;
+}
+
+/* Amerika */
+.americaHeader {
+  width: 100%;
+  height: 375px;
+  min-height: 200px;
+  max-height: 400px;
+  background-image: url('img/amerika-zahlavi.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 56%;
+}
+
+/* Asie */
+.asiaHeader {
+  width: 100%;
+  height: 375px;
+  min-height: 200px;
+  max-height: 400px;
+  background-image: url('img/asie-zahlavi.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 35%;
+}
+
+/* společný styl pro všechny genus bannery */
+.generaHeader {
+  width: 100%;
+  height: 375px;
+  min-height: 200px;
+  max-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 55%;
+}
+
+/* Afrika */
+.ceratogyrusHeader {
+  background-image: url('img/ceratogyrus-zahlavi.webp');
+}
+
+.harpactiraHeader {
+  background-image: url('img/harpactira-zahlavi.webp');
+}
+
+.heteroscodraHeader {
+  background-image: url('img/heteroscodra-zahlavi.webp');
+}
+
+.heterotheleHeader {
+  background-image: url('img/heterothele-zahlavi.webp');
+}
+
+.idiotheleHeader {
+  background-image: url('img/idiothele-zahlavi.webp');
+}
+
+.monocentropusHeader {
+  background-image: url('img/monocentropus-zahlavi.webp');
+}
+
+.pterinochilusHeader {
+  background-image: url('img/pterinochilus-zahlavi.webp');
+}
+
+
+
+
+
+/* Asie */
+
+.aspinochilusHeader {
+  background-image: url('img/aspinochilus-zahlavi.webp');
+}
+
+.birupesHeader {
+  background-image: url('img/birupes-zahlavi.webp');
+}
+
+.chaetopelmaHeader {
+  background-image: url('img/chaetopelma-zahlavi.webp');
+}
+
+.chilobrachysHeader {
+  background-image: url('img/chilobrachys-zahlavi.webp');
+}
+
+.cyriopagopusHeader {
+  background-image: url('img/cyriopagopus-zahlavi.webp');
+}
+
+.haploclastusHeader {
+  background-image: url('img/haploclastus-zahlavi.webp');
+}
+
+.lampropelmaHeader {
+  background-image: url('img/lampropelma-zahlavi.webp');
+}
+
+.ornithoctoninaeHeader {
+  background-image: url('img/ornithoctoninae-zahlavi.webp');
+}
+
+.ornithoctonusHeader {
+  background-image: url('img/ornithoctonus-zahlavi.webp');
+}
+
+.poecilotheriaHeader {
+  background-image: url('img/poecilotheria-zahlavi.webp');
+}
+
+
+
+
+
+
+
+/* Amerika */
+
+.acanthoscurriaHeader {
+  background-image: url('img/acanthoscurria-zahlavi.webp');
+}
+
+.aphonopelmaHeader {
+  background-image: url('img/aphonopelma-zahlavi.webp');
+}
+
+.aviculariaHeader {
+  background-image: url('img/avicularia-zahlavi.webp');
+}
+
+.brachypelmaHeader {
+  background-image: url('img/brachypelma-zahlavi.webp');
+}
+
+.caribenaHeader {
+  background-image: url('img/caribena-zahlavi.webp');
+}
+
+.chromatopelmaHeader {
+  background-image: url('img/chromatopelma-zahlavi.webp');
+}
+
+.dolichotheleHeader {
+  background-image: url('img/dolichothele-zahlavi.webp');
+}
+
+.grammostolaHeader {
+  background-image: url('img/grammostola-zahlavi.webp');
+}
+
+.lasiodoraHeader {
+  background-image: url('img/lasiodora-zahlavi.webp');
+}
+
+.pamphobeteusHeader {
+  background-image: url('img/pamphobeteus-zahlavi.webp');
+}
+
+.phormictopusHeader {
+  background-image: url('img/phormictopus-zahlavi.webp');
+}
+
+.pterinopelmaHeader {
+  background-image: url('img/pterinopelma-zahlavi.webp');
+}
+
+.psalmopoeusHeader {
+  background-image: url('img/psalmopoeus-zahlavi.webp');
+}
+
+.sericopelmaHeader {
+  background-image: url('img/sericopelma-zahlavi.webp');
+}
+
+.tapinaucheniusHeader {
+  background-image: url('img/tapinauchenius-zahlavi.webp');
+}
+
+.tliltocatlHeader {
+  background-image: url('img/tliltocatl-zahlavi.webp');
+}
+
+.xenesthisHeader {
+  background-image: url('img/xenesthis-zahlavi.webp');
+}
+
+
+
+
+
+
+
 
 /* LAYOUT HOMEPAGE */
 .pageLayout {
@@ -50,6 +255,12 @@ a {
   align-items: center;
   gap: 10px;
 
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* mezera mezi boxy */
 }
 
 
@@ -380,6 +591,36 @@ section:first-of-type h2 {
   color: #9ec5ff;
 }
 
+/* DETAIL STRÁNKY RODU */
+
+.genusDetailTop {
+  display: grid;
+  grid-template-columns: minmax(320px, 520px) minmax(320px, 520px);
+  justify-content: center;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  align-items: start;
+}
+
+.genusText {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.genusText h3 {
+  margin-top: 35px;
+  color: #9ec5ff;
+}
+
+.generaHeader {
+  margin-bottom: 30px;
+}
+
+
 .care {
   background: #151518;
   padding: 18px;
@@ -527,5 +768,259 @@ section:first-of-type h2 {
   .rating {
     cursor: default;
   }
+
+  .genusDetailTop {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .genusDetailTop .speciesPhoto {
+    max-width: 380px;
+  }
+
+  .speciesRowWide {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .speciesContinent {
+    text-align: left;
+  }
+
+  .speciesRowWide .speciesGenus {
+    text-align: left;
+  }
+
+  .speciesInfoBadge {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
 }
 
+
+
+
+
+
+/* KONTINENTÁLNÍ STRÁNKY */
+.continentPage {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.genusGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.genusCard {
+  background: #17171b;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.genusCard:hover {
+  transform: translateY(-1px);
+  background: #1c1c21;
+  border-color: rgba(158, 197, 255, 0.18);
+}
+
+.genusCard:hover .genusName {
+  color: #9ec5ff;
+}
+
+.genusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8fb2e0;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(143, 178, 224, 0.14);
+}
+
+.genusName {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.continentBack {
+  margin-top: 30px;
+}
+
+.backBtn {
+  display: inline-block;
+  background: #17171b;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.backBtn:hover {
+  background: #1d1d22;
+  border-color: rgba(158, 197, 255, 0.22);
+}
+
+.continentIntro {
+  margin: 20px 0 18px;
+}
+
+.continentLead {
+  margin: 0;
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #a7afb8;
+  border-left: 3px solid rgba(158, 197, 255, 0.22);
+  padding-left: 14px;
+}
+
+/* MOBIL - KONTINENTY */
+@media (max-width: 900px) {
+  .genusGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .genusCard {
+    padding: 15px 16px;
+    gap: 10px;
+  }
+
+  .genusName {
+    font-size: 18px;
+  }
+
+  .continentLead {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+
+
+.continentActions {
+  margin: 8px 0 22px;
+}
+
+.smallBtn {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.genusCount {
+  color: #9fbfff;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.speciesList {
+  display: grid;
+  gap: 14px;
+}
+
+.speciesRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.genusSpeciesSection {
+  margin: 28px auto 0;
+  max-width: 1260px;
+}
+
+.genusSpeciesSection h2 {
+  margin-bottom: 20px;
+}
+
+.speciesName {
+  font-size: 17px;
+  font-weight: 600;
+  color: #f3f5f7;
+}
+
+.speciesGenus {
+  font-size: 15px;
+  color: #9aa3ad;
+}
+
+.speciesLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+.speciesLink:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.speciesRowWide {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr 0.9fr;
+  align-items: center;
+}
+
+.speciesContinent {
+  font-size: 15px;
+  color: #9aa3ad;
+  text-align: center;
+}
+
+.speciesRowWide .speciesGenus {
+  text-align: right;
+}
+
+
+
+
+.speciesNameWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.speciesInfoBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(158, 197, 255, 0.16);
+  border: 1px solid rgba(158, 197, 255, 0.28);
+  color: #9ec5ff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.speciesInfoBadge:hover {
+  background: rgba(158, 197, 255, 0.22);
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Heterothele | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Heterothele" data-genus-page="genera/afrika/heterothele.html">
+
+<header class="siteHeader generaHeader heterotheleHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Heterothele</p>
+<p><b>Běžný název:</b> Dwarf Baboon Tarantulas</p>
+<p><b>Původ:</b> tropická Afrika (Kongo, Gabon, Tanzanie, Nigérie)</p>
+<p><b>Typ:</b> semi-arboreální až terestriální</p>
+<p><b>Velikost:</b> přibližně 5–8 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> menší, ideálně kombinace horizontálního a částečně vertikálního prostoru</p>
+<p><b>Substrát:</b> mírně vlhký, kokosová drť nebo směs terarijní půdy (cca 5–10 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> střední až vyšší (cca 60–75 %)</p>
+<p><b>Úkryty:</b> kombinace – kůra, větve i možnost hrabání</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Heterothele je menší rod afrických sklípkanů pocházející z tropických oblastí rovníkové Afriky. Na rozdíl od většiny afrických rodů obývá vlhčí prostředí, především lesy a hustou vegetaci, kde využívá kombinaci úkrytů v substrátu i nad zemí.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu nejsou striktně stromoví ani čistě zemní, ale spíše semi-arboreální. Vytvářejí komplexní pavučinové struktury, které propojují úkryty v zemi s vegetací nebo kůrou. Díky tomu využívají prostor velmi efektivně.
+</p>
+
+<p class="care">
+Jedná se o rychlé a velmi plaché sklípkany, kteří při vyrušení preferují útěk před obranou. Ve srovnání s jinými africkými rody jsou méně agresivní, i když v krajním případě mohou kousnout.
+</p>
+
+<p class="care">
+Typickým znakem rodu je menší velikost a velmi hustá tvorba pavučin. Tyto sklípkany lze často najít spíše podle jejich pavučin než podle samotného jedince.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Heterothele je výjimečný tím, že u některých druhů bylo pozorováno tolerantní až polosociální chování. Jedinci mohou sdílet prostor nebo pavučinové struktury, což je u sklípkanů spíše vzácné.
+</p>
+
+<p class="care">
+Například druh Heterothele gabonensis (Gabon Blue Dwarf) je známý svou menší velikostí a lehce namodralým zbarvením. U tohoto druhu bylo v chovu pozorováno relativně tolerantní soužití více jedinců.
+</p>
+
+<p class="care">
+Rod také patří mezi nejmenší africké sklípkany, což z něj dělá zajímavou alternativu k větším a robustnějším druhům.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Heterothele jsou aktivní predátoři, kteří přijímají drobnější živý hmyz, jako jsou menší cvrčci, švábi nebo larvy. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 5–10 dní podle velikosti kořisti.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+
+</body>
+</html>

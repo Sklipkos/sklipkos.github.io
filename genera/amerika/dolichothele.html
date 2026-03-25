@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dolichothele | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Dolichothele" data-genus-page="genera/amerika/dolichothele.html">
+
+  <header class="siteHeader generaHeader dolichotheleHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Dolichothele (dříve Doliothele)</p>
+      <p><b>Běžný název:</b> Dwarf Webbing Tarantulas</p>
+      <p><b>Původ:</b> Jižní Amerika (Brazílie, Bolívie)</p>
+      <p><b>Typ:</b> terestriální (pozemní, s výrazným webováním)</p>
+      <p><b>Velikost:</b> přibližně 7–10 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s možností ukotvení pavučin</p>
+      <p><b>Substrát:</b> lehce vlhký až mírně suchý, dobře propustný</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> střední (spíše sušší s lokální vlhkostí)</p>
+      <p><b>Úkryty:</b> kůra, kameny nebo dekorace pro tvorbu pavučinových tunelů</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Dolichothele je rod menších sklípkanů pocházejících z Jižní Ameriky, především z Brazílie a okolních oblastí. Obývají savany, suché lesy a křovinaté oblasti, kde si vytvářejí úkryty pod kameny, kořeny nebo v mělkých norách.
+    </p>
+
+    <p class="care">
+      Typickým znakem tohoto rodu je menší velikost a velmi aktivní způsob života. Jedná se o rychlé a plaché sklípkany, kteří při vyrušení dávají přednost útěku. Přesto jsou často viditelní a aktivní i během dne.
+    </p>
+
+    <p class="care">
+      Zástupci tohoto rodu jsou známí výraznou tvorbou pavučin. Vytvářejí husté sítě a tunely, které slouží jako úkryt i lovecká plocha. Díky tomu mohou pokrýt velkou část terária jemnou, ale pevnou pavučinou.
+    </p>
+
+    <p class="care">
+      Zajímavostí je, že některé druhy rodu Dolichothele postrádají nebo téměř nevyužívají obranné chloupky, což je u amerických sklípkanů poměrně neobvyklé.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Dolichothele prošel v minulosti taxonomickými změnami a byl dříve označován jako Doliothele. Moderní klasifikace však používá název Dolichothele.
+    </p>
+
+    <p class="care">
+      Mezi nejznámější druhy patří Dolichothele diamantinensis, který je známý svým výrazným modrým zbarvením a velmi rychlým růstem. Tento druh patří mezi nejatraktivnější malé sklípkany v chovu.
+    </p>
+
+    <p class="care">
+      Díky své velikosti, zbarvení a aktivitě jsou zástupci tohoto rodu oblíbení jako „display“ druhy, které jsou často viditelné mimo úkryt.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Dolichothele mají dobrý apetit a přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

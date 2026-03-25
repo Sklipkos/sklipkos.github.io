@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sericopelma | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Sericopelma" data-genus-page="genera/amerika/sericopelma.html">
+
+  <header class="siteHeader generaHeader sericopelmaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Sericopelma</p>
+      <p><b>Běžný název:</b> Central American Tarantulas</p>
+      <p><b>Původ:</b> Střední Amerika (Nikaragua, Kostarika, Panama)</p>
+      <p><b>Typ:</b> terestriální až částečně hrabavý rod</p>
+      <p><b>Velikost:</b> přibližně 15–20 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s možností úkrytu</p>
+      <p><b>Substrát:</b> mírně vlhký, dostatečně hluboký pro hrabání</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> střední až vyšší (60–80 %)</p>
+      <p><b>Úkryty:</b> korková kůra, kořeny nebo předpřipravené úkryty</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Sericopelma je rod sklípkanů ze Střední Ameriky, který obývá především tropické a vlhké oblasti, jako jsou deštné lesy v Nikaragui, Kostarice a Panamě. Tito sklípkani žijí převážně na zemi, kde využívají přirozené úkryty nebo si vytvářejí mělké nory.
+    </p>
+
+    <p class="care">
+      Jedná se o terestriální až částečně hrabavý rod. Na rozdíl od typických hlubokých „kopáčů“ nejsou extrémně fosoriální, ale často kombinují pobyt na povrchu s úkrytem v norách nebo pod kořeny a kameny.
+    </p>
+
+    <p class="care">
+      Zástupci rodu Sericopelma patří mezi robustní a poměrně velké sklípkany. Svým vzhledem i chováním jsou blízcí rodům jako Aphonopelma, se kterými byli v minulosti často zaměňováni.
+    </p>
+
+    <p class="care">
+      Temperament se liší podle druhu i jedince – některé druhy jsou relativně klidné, jiné mohou být výrazně defenzivní. Při vyrušení se spoléhají především na obranné chloupky a ústup, ale v krajním případě mohou být i velmi prudcí.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Rod Sericopelma je považován za taxonomicky problematický a dlouhou dobu nebyl přesně vymezen. V minulosti docházelo k častým záměnám s rody Aphonopelma nebo Brachypelma, a i dnes se systematika tohoto rodu stále upřesňuje.
+    </p>
+
+    <p class="care">
+      Patří mezi největší sklípkany Střední Ameriky, přičemž některé druhy dosahují rozpětí nohou až kolem 20 cm. Díky robustní stavbě těla působí velmi mohutně.
+    </p>
+
+    <p class="care">
+      Mezi zajímavé druhy patří například Sericopelma melanotarsum, který je známý výrazně defenzivním až agresivním chováním, čímž vybočuje z jinak spíše klidnějšího průměru rodu.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Sericopelma jsou silní a žraví predátoři s dobrou krmnou reakcí. Přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

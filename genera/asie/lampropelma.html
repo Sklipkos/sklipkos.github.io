@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lampropelma | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Lampropelma" data-genus-page="genera/asie/lampropelma.html">
+
+<header class="siteHeader generaHeader lampropelmaHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 3 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Lampropelma</p>
+<p><b>Běžný název:</b> Asian Arboreal / Earth Tiger Tarantulas</p>
+<p><b>Původ:</b> Indonésie (Sulawesi, Borneo a okolní oblasti)</p>
+<p><b>Typ:</b> převážně arboreální (stromový rod)</p>
+<p><b>Velikost:</b> přibližně 15–22 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Ornithoctoninae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> spíše vertikální typ s možností šplhání</p>
+<p><b>Substrát:</b> mírně vlhký (cca 5–10 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší (70–85 %)</p>
+<p><b>Úkryty:</b> korková kůra, dutiny nebo vertikální úkryt</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Lampropelma je rod asijských sklípkanů pocházejících z tropických oblastí Indonésie. Obývají především deštné lesy, kde se vyskytují ve vlhkém a teplém prostředí s dostatkem vegetace.
+</p>
+
+<p class="care">
+Na rozdíl od většiny „earth tiger“ sklípkanů jsou zástupci tohoto rodu převážně arboreální – žijí ve stromových dutinách, pod kůrou nebo ve vyšších částech prostředí. Mladí jedinci však mohou být více hrabaví a postupně přecházejí na stromový způsob života.
+</p>
+
+<p class="care">
+Jedná se o velmi rychlé, reaktivní a defenzivní sklípkany. Stejně jako ostatní „Old World“ druhy nemají obranné chloupky, a proto spoléhají především na útěk nebo obranu pomocí kousnutí. Z tohoto důvodu jsou vhodní především pro zkušené chovatele.
+</p>
+
+<p class="care">
+V přírodě jsou aktivní zejména v noci, kdy opouštějí své úkryty a loví kořist. Často si vytvářejí pavučinové tunely nebo úkryty ve stromových strukturách.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Lampropelma je známý svým výrazným a atraktivním zbarvením. Některé druhy mají metalicky modré nohy v kombinaci s kontrastním karapaxem, což je řadí mezi vizuálně nejpůsobivější asijské sklípkany.
+</p>
+
+<p class="care">
+Taxonomie tohoto rodu je poměrně složitá a v minulosti došlo k přesunům druhů do jiných rodů, například Omothymus nebo Cyriopagopus. V chovatelském hobby se proto často setkáš se staršími nebo nepřesnými názvy.
+</p>
+
+<p class="care">
+Mezi známé druhy patří například Lampropelma violaceopes (často však nesprávně označovaný v hobby), který je ceněný pro své výrazné modré zbarvení a impozantní velikost.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Lampropelma jsou velmi žraví predátoři. Přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

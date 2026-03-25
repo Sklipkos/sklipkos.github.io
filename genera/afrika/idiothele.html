@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Idiothele | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Idiothele" data-genus-page="genera/afrika/idiothele.html">
+
+<header class="siteHeader generaHeader idiotheleHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Idiothele</p>
+<p><b>Běžný název:</b> Trapdoor Baboon Tarantulas</p>
+<p><b>Původ:</b> jižní Afrika</p>
+<p><b>Typ:</b> fosoriální (hrabavý rod)</p>
+<p><b>Velikost:</b> přibližně 8–10 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s dostatkem prostoru pro hrabání</p>
+<p><b>Substrát:</b> pevný, mírně vlhký (min. 10–20 cm pro tvorbu nor)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> střední, lokálně vlhčí část substrátu</p>
+<p><b>Úkryty:</b> není nutný – vytváří si vlastní nory s „víčkem“</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Idiothele je menší rod afrických sklípkanů pocházející ze suchých až polosuchých oblastí jižní Afriky. Zástupci tohoto rodu jsou typicky hrabaví a většinu života tráví ukrytí v hlubokých podzemních norách.
+</p>
+
+<p class="care">
+Na rozdíl od většiny ostatních sklípkanů vytvářejí zástupci rodu Idiothele unikátní nory s tzv. „víčkem“ (trapdoor). Vstup do nory je zakrytý vrstvou hlíny a pavučiny, kterou sklípkan maskuje a využívá jako past na kořist.
+</p>
+
+<p class="care">
+Jedná se o velmi skryté a reclusivní sklípkany, kteří jsou na povrchu vidět jen výjimečně. Při vyrušení reagují rychlým únikem do nory, případně obranným chováním. Jako typičtí „Old World“ sklípkani nemají obranné chloupky a spoléhají především na kousnutí.
+</p>
+
+<p class="care">
+Lov probíhá typicky z úkrytu – sklípkan čeká pod „víčkem“ nory a při zaznamenání vibrací ho otevře a bleskově zaútočí na kořist. Tento způsob lovu je mezi sklípkany velmi vzácný.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Idiothele patří mezi velmi malé množství sklípkanů, kteří staví trapdoor nory. Tento způsob života je typický spíše pro jiné skupiny pavouků a u sklípkanů jde o unikátní evoluční adaptaci.
+</p>
+
+<p class="care">
+Nejznámějším druhem je Idiothele mira, který má výrazné modré zbarvení na koncích končetin. Tento druh je extrémně skrytý a jen zřídka opouští svou noru, což z něj dělá jeden z nejméně pozorovatelných sklípkanů v chovu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Idiothele jsou ambush predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+
+</body>
+</html>

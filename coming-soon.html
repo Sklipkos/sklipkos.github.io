@@ -48,10 +48,22 @@
 <body>
 
 <div class="comingSoon">
-  <h1>🕷️ Připravujeme</h1>
-  <p>Tato sekce je momentálně ve vývoji.<br>Brzy zde najdeš jednotlivé druhy s veškerými informacemi.</p>
+  <h1>🕷️ Připravujeme!</h1>
+  <p>Tato sekce je momentálně ve vývoji.</p>
 
-  <a href="index.html" class="backBtn">Zpět na hlavní stránku</a>
+  <button onclick="goBack()" class="backBtn">
+  ← Zpět
+</button>
+
+<script>
+function goBack() {
+  if (window.history.length > 1) {
+    history.back();
+  } else {
+    window.location.href = "index.html";
+  }
+}
+</script>
 </div>
 
 </body>

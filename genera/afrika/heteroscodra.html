@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Heteroscodra | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Heteroscodra" data-genus-page="genera/afrika/heteroscodra.html">
+
+<header class="siteHeader generaHeader heteroscodraHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Heteroscodra</p>
+<p><b>Běžný název:</b> Starburst Baboon Tarantulas</p>
+<p><b>Původ:</b> západní a střední Afrika (Ghana, Togo, Kamerun)</p>
+<p><b>Typ:</b> arboreální (stromový rod)</p>
+<p><b>Velikost:</b> přibližně 12–13 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> vertikální typ s dostatkem prostoru na šplhání</p>
+<p><b>Substrát:</b> spíše vlhčí, kokosová drť nebo směs terarijní půdy (cca 5–8 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší, ideálně 70–80 %</p>
+<p><b>Úkryty:</b> korková kůra, dutiny, vertikální úkryty s možností tvorby pavučin</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Heteroscodra je menší rod afrických sklípkanů pocházející z tropických oblastí západní a střední Afriky. Na rozdíl od většiny afrických rodů obývá vlhčí prostředí, především tropické lesy, kde žije ve stromových dutinách a štěrbinách kůry.
+</p>
+
+<p class="care">
+Jedná se o typicky stromové (arboreální) sklípkany, kteří si vytvářejí husté pavučinové úkryty ve vertikálním prostoru. Mladí jedinci mohou krátkodobě využívat i úkryty v substrátu, ale s růstem přecházejí na plně stromový způsob života.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu patří mezi nejrychlejší sklípkany vůbec. Jsou extrémně reaktivní, velmi agilní a schopní pohybu i po hladkých površích. Při vyrušení reagují bleskovým únikem nebo obranným postojem, v krajním případě kousnutím.
+</p>
+
+<p class="care">
+Jako typičtí „Old World“ sklípkani nemají obranné chloupky a spoléhají především na rychlost a jed, který je považován za medicínsky významný. Z tohoto důvodu jsou vhodní pouze pro zkušené chovatele.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Heteroscodra je známý svou extrémní rychlostí a schopností pohybu po téměř jakémkoliv povrchu, včetně skla. Díky speciálním strukturám na končetinách dokáže velmi efektivně přilnout i k hladkým plochám.
+</p>
+
+<p class="care">
+Nejznámějším druhem je Heteroscodra maculata, který je charakteristický výrazným kontrastním „starburst“ vzorem na těle. Tento druh je zároveň považován za jeden z nejrychlejších a nejdefenzivnějších stromových sklípkanů v chovu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Heteroscodra jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti a kondici jedince.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

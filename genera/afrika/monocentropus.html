@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Monocentropus | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Monocentropus" data-genus-page="genera/afrika/monocentropus.html">
+
+<header class="siteHeader generaHeader monocentropusHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Monocentropus</p>
+<p><b>Běžný název:</b> Socotra Baboon Tarantulas</p>
+<p><b>Původ:</b> Afrika / ostrov Socotra (Jemen)</p>
+<p><b>Typ:</b> terestriální až semi-fosoriální</p>
+<p><b>Velikost:</b> přibližně 10–15 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s možností úkrytů a pavučinových struktur</p>
+<p><b>Substrát:</b> spíše suchý až mírně vlhký (cca 8–15 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> nižší až střední, s možností lokální vlhkosti</p>
+<p><b>Úkryty:</b> kůra, kameny nebo jiné pevné úkryty – nehrabou hluboké nory</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Monocentropus je menší rod afrických sklípkanů pocházející ze suchých a skalnatých oblastí, především z ostrova Socotra. Na rozdíl od mnoha jiných afrických rodů nehrabou hluboké nory, ale využívají přirozené úkryty, jako jsou skalní štěrbiny nebo mělké nory, které si vystýlají pavučinou.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu jsou známí velmi intenzivní tvorbou pavučin. V teráriu často vytvářejí husté pavučinové struktury, které mohou pokrývat velkou část prostoru a slouží jako úkryt i lovná zóna.
+</p>
+
+<p class="care">
+Jedná se o rychlé a reaktivní sklípkany, kteří při vyrušení preferují únik do úkrytu. Ve srovnání s jinými africkými druhy jsou spíše plachí než agresivní, i když v krajním případě mohou kousnout.
+</p>
+
+<p class="care">
+Jako typičtí „Old World“ sklípkani nemají obranné chloupky a spoléhají především na rychlost a jed. Většinu času tráví skrytí v pavučinových tunelech nebo úkrytech.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Monocentropus je výjimečný tím, že vykazuje sociální (komunální) chování. Jedinci mohou žít společně v koloniích, sdílet úkryty a pavučinové struktury a vzájemně se tolerovat, což je u sklípkanů velmi vzácné.
+</p>
+
+<p class="care">
+Nejznámějším druhem je Monocentropus balfouri, který je charakteristický intenzivně modrým zbarvením. Tento druh je považován za jeden z mála sklípkanů vhodných pro komunální chov, pokud jsou dodrženy správné podmínky.
+</p>
+
+<p class="care">
+U tohoto rodu byla pozorována také určitá forma spolupráce při sdílení prostoru a potravy, stejně jako silnější mateřský instinkt samic.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Monocentropus jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+
+</body>
+</html>

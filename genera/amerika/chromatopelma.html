@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chromatopelma | Sklípkoš</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+</head>
+
+<body data-genus="Chromatopelma" data-genus-page="genera/amerika/chromatopelma.html">
+
+  <header class="siteHeader generaHeader chromatopelmaHeader"></header>
+
+
+  <!-- AUTOMATICKY GENEROVANÉ CHOVANÉ DRUHY -->
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+  <!-- HORNÍ 2 SLOUPCE -->
+  <section class="genusDetailTop">
+
+    <!-- INFORMACE O RODU -->
+    <div class="speciesInfo">
+      <h2>Informace o rodu</h2>
+
+      <p><b>Latinský název:</b> Chromatopelma</p>
+      <p><b>Běžný název:</b> Green Bottle Blue Tarantula</p>
+      <p><b>Původ:</b> severní Venezuela (Paraguaná Peninsula)</p>
+      <p><b>Typ:</b> terestriální až semi-arboreální</p>
+      <p><b>Velikost:</b> přibližně 12–15 cm rozpětí nohou</p>
+      <p><b>Podčeleď:</b> Theraphosinae</p>
+    </div>
+
+    <!-- PODMÍNKY CHOVU -->
+    <div class="speciesInfo">
+      <h2>Podmínky chovu (obecně)</h2>
+
+      <p><b>Terárium:</b> horizontální typ s možností šplhání a kotvících bodů pro pavučinu</p>
+      <p><b>Substrát:</b> spíše suchý, dobře propustný</p>
+      <p><b>Teplota:</b> přibližně 24–28 °C</p>
+      <p><b>Vlhkost:</b> nižší (suché prostředí, dobré větrání)</p>
+      <p><b>Úkryty:</b> větve, kořeny nebo dekorace pro stavbu pavučinových tunelů</p>
+    </div>
+
+  </section>
+
+
+  <!-- SPODNÍ TEXT -->
+  <section class="genusText">
+
+    <h3>Popis rodu</h3>
+
+    <p class="care">
+      Chromatopelma je monotypický rod sklípkanů pocházející ze suchých oblastí severní Venezuely. Na rozdíl od většiny amerických sklípkanů obývá spíše polopouštní a křovinaté prostředí, kde si vytváří rozsáhlé pavučinové úkryty pod keři, kořeny nebo kameny.
+    </p>
+
+    <p class="care">
+      Tento rod je unikátní tím, že obsahuje pouze jediný druh – Chromatopelma cyaneopubescens. I přesto patří mezi nejznámější a nejčastěji chované sklípkany na světě.
+    </p>
+
+    <p class="care">
+      Zástupci tohoto rodu jsou velmi aktivní, rychlí a poměrně dobře viditelní. Na rozdíl od mnoha jiných sklípkanů tráví velkou část času mimo úkryt. Při vyrušení obvykle utíkají, ale mohou použít i obranné chloupky.
+    </p>
+
+    <p class="care">
+      Typickým znakem je extrémní tvorba pavučin – sklípkani tohoto rodu dokáží během krátké doby „obalit“ velkou část terária hustou sítí, která slouží jako úkryt, past i ochrana.
+    </p>
+
+    <h3>Zajímavosti</h3>
+
+    <p class="care">
+      Chromatopelma cyaneopubescens patří mezi nejbarevnější sklípkany na světě – kombinuje modré nohy, zelenomodrý karapax a oranžový zadeček. Toto výrazné zbarvení je v rámci sklípkanů velmi neobvyklé.
+    </p>
+
+    <p class="care">
+      Rod byl dlouhou dobu řazen mezi běžné americké druhy, ale jeho chování a prostředí se výrazně liší – například preferencí sucha a extrémní tvorbou pavučin.
+    </p>
+
+    <p class="care">
+      Mláďata mají zcela odlišné zbarvení než dospělci a postupně se během růstu výrazně mění.
+    </p>
+
+    <h3>Krmení</h3>
+
+    <p class="care">
+      Zástupci rodu Chromatopelma mají velmi dobrý apetit a přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí každé 3–5 dní, dospělci přibližně jednou za 7–10 dní.
+    </p>
+
+    <a href="../../continents/amerika.html">← zpět na seznam rodů</a>
+  </section>
+
+  <!-- MODAL -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../../js/species-data.js"></script>
+  <script src="../../js/genus-species.js"></script>
+
+  <script>
+    window.onload = function() {
+      var modal = document.getElementById("imgModal");
+      modal.style.display = "none";
+      modal.classList.remove('show');
+    };
+
+    function openModal(img) {
+      var modal = document.getElementById("imgModal");
+      var modalImg = document.getElementById("modalImg");
+
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("imgModal");
+
+      modal.classList.remove('show');
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 350);
+    }
+
+    var modal = document.getElementById("imgModal");
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

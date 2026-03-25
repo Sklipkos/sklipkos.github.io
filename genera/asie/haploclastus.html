@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Haploclastus | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Haploclastus" data-genus-page="genera/asie/haploclastus.html">
+
+<header class="siteHeader generaHeader haploclastusHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+<!-- HORNÍ 3 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Haploclastus</p>
+<p><b>Běžný název:</b> Indian Burrowing Tarantulas</p>
+<p><b>Původ:</b> Indie (zejména oblast Západních Ghátů)</p>
+<p><b>Typ:</b> fosoriální (hrabavý rod)</p>
+<p><b>Velikost:</b> přibližně 10–16 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Thrigmopoeinae</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s dostatkem prostoru pro hrabání</p>
+<p><b>Substrát:</b> vlhký, pevný (min. 10–20 cm pro tvorbu nor)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> střední až vyšší (60–80 %)</p>
+<p><b>Úkryty:</b> vhodné – např. kůra pro založení nory</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Haploclastus je rod vzácnějších asijských sklípkanů pocházejících z Indie, především z oblasti Západních Ghátů. Tito pavouci obývají tropické a subtropické lesy, kde se pohybují v prostředí s vyšší vlhkostí a stabilní teplotou.
+</p>
+
+<p class="care">
+Většina druhů tohoto rodu je silně fosoriální – vyhrabávají si hluboké nory v půdě, které bývají vystlané pavučinou. Tyto nory slouží nejen jako úkryt, ale i jako místo pro lov, kdy sklípkan vyčkává u vstupu a reaguje na vibrace kořisti.
+</p>
+
+<p class="care">
+Jedná se o rychlé, velmi reaktivní a defenzivní sklípkany. Stejně jako ostatní „Old World“ druhy nemají obranné chloupky, a proto spoléhají na únik nebo obranu pomocí kousnutí. Z tohoto důvodu jsou vhodní především pro zkušené chovatele.
+</p>
+
+<p class="care">
+Ačkoliv jsou typicky hrabaví, některé druhy mohou využívat i přirozené dutiny, například ve dřevě nebo mezi kořeny, což ukazuje určitou variabilitu v jejich způsobu života.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Haploclastus je zajímavý tím, že některé druhy vykazují chování podobné tzv. „trapdoor“ pavoukům – mohou částečně uzavírat vstup do své nory. To je u sklípkanů poměrně neobvyklé.
+</p>
+
+<p class="care">
+Další zajímavostí je složitá taxonomie rodu. Některé druhy byly v minulosti přesunuty do jiných rodů (např. Cilantica), a v chovatelském hobby se proto můžeš setkat se staršími názvy.
+</p>
+
+<p class="care">
+Mezi známé druhy patří například Haploclastus validus, který je spojován právě s „trapdoor“ chováním, nebo bývalý Haploclastus devamatha (dnes Cilantica devamatha), známý svým výrazným modrým až iridescentním zbarvením.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Haploclastus jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

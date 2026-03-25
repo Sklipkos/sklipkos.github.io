@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Harpactira | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Harpactira" data-genus-page="genera/afrika/harpactira.html">
+
+<header class="siteHeader generaHeader harpactiraHeader"></header>
+
+  <section class="sectionCard genusSpeciesSection">
+    <h2>Chované druhy tohoto rodu</h2>
+    <div id="genusSpeciesList" class="speciesList"></div>
+  </section>
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Harpactira</p>
+<p><b>Běžný název:</b> Baboon Tarantulas</p>
+<p><b>Původ:</b> jižní Afrika (JAR, Namibie)</p>
+<p><b>Typ:</b> terestriální až fosoriální</p>
+<p><b>Velikost:</b> přibližně 12–15 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Harpactirinae (afričtí „baboon“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> horizontální typ s dostatkem prostoru pro hrabání</p>
+<p><b>Substrát:</b> suchý, pevný (min. 10–20 cm pro tvorbu nor)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> spíše nižší, lokálně vlhčí část substrátu</p>
+<p><b>Úkryty:</b> vhodné, ale často si vytváří vlastní nory a pavučinové úkryty</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Harpactira je rod afrických sklípkanů patřící mezi tzv. „baboon tarantulas“, který se vyskytuje především v suchých a polopouštních oblastech jižní Afriky. Většina druhů obývá savany a křovinaté oblasti, kde si vytváří podzemní nory nebo hustě zapavučinované úkryty.
+</p>
+
+<p class="care">
+Na rozdíl od některých jiných afrických rodů jsou zástupci rodu Harpactira častěji k vidění na povrchu nebo u vstupu do nory. I přesto se jedná o převážně noční predátory, kteří loví kořist z úkrytu a spoléhají na rychlý výpad.
+</p>
+
+<p class="care">
+Jedná se o rychlé, obratné a typicky „Old World“ sklípkany, kteří nemají obranné chloupky. Při vyrušení proto reagují útěkem nebo výstražným postojem, v krajním případě kousnutím. Ve srovnání s jinými africkými rody jsou však často spíše plachí než vyloženě agresivní.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu si vytvářejí kombinaci nor a pavučinových struktur, které slouží jako úkryt i past na kořist. V okolí nory bývá často patrná hustá vrstva pavučin, která zvyšuje citlivost na vibrace.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Rod Harpactira patří mezi zajímavé tím, že některé druhy jsou na poměry afrických sklípkanů relativně dobře pozorovatelné. Často sedí u vstupu do nory nebo se pohybují v jejím okolí, což z nich dělá atraktivní druhy pro chov.
+</p>
+
+<p class="care">
+Mezi nejznámější druhy patří Harpactira pulchripes, který je výrazně zbarvený do zlaté a modré barvy. Tento druh je zároveň považován za klidnější a méně defenzivní ve srovnání s ostatními zástupci rodu.
+</p>
+
+<p class="care">
+Naopak druh Harpactira gigas patří mezi více skrytě žijící zástupce rodu a tráví většinu času hluboko ve své noře. Ukazuje tak rozdílné chování v rámci jednoho rodu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Harpactira jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní v závislosti na velikosti kořisti a kondici jedince.
+</p>
+
+<a href="../../continents/afrika.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+
+
+</body>
+</html>

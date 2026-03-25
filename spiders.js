@@ -4,7 +4,7 @@ const spiders = [
     sex: "Samice",
     size: "3 cm",
     price: "700 Kč",
-    link: "species/heteroscodra-maculata.html",
+    slug: "heteroscodra-maculata",
     continent: "Afrika"
   },
   {
@@ -12,7 +12,7 @@ const spiders = [
     sex: "Samice",
     size: "adult",
     price: "1000 Kč",
-    link: "species/pterinochilus-murinus-rcf.html",
+    slug: "pterinochilus-murinus-rcf",
     continent: "Afrika"
   },
   {
@@ -20,7 +20,7 @@ const spiders = [
     sex: "Samec",
     size: "4 cm",
     price: "300 Kč",
-    link: "species/lasiodora-parahybana.html",
+    slug: "lasiodora-parahybana",
     continent: "Amerika"
   },
   {
@@ -28,7 +28,7 @@ const spiders = [
     sex: "Neurčené",
     size: "1. svlek",
     price: "70 Kč",
-    link: "species/psalmopoeus-cambridgei.html",
+    slug: "psalmopoeus-cambridgei",
     continent: "Amerika"
   }
 ];
@@ -40,6 +40,15 @@ const groups = {
   "Samec": [],
   "Neurčené": []
 };
+
+function getSpiderUrl(spider) {
+  if (spider.slug) {
+    const returnTo = encodeURIComponent("index.html");
+    return `species-detail.html?slug=${spider.slug}&returnTo=${returnTo}`;
+  }
+
+  return "coming-soon.html";
+}
 
 spiders.forEach(spider => {
   if (groups[spider.sex]) {
@@ -54,28 +63,30 @@ Object.keys(groups).forEach(groupName => {
         <h3 class="offerGroupTitle">${groupName}</h3>
         <div class="offerGroupList">
           ${groups[groupName].map(spider => {
-  let sexSymbol = "?";
-  let sexClass = "unknown";
+            let sexSymbol = "?";
+            let sexClass = "unknown";
 
-  if (spider.sex === "Samice") {
-    sexSymbol = "♀";
-    sexClass = "female";
-  } else if (spider.sex === "Samec") {
-    sexSymbol = "♂";
-    sexClass = "male";
-  }
+            if (spider.sex === "Samice") {
+              sexSymbol = "♀";
+              sexClass = "female";
+            } else if (spider.sex === "Samec") {
+              sexSymbol = "♂";
+              sexClass = "male";
+            }
 
-  return `
-    <a href="${spider.link}" class="spider">
-      <div class="name">
-        <span class="sexIcon ${sexClass}">${sexSymbol}</span>
-        <span>${spider.name}</span>
-      </div>
-      <div class="info">${spider.size}</div>
-      <div class="price">${spider.price}</div>
-    </a>
-  `;
-}).join("")}
+            const spiderUrl = getSpiderUrl(spider);
+
+            return `
+              <a href="${spiderUrl}" class="spider">
+                <div class="name">
+                  <span class="sexIcon ${sexClass}">${sexSymbol}</span>
+                  <span>${spider.name}</span>
+                </div>
+                <div class="info">${spider.size}</div>
+                <div class="price">${spider.price}</div>
+              </a>
+            `;
+          }).join("")}
         </div>
       </div>
     `;

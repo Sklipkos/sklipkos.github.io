@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Aspinochilus | Sklípkoš</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../img/sklipkos-favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-genus="Aspinochilus" data-genus-page="genera/asie/aspinochilus.html">
+
+<header class="siteHeader generaHeader aspinochilusHeader"></header>
+
+<section class="sectionCard genusSpeciesSection">
+  <h2>Chované druhy tohoto rodu</h2>
+  <div id="genusSpeciesList" class="speciesList"></div>
+</section>
+
+
+<!-- HORNÍ 2 SLOUPCE -->
+
+<section class="genusDetailTop">
+
+<!-- INFORMACE O RODU -->
+
+<div class="speciesInfo">
+
+<h2>Informace o rodu</h2>
+
+<p><b>Latinský název:</b> Aspinochilus</p>
+<p><b>Běžný název:</b> Rufus Tree Tarantula</p>
+<p><b>Původ:</b> Indonésie (Jáva)</p>
+<p><b>Typ:</b> arboreální (stromový rod)</p>
+<p><b>Velikost:</b> přibližně 11–15 cm rozpětí nohou</p>
+<p><b>Podčeleď:</b> Ornithoctoninae (asijští „Old World“ sklípkani)</p>
+
+</div>
+
+<!-- PODMÍNKY CHOVU -->
+<div class="speciesInfo">
+
+<h2>Podmínky chovu (obecně)</h2>
+
+<p><b>Terárium:</b> vertikální typ s dostatkem prostoru na šplhání</p>
+<p><b>Substrát:</b> mírně vlhký (cca 5–8 cm)</p>
+<p><b>Teplota:</b> přibližně 24–28 °C</p>
+<p><b>Vlhkost:</b> vyšší (70–80 %)</p>
+<p><b>Úkryty:</b> korková kůra, dutiny, větve – prostor pro pavučinové tunely</p>
+
+</div>
+
+</section>
+
+<!-- SPODNÍ TEXT -->
+
+<section class="genusText">
+
+<h3>Popis rodu</h3>
+
+<p class="care">
+Aspinochilus je nově popsaný rod asijských sklípkanů pocházející z tropických oblastí Indonésie, konkrétně z ostrova Jáva. Vyskytuje se v horských deštných lesích, kde panuje vysoká vlhkost a stabilní teploty.
+</p>
+
+<p class="care">
+Zástupci tohoto rodu jsou typicky stromoví (arboreální) a vytvářejí husté pavučinové úkryty ve výšce, například v dutinách stromů nebo mezi větvemi. Pavučiny tvoří ve formě tunelů, které slouží jako úkryt i místo pro lov.
+</p>
+
+<p class="care">
+Jedná se o velmi rychlé a plaché sklípkany, kteří při vyrušení reagují okamžitým únikem. Stejně jako ostatní asijští „Old World“ sklípkani nemají obranné chloupky a v krajním případě mohou kousnout.
+</p>
+
+<p class="care">
+Rod je zajímavý i tím, že byl dlouhou dobu znám pouze jako neoficiální označení v chovatelském hobby a teprve nedávno byl vědecky popsán jako samostatný rod.
+</p>
+
+<h3>Zajímavosti</h3>
+
+<p class="care">
+Aspinochilus je monotypický rod, což znamená, že obsahuje pouze jeden jediný druh – Aspinochilus rufus. To je mezi sklípkany poměrně vzácné.
+</p>
+
+<p class="care">
+Druh Aspinochilus rufus byl dříve znám jako Phormingochilus sp. „rufus“, než byl na základě vědeckého výzkumu přeřazen do vlastního rodu.
+</p>
+
+<p class="care">
+Tento sklípkan je ceněný pro své výrazné oranžovo-červené zbarvení a elegantní stavbu těla, což z něj dělá atraktivní druh v chovu.
+</p>
+
+<h3>Krmení</h3>
+
+<p class="care">
+Zástupci rodu Aspinochilus jsou aktivní predátoři, kteří přijímají běžný živý hmyz, jako jsou cvrčci, švábi nebo sarančata. Mladí jedinci se krmí častěji (každé 3–5 dní), dospělci přibližně jednou za 7–10 dní podle velikosti kořisti.
+</p>
+
+<a href="../../continents/asie.html">← zpět na seznam rodů</a>
+
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<script src="../../js/species-data.js"></script>
+<script src="../../js/genus-species.js"></script>
+
+<script>
+window.onload = function() {
+  var modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+  modal.classList.remove('show');
+};
+
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+
+  modalImg.src = img.src;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add('show');
+  }, 10);
+}
+
+function closeModal() {
+  var modal = document.getElementById("imgModal");
+
+  modal.classList.remove('show');
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 350);
+}
+
+var modal = document.getElementById("imgModal");
+modal.addEventListener('click', function(e){
+  if(e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener('keydown', function(e){
+  if(e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>
