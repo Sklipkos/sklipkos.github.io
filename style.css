@@ -796,6 +796,43 @@ section:first-of-type h2 {
     height: 20px;
     font-size: 12px;
   }
+
+  .speciesRowWide {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .speciesNameWrap {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .speciesContinent {
+    font-size: 14px;
+    color: #8e97a1;
+    text-align: left;
+  }
+
+  .speciesRowWide .speciesGenus {
+    font-size: 14px;
+    color: #8e97a1;
+    text-align: left;
+  }
+
+  /* spojení kontinent + rod do jednoho řádku */
+  .speciesContinent::after {
+    content: " • ";
+    margin: 0 4px;
+    color: #666;
+  }
+
+  .speciesRowWide .speciesGenus {
+    display: inline;
+  }
+
+  .speciesName {
+  color: #ffffff;
+  }
 }
 
 
