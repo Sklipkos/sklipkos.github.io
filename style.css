@@ -780,38 +780,33 @@ section:first-of-type h2 {
   }
 
   .speciesRowWide {
-    grid-template-columns: 1fr;
-    align-items: start;
-    gap: 6px;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
   }
 
   .speciesNameWrap {
+    min-width: 0;
     font-size: 16px;
     font-weight: 600;
   }
 
   .speciesName {
+    display: inline;
     color: #ffffff;
+    font-size: 16px;
+    line-height: 1.35;
   }
 
   .speciesContinent {
     font-size: 14px;
     color: #8e97a1;
-    text-align: left;
-    display: inline;
+    text-align: right;
+    white-space: nowrap;
   }
 
   .speciesRowWide .speciesGenus {
-    font-size: 14px;
-    color: #8e97a1;
-    text-align: left;
-    display: inline;
-  }
-
-  .speciesContinent::after {
-    content: " • ";
-    margin: 0 4px;
-    color: #666;
+    display: none;
   }
 
   .speciesInfoBadge {
@@ -820,7 +815,6 @@ section:first-of-type h2 {
     font-size: 12px;
   }
 }
-
 
 
 
