@@ -19,14 +19,15 @@ function renderAllSpeciesList(speciesList) {
   const hasDetail = window.hasSpeciesDetail && window.hasSpeciesDetail(item);
 
   return `
-    <a href="${url}" class="speciesRow speciesLink">
-      <span class="speciesNameWrap">
-        <span class="speciesName">${item.species}</span>
-        ${hasDetail ? `<span class="speciesInfoBadge" title="Detail druhu dostupný">i</span>` : ""}
-      </span>
-      <span class="speciesGenus">${item.genus}</span>
-    </a>
-  `;
+  <a href="${url}" class="speciesRow speciesLink speciesRowWide">
+    <span class="speciesNameWrap">
+      <span class="speciesName">${item.species}</span>
+      ${hasDetail ? `<span class="speciesInfoBadge" title="Detail druhu dostupný">i</span>` : ""}
+    </span>
+    <span class="speciesContinent">${item.continent}</span>
+    <span class="speciesGenus">${item.genus}</span>
+  </a>
+`;
 }).join("");
 
   container.innerHTML = html;
