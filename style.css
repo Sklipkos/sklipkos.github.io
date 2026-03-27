@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #0b0b0d;
   color: white;
@@ -2043,6 +2054,9 @@ section:first-of-type h2 {
   border-left: 3px solid rgba(158, 197, 255, 0.22);
   padding-left: 14px;
 }
+
+
+
 
 /* MOBIL - KONTINENTY */
 @media (max-width: 900px) {
