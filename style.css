@@ -817,6 +817,78 @@ section:first-of-type h2 {
     height: 20px;
     font-size: 12px;
   }
+
+  .genusSpeciesSection {
+    margin: 18px auto 0;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .genusSpeciesSection h2 {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .genusSpeciesSection .speciesRow {
+    padding: 14px 16px;
+    border-radius: 16px;
+  }
+
+  .genusSpeciesSection .speciesName {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .genusDetailTop {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin: 22px auto 28px;
+    padding: 0 14px;
+  }
+
+  .genusDetailTop .speciesInfo {
+    padding: 20px 18px;
+    border-radius: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .genusDetailTop .speciesInfo h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .genusDetailTop .speciesInfo p {
+    margin: 0 0 10px;
+  }
+
+  .genusText {
+    margin: 24px auto 0;
+    padding: 0 14px;
+  }
+
+  .genusText h3 {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .genusText .care {
+    padding: 16px 16px;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .genusText a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
 }
 
 
