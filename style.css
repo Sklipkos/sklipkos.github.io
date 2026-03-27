@@ -759,16 +759,12 @@ section:first-of-type h2 {
   }
 
   .tooltip {
-    position: static;
-    opacity: 1;
-    pointer-events: auto;
-    margin-top: 8px;
-    min-width: auto;
-  }
+  display: none !important;
+}
 
-  .rating {
-    cursor: default;
-  }
+.rating {
+  cursor: default;
+}
 
   .genusDetailTop {
     grid-template-columns: 1fr;
