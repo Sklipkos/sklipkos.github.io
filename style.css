@@ -779,33 +779,40 @@ section:first-of-type h2 {
     max-width: 380px;
   }
 
-  .speciesRowWide {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-}
+  .speciesRow.speciesLink.speciesRowWide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+  }
 
-  .speciesNameWrap {
+  .speciesRow.speciesLink.speciesRowWide .speciesNameWrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     min-width: 0;
     font-size: 16px;
     font-weight: 600;
   }
 
-  .speciesName {
+  .speciesRow.speciesLink.speciesRowWide .speciesName {
     display: inline;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.35;
   }
 
-  .speciesContinent {
-  font-size: 14px;
-  color: #8e97a1;
-  text-align: left;
-}
+  .speciesRow.speciesLink.speciesRowWide .speciesContinent {
+    display: block;
+    font-size: 14px;
+    color: #8e97a1;
+    text-align: left;
+    white-space: normal;
+    margin-top: 2px;
+  }
 
-  .speciesRowWide .speciesGenus {
+  .speciesRow.speciesLink.speciesRowWide .speciesGenus {
     display: none;
   }
 
