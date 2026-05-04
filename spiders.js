@@ -11,17 +11,9 @@ const spiders = [
     name: "Pterinochilus murinus RCF",
     sex: "Samice",
     size: "adult",
-    price: "1000 Kč",
+    price: "800 Kč",
     slug: "pterinochilus-murinus-rcf",
     continent: "Afrika"
-  },
-  {
-    name: "Lasiodora parahybana",
-    sex: "Samec",
-    size: "4 cm",
-    price: "300 Kč",
-    slug: "lasiodora-parahybana",
-    continent: "Amerika"
   },
   {
     name: "Psalmopoeus cambridgei",
@@ -30,7 +22,32 @@ const spiders = [
     price: "70 Kč",
     slug: "psalmopoeus-cambridgei",
     continent: "Amerika"
-  }
+  },
+  {
+    name: "Chilobrachys natanicharum",
+    sex: "Samec",
+    size: "adult",
+    price: "500 Kč",
+
+    continent: "Asie"
+  },
+  {
+    name: "Heteroscodra maculata",
+    sex: "Samec",
+    size: "adult",
+    price: "300 Kč",
+
+    continent: "Afrika"
+  },
+  {
+    name: "Aspinochilus (ex. Phormingochilus) rufus",
+    sex: "Samec",
+    size: "adult",
+    price: "300 Kč",
+
+    continent: "Asie"
+  },
+
 ];
 
 const container = document.getElementById("spiderList");
