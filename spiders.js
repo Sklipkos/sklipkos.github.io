@@ -1,18 +1,26 @@
 const spiders = [
+    {
+    name: "Aspinochilus (ex. Phormingochilus) rufus",
+    sex: "Samice",
+    size: "sub-adult",
+    price: "700 Kč",
+    
+    continent: "Asie"
+  },
+  {
+    name: "Cyriopagopus sp. Hati Hati",
+    sex: "Samice",
+    size: "sub-adult",
+    price: "1500 Kč",
+    
+    continent: "Asie"
+  },
   {
     name: "Heteroscodra maculata",
     sex: "Samice",
     size: "3 cm",
     price: "700 Kč",
     slug: "heteroscodra-maculata",
-    continent: "Afrika"
-  },
-  {
-    name: "Pterinochilus murinus RCF",
-    sex: "Samice",
-    size: "adult",
-    price: "800 Kč",
-    slug: "pterinochilus-murinus-rcf",
     continent: "Afrika"
   },
   {
@@ -32,20 +40,12 @@ const spiders = [
     continent: "Asie"
   },
   {
-    name: "Cyriopagopus sp. Hati Hati",
+    name: "Pterinochilus murinus RCF",
     sex: "Samice",
-    size: "sub-adult",
-    price: "1500 Kč",
-    
-    continent: "Asie"
-  },
-  {
-    name: "Aspinochilus (ex. Phormingochilus) rufus",
-    sex: "Samice",
-    size: "sub-adult",
-    price: "700 Kč",
-    
-    continent: "Asie"
+    size: "adult",
+    price: "800 Kč",
+    slug: "pterinochilus-murinus-rcf",
+    continent: "Afrika"
   },
   {
     name: "Psalmopoeus cambridgei",
