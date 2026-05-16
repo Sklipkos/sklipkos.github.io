@@ -35,7 +35,7 @@ const spiders = [
     name: "Cyriopagopus sp. Hati Hati",
     sex: "Samice",
     size: "sub-adult",
-    price: "1800 Kč",
+    price: "1500 Kč",
     
     continent: "Asie"
   },
