@@ -16,6 +16,38 @@ const spiders = [
     continent: "Afrika"
   },
   {
+    name: "Poecilotheria ornata",
+    sex: "Samice",
+    size: "adult",
+    price: "1900 Kč",
+
+    continent: "Asie"
+  },
+  {
+    name: "Poecilotheria regalis",
+    sex: "Samice",
+    size: "5 cm",
+    price: "1700 Kč",
+    
+    continent: "Asie"
+  },
+  {
+    name: "Cyriopagopus sp. Hati Hati",
+    sex: "Samice",
+    size: "sub-adult",
+    price: "1800 Kč",
+    
+    continent: "Asie"
+  },
+  {
+    name: "Aspinochilus (ex. Phormingochilus) rufus",
+    sex: "Samice",
+    size: "sub-adult",
+    price: "700 Kč",
+    
+    continent: "Asie"
+  },
+  {
     name: "Psalmopoeus cambridgei",
     sex: "Neurčené",
     size: "1. svlek",
@@ -27,23 +59,7 @@ const spiders = [
     name: "Chilobrachys natanicharum",
     sex: "Samec",
     size: "adult",
-    price: "500 Kč",
-
-    continent: "Asie"
-  },
-  {
-    name: "Heteroscodra maculata",
-    sex: "Samec",
-    size: "adult",
-    price: "300 Kč",
-
-    continent: "Afrika"
-  },
-  {
-    name: "Aspinochilus (ex. Phormingochilus) rufus",
-    sex: "Samec",
-    size: "adult",
-    price: "300 Kč",
+    price: "400 Kč",
 
     continent: "Asie"
   },
