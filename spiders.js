@@ -3,7 +3,7 @@ const spiders = [
     name: "Aspinochilus (ex. Phormingochilus) rufus",
     sex: "Samice",
     size: "sub-adult",
-    price: "700 Kč",
+    price: "600 Kč",
     
     continent: "Asie"
   },
@@ -11,7 +11,7 @@ const spiders = [
     name: "Cyriopagopus sp. Hati Hati",
     sex: "Samice",
     size: "sub-adult",
-    price: "1500 Kč",
+    price: "1200 Kč",
     
     continent: "Asie"
   },
@@ -27,7 +27,7 @@ const spiders = [
     name: "Poecilotheria ornata",
     sex: "Samice",
     size: "adult",
-    price: "1900 Kč",
+    price: "1700 Kč",
 
     continent: "Asie"
   },
@@ -35,7 +35,7 @@ const spiders = [
     name: "Poecilotheria regalis",
     sex: "Samice",
     size: "5 cm",
-    price: "1700 Kč",
+    price: "1500 Kč",
     
     continent: "Asie"
   },
@@ -43,15 +43,15 @@ const spiders = [
     name: "Pterinochilus murinus RCF",
     sex: "Samice",
     size: "adult",
-    price: "800 Kč",
+    price: "600 Kč",
     slug: "pterinochilus-murinus-rcf",
     continent: "Afrika"
   },
   {
     name: "Psalmopoeus cambridgei",
-    sex: "Neurčené",
-    size: "1. svlek",
-    price: "70 Kč",
+    sex: "Samice",
+    size: "4 cm",
+    price: "700 Kč",
     slug: "psalmopoeus-cambridgei",
     continent: "Amerika"
   },
@@ -60,6 +60,23 @@ const spiders = [
     sex: "Samec",
     size: "adult",
     price: "400 Kč",
+
+    continent: "Asie"
+  },
+    {
+    name: "Avicularia laeta",
+    sex: "Samec",
+    size: "adult",
+    price: "800 Kč",
+
+    continent: "Amerika"
+  },
+
+      {
+    name: "Ornithoctonus aureotibialis",
+    sex: "Neurčené",
+    size: "1.svlek",
+    price: "150 Kč/kus",
 
     continent: "Asie"
   },
