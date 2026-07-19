@@ -3,18 +3,64 @@ const spiders = [
     name: "Aspinochilus (ex. Phormingochilus) rufus",
     sex: "Samice",
     size: "sub-adult",
-    price: "600 Kč",
+    price: "500 Kč",
     
     continent: "Asie"
   },
   {
-    name: "Cyriopagopus sp. Hati Hati",
+    name: "Chilobrachys sp. Vietnam Blue",
     sex: "Samice",
-    size: "sub-adult",
+    size: "adult",
     price: "1200 Kč",
     
     continent: "Asie"
   },
+
+  {
+    name: "Phormictopus sp. Green",
+    sex: "Samice",
+    size: "5.5 cm",
+    price: "1000 Kč",
+    
+    continent: "Amerika"
+  },
+
+  {
+    name: "Psalmopoeus irminia",
+    sex: "Samice",
+    size: "3.5 cm",
+    price: "700 Kč",
+
+    continent: "Amerika"
+  },
+
+  {
+    name: "Psalmopoeus reduncus",
+    sex: "Samice",
+    size: "adult",
+    price: "800 Kč",
+    
+    continent: "Amerika"
+  },
+
+  {
+    name: "Pterinochilus lugardi",
+    sex: "Samice",
+    size: "adult",
+    price: "1200 Kč",
+    
+    continent: "Afrika"
+  },
+
+  {
+    name: "Heterothele gabonensis",
+    sex: "Samice",
+    size: "adult",
+    price: "800 Kč",
+    
+    continent: "Afrika"
+  },
+
   {
     name: "Heteroscodra maculata",
     sex: "Samice",
@@ -43,7 +89,7 @@ const spiders = [
     name: "Pterinochilus murinus RCF",
     sex: "Samice",
     size: "adult",
-    price: "600 Kč",
+    price: "500 Kč",
     slug: "pterinochilus-murinus-rcf",
     continent: "Afrika"
   },
@@ -55,31 +101,85 @@ const spiders = [
     slug: "psalmopoeus-cambridgei",
     continent: "Amerika"
   },
+
+
+
+
   {
-    name: "Chilobrachys natanicharum",
+    name: "Chilobrachys sp. Vietnam Blue",
     sex: "Samec",
     size: "adult",
     price: "400 Kč",
-
+    
     continent: "Asie"
   },
-    {
-    name: "Avicularia laeta",
-    sex: "Samec",
-    size: "adult",
-    price: "800 Kč",
 
+  {
+    name: "Psalmopoeus cambridgei",
+    sex: "Samec",
+    size: "sub-adult",
+    price: "400 Kč",
+    
     continent: "Amerika"
   },
+
+  {
+    name: "Psalmopoeus reduncus",
+    sex: "Samec",
+    size: "4 cm",
+    price: "400 Kč",
+    
+    continent: "Asie"
+  },
+
+
+
+
+
 
       {
     name: "Ornithoctonus aureotibialis",
     sex: "Neurčené",
     size: "1.svlek",
-    price: "150 Kč/kus",
+    price: "100 Kč/kus",
 
     continent: "Asie"
   },
+
+  {
+    name: "Chilobrachys sp. Vietnam Blue",
+    sex: "Neurčené",
+    size: "1.svlek",
+    price: "80 Kč/kus",
+    
+    continent: "Asie"
+  },
+
+
+
+
+
+
+  {
+    name: "Cyriopagopus sp. Hati Hati",
+    sex: "Neurčené",
+    size: "2 cm",
+    price: "200 Kč/kus",
+    
+    continent: "Asie"
+  },
+
+  {
+    name: "Heteroscodra maculata",
+    sex: "Neurčené",
+    size: "5. slvek",
+    price: "150 Kč/kus",
+    
+    continent: "Afrika"
+  },
+
+
+
 
 ];
 
