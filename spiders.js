@@ -131,7 +131,7 @@ const spiders = [
 {
     name: "Ornithoctonus aureotibialis",
     sex: "Neurčené",
-    size: "1.svlek",
+    size: "2.svlek",
     price: "100 Kč/kus",
     continent: "Asie"
 },
