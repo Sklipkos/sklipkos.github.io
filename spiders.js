@@ -76,6 +76,14 @@ const spiders = [
 },
 
 {
+    name: "Phormictopus auratus",
+    sex: "Samec",
+    size: "adult",
+    price: "600 Kč",
+    continent: "Amerika"
+},
+
+{
     name: "Psalmopoeus reduncus",
     sex: "Samec",
     size: "4 cm",
