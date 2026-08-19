@@ -8,14 +8,6 @@ const spiders = [
 },
 
 {
-    name: "Chilobrachys sp. Vietnam Blue",
-    sex: "Samice",
-    size: "adult",
-    price: "1200 Kč",
-    continent: "Asie"
-},
-
-{
     name: "Heterothele gabonensis",
     sex: "Samice",
     size: "adult",
@@ -29,14 +21,6 @@ const spiders = [
     size: "5.5 cm",
     price: "1000 Kč",
     continent: "Amerika"
-},
-
-{
-    name: "Poecilotheria regalis",
-    sex: "Samice",
-    size: "5 cm",
-    price: "1500 Kč",
-    continent: "Asie"
 },
 
 {
@@ -80,14 +64,6 @@ const spiders = [
     sex: "Samec",
     size: "adult",
     price: "1500 Kč",
-    continent: "Amerika"
-},
-
-{
-    name: "Brachypelma hamorii",
-    sex: "Samec",
-    size: "sub-adult",
-    price: "1000 Kč",
     continent: "Amerika"
 },
 
