@@ -1,11 +1,4 @@
 const spiders = [
-{
-    name: "Aspinochilus (ex. Phormingochilus) rufus",
-    sex: "Samice",
-    size: "sub-adult",
-    price: "500 Kč",
-    continent: "Asie"
-},
 
 {
     name: "Heterothele gabonensis",
