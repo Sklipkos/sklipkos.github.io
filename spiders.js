@@ -59,21 +59,6 @@ const spiders = [
 
 
 
-{
-    name: "Avicularia laeta",
-    sex: "Samec",
-    size: "adult",
-    price: "1500 Kč",
-    continent: "Amerika"
-},
-
-{
-    name: "Chilobrachys sp. Vietnam Blue",
-    sex: "Samec",
-    size: "adult",
-    price: "400 Kč",
-    continent: "Asie"
-},
 
 {
     name: "Phormictopus auratus",
