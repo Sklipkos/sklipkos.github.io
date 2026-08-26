@@ -9,14 +9,6 @@ const spiders = [
 },
 
 {
-    name: "Phormictopus sp. Green",
-    sex: "Samice",
-    size: "5.5 cm",
-    price: "1000 Kč",
-    continent: "Amerika"
-},
-
-{
     name: "Psalmopoeus irminia",
     sex: "Samice",
     size: "3.5 cm",
@@ -30,23 +22,6 @@ const spiders = [
     size: "adult",
     price: "800 Kč",
     continent: "Amerika"
-},
-
-{
-    name: "Pterinochilus lugardi",
-    sex: "Samice",
-    size: "adult",
-    price: "1200 Kč",
-    continent: "Afrika"
-},
-
-{
-    name: "Pterinochilus murinus RCF",
-    sex: "Samice",
-    size: "adult",
-    price: "500 Kč",
-    slug: "pterinochilus-murinus-rcf",
-    continent: "Afrika"
 },
 
 
