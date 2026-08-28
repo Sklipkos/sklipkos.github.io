@@ -515,22 +515,31 @@ header {
 }
 
 .speciesHeader {
+  width: 100%;
+  max-width: 900px;
+
+  /* Všechny bannery dostanou úplně stejný prostor */
+  aspect-ratio: 1672 / 941;
+
   margin: 0;
   padding: 0;
   line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .speciesHeader img {
   display: block;
-  width: 100%;
-  max-width: 900px;
-  margin-top: -70px;
-  margin-bottom: -100px;
-}
 
-section:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  margin: 0;
 }
 
 section:first-of-type h2 {
@@ -1565,35 +1574,15 @@ header {
   overflow: hidden;
 }
 
-.speciesHeader {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-}
-
-.speciesHeader img {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  margin-top: -70px;
-  margin-bottom: -100px;
-}
-
-section:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-section:first-of-type h2 {
-  margin-top: 0;
-}
 
 .speciesDetailTop {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
   gap: 20px;
   max-width: 1200px;
-  margin: 50px auto;
+
+  margin: 30px auto 50px;
+
   padding: 0 20px;
   align-items: start;
 }
@@ -2193,12 +2182,3 @@ section:first-of-type h2 {
 }
 
 
-
-
-
-
-
-/* PEVNÁ MEZERA POD BANNEREM DRUHU */
-section.speciesDetailTop {
-  margin-top: 40px;
-}
