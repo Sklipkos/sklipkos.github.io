@@ -2191,3 +2191,14 @@ section:first-of-type h2 {
 .speciesInfoBadge:hover {
   background: rgba(158, 197, 255, 0.22);
 }
+
+
+
+
+
+
+
+/* PEVNÁ MEZERA POD BANNEREM DRUHU */
+section.speciesDetailTop {
+  margin-top: 40px;
+}
