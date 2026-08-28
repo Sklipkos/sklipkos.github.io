@@ -181,7 +181,8 @@ const speciesData = [
     "Dospělí jedinci mají obvykle tmavě hnědé až černé zbarvení těla s výraznými růžovými až lososově zbarvenými chloupky na končetinách a zadečku. Právě tyto jemné chloupky dávají druhu charakteristický vzhled, podle kterého získal své anglické jméno „Salmon Pink“.",
     "Tento druh patří mezi New World sklípkany, kteří mají na zadečku obranné (urtikační) chloupky. Při vyrušení je může vyčesávat zadními nohami směrem k predátorovi. Tyto chloupky mohou způsobit silné podráždění kůže nebo očí.",
     "V porovnání s některými jinými velkými druhy sklípkanů je Lasiodora parahybana považována za poměrně odolný a rychle rostoucí druh. Díky tomu je často doporučována i méně zkušeným chovatelům, kteří chtějí chovat velkého sklípkana. Tento druh patří mezi nejrychleji rostoucí velké sklípkany a při dobrých podmínkách může dospět přibližně za 2–3 roky.",
-    "Samice tohoto druhu může vytvořit velmi početný kokon, často se stovkami až více než tisícem vajíček; ve starších chovatelských zdrojích jsou uváděny i mimořádně vysoké počty přes 2000, což je mezi sklípkany mimořádně vysoké číslo. Právě díky této vysoké reprodukční schopnosti se Lasiodora parahybana stala jedním z nejrozšířenějších druhů sklípkanů v chovech po celém světě."
+    "Samice tohoto druhu může vytvořit velmi početný kokon, často se stovkami až více než tisícem vajíček; ve starších chovatelských zdrojích jsou uváděny i mimořádně vysoké počty přes 2000, což je mezi sklípkany mimořádně vysoké číslo. Právě díky této vysoké reprodukční schopnosti se Lasiodora parahybana stala jedním z nejrozšířenějších druhů sklípkanů v chovech po celém světě.",
+    "Zajímavostí je, že jed druhu Lasiodora parahybana obsahuje řadu biologicky aktivních látek, včetně peptidů s antibakteriálními a antifungálními účinky. Tyto látky jsou předmětem vědeckého výzkumu, protože mohou mít potenciální využití například v medicíně, což ukazuje na komplexnost jedu i u druhů považovaných za méně nebezpečné pro člověka."
   ],
 
   care: {
@@ -500,20 +501,398 @@ const speciesData = [
 
   // AFRIKA
   {
-    continent: "Afrika",
-    genus: "Ceratogyrus",
-    species: "Ceratogyrus darlingi"
+  continent: "Afrika",
+  genus: "Ceratogyrus",
+  species: "Ceratogyrus darlingi",
+  slug: "ceratogyrus-darlingi",
+
+  latinName: "Ceratogyrus darlingi",
+  commonName: "Rear-Horned Baboon Tarantula",
+  origin: "jižní Afrika (např. Botswana, Namibie, Zimbabwe, Mozambik, Jihoafrická republika)",
+  type: "fosoriální sklípkan (hrabavý druh)",
+  adultSize: "přibližně 10–13 cm rozpětí nohou",
+  lifespan: "samice obvykle 13–15 let, samec přibližně 2–4 roky",
+
+  logo: "img/logos/c.darlingi-logo.webp",
+  image: "img/spiders/ceratogyrus-darlingi.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡ velmi rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️🕷️ silně defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "⛏️ fosoriální (hrabavý)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️ střední tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀👀 většinou skrytý",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐇 střední růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Ceratogyrus darlingi je výrazný africký sklípkan známý především charakteristickým rohem na karapaxu, který je u tohoto druhu skloněný směrem dozadu. Tento znak je typický pro rod Ceratogyrus a výrazně jej odlišuje od většiny ostatních sklípkanů.",
+    "V přírodě obývá sušší otevřené oblasti jižní Afriky, jako jsou savany a řídké travnaté porosty. Jde o skutečně hrabavý druh, který si vytváří hluboké nory, často o hloubce několika desítek centimetrů, kde tráví většinu svého života.",
+    "Patří mezi tzv. Old World sklípkany, takže nemá obranné chloupky. Při vyrušení spoléhá na rychlost, obranný postoj a případně kousnutí. Kvůli své povaze a síle jedu je vhodný spíše pro zkušenější chovatele.",
+    "Většinu času tráví ukrytý ve své noře a aktivní bývá převážně v noci. V porovnání s jinými africkými druhy není typickým „web builderem“, ale pavučiny využívá spíše k vystlání nory a signalizaci pohybu kořisti.",
+    "Zajímavostí je, že z jedu tohoto druhu byl izolován specifický peptidový toxin označovaný jako Cd1a, který působí na iontové kanály. Tento toxin byl studován i z hlediska jeho potenciálu v medicíně, například v souvislosti s vývojem látek tlumících bolest, což ukazuje na biologickou komplexnost jedu sklípkanů."
+  ],
+
+  care: {
+    terrarium: "spíše horizontální terárium s dostatečnou výškou substrátu (např. 30×30×30 cm nebo větší)",
+    hides: "hlubší vrstva substrátu umožňující vyhrabání nory, případně korek jako startovací úkryt",
+    temperature: "přibližně 22–26 °C",
+    humidity: "spíše sušší, kolem 50–60 %, s miskou na vodu",
+    substrate: "hlubší vrstva substrátu vhodná k hrabání (ideálně 15–25 cm)"
   },
+
+  feeding: [
+    "Ceratogyrus darlingi se krmí běžným živým hmyzem, například cvrčky nebo šváby. Mladí jedinci přijímají potravu častěji, dospělci obvykle jednou za 7–10 dní v závislosti na kondici. Jelikož jde o druh žijící převážně v noře, potravu často loví z ústí nory nebo přímo z jejích vnitřních částí."
+  ]
+},
   {
-    continent: "Afrika",
-    genus: "Ceratogyrus",
-    species: "Ceratogyrus marshalli"
+  continent: "Afrika",
+  genus: "Ceratogyrus",
+  species: "Ceratogyrus marshalli",
+  slug: "ceratogyrus-marshalli",
+
+  latinName: "Ceratogyrus marshalli",
+  commonName: "Straight-Horned Baboon Tarantula",
+  origin: "jihovýchodní Afrika (Zimbabwe, Mosambik)",
+  type: "fosoriální sklípkan (hrabavý druh)",
+  adultSize: "přibližně 10–13 cm rozpětí nohou",
+  lifespan: "samice obvykle 10–15 let, samec přibližně 2–4 roky",
+
+  logo: "img/logos/c.marshalli-logo.webp",
+  image: "img/spiders/ceratogyrus-marshalli.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡ velmi rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️🕷️ silně defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "⛏️ fosoriální (hrabavý)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️ střední tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀👀 většinou skrytý",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐇 střední růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Ceratogyrus marshalli je africký sklípkan známý především charakteristickým rohem na karapaxu, který je u tohoto druhu orientován spíše vzpřímeně. Tento znak je typický pro rod Ceratogyrus a výrazně jej odlišuje od většiny ostatních sklípkanů.",
+    "V přírodě se vyskytuje v sušších oblastech jihovýchodní Afriky, především v Zimbabwe a Mosambiku. Obývá otevřenější biotopy a vytváří si hluboké nory, ve kterých tráví většinu svého života.",
+    "Jde o skutečně fosoriální druh, který je aktivní převážně v noci a přes den zůstává ukrytý. Patří mezi tzv. Old World sklípkany, takže nemá obranné chloupky a při vyrušení spoléhá na rychlost, obranný postoj a případně kousnutí.",
+    "V chovu je známý svou rychlostí a výrazně defenzivní povahou. Pavučiny využívá především k vystlání nory a jako senzorický systém pro zachycení pohybu kořisti, nikoliv k rozsáhlému zapřádání prostoru jako některé jiné druhy.",
+    "Zajímavostí je, že z jedu tohoto druhu byl izolován specifický toxin označovaný jako ceratotoxin-1, který je studován v souvislosti s jeho účinky na iontové kanály. Tento fakt ukazuje na biologickou komplexnost jedu sklípkanů rodu Ceratogyrus."
+  ],
+
+  care: {
+    terrarium: "spíše horizontální terárium s velkou vrstvou substrátu (např. 30×30×30 cm nebo větší)",
+    hides: "hlubší vrstva substrátu umožňující vyhrabání nory, případně korek jako startovací úkryt",
+    temperature: "přibližně 21–27 °C",
+    humidity: "spíše sušší, kolem 50–60 %, s miskou na vodu",
+    substrate: "hluboká vrstva substrátu vhodná k hrabání (ideálně 15–25 cm)"
   },
+
+  feeding: [
+    "Ceratogyrus marshalli se krmí běžným živým hmyzem, například cvrčky nebo šváby. Mladí jedinci přijímají potravu častěji, dospělci obvykle jednou za 7–10 dní v závislosti na kondici. Jako typický hrabavý druh často loví z ústí nory nebo přímo z jejího vnitřního prostoru."
+  ]
+},
   {
-    continent: "Afrika",
-    genus: "Harpactira",
-    species: "Harpactira pulchripes"
+  continent: "Afrika",
+  genus: "Harpactira",
+  species: "Harpactira pulchripes",
+  slug: "harpactira-pulchripes",
+
+  latinName: "Harpactira pulchripes",
+  commonName: "Golden Blue-Legged Baboon Tarantula",
+  origin: "Jihoafrická republika",
+  type: "fosoriální sklípkan (hrabavý druh)",
+  adultSize: "přibližně 12–14 cm rozpětí nohou",
+  lifespan: "samice obvykle 10–15 let, samec přibližně 2–4 roky",
+
+  logo: "img/logos/h.pulchripes-logo.webp",
+  image: "img/spiders/harpactira-pulchripes.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡ velmi rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️ defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "⛏️ fosoriální (hrabavý)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️ silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀 občas viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐇 střední růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Harpactira pulchripes je výrazný africký sklípkan známý především svým kontrastním zbarvením, kdy tělo má zlatavý až žlutý odstín a končetiny jsou výrazně modré. Tento barevný kontrast z něj činí jeden z vizuálně nejatraktivnějších druhů v chovu.",
+    "V přírodě se vyskytuje v sušších oblastech Jihoafrické republiky, kde obývá travnaté a křovinaté biotopy. Jde o skutečně hrabavý druh, který si vytváří hluboké nory v pevnější půdě a většinu času tráví ukrytý pod zemí.",
+    "Patří mezi tzv. Old World sklípkany, takže nemá obranné chloupky. Při vyrušení spoléhá na rychlost a obranný postoj, ale často se snaží spíše ustoupit do úkrytu než aktivně útočit.",
+    "V chovu je známý tím, že si nory vystýlá pavučinou a vytváří v jejich okolí komplexní struktury, které slouží k zachycení vibrací a orientaci při lovu.",
+    "Zajímavostí je, že Harpactira pulchripes je jihoafrický endemit s omezenou schopností šíření do nových lokalit. Tento druh je navíc chráněn i v rámci národního parku, což z něj dělá nejen atraktivního chovatelského sklípkana, ale i biologicky cenný druh ve své domovině."
+  ],
+
+  care: {
+    terrarium: "spíše horizontální nebo kubické terárium s velkou vrstvou substrátu (např. 30×30×30 cm nebo větší)",
+    hides: "hlubší vrstva substrátu umožňující vyhrabání nory, případně korek jako startovací úkryt",
+    temperature: "přibližně 21–27 °C",
+    humidity: "spíše sušší, kolem 50–60 %, s miskou na vodu",
+    substrate: "hluboká vrstva substrátu vhodná k hrabání (ideálně 15–25 cm)"
   },
+
+  feeding: [
+    "Harpactira pulchripes se krmí běžným živým hmyzem, například cvrčky nebo šváby. Mladí jedinci přijímají potravu častěji, dospělci obvykle jednou za 7–10 dní v závislosti na kondici. Jako hrabavý druh často reaguje na kořist z ústí nory."
+  ]
+},
 {
   continent: "Afrika",
   genus: "Heteroscodra",
@@ -629,7 +1008,8 @@ const speciesData = [
     "Heteroscodra maculata je rychlý a velmi agilní stromový sklípkan pocházející z tropických oblastí západní Afriky. Je charakteristický kontrastním šedo-bílým až černo-šedým vzorem na těle a dlouhými štíhlými končetinami. Na zadečku má typický radiální vzor připomínající hvězdicovité paprsky, podle kterého získal svůj anglický název „Starburst“.",
     "V přírodě obývá především stromové dutiny, štěrbiny v kůře a další vyvýšené úkryty, kde si vytváří husté pavučinové tunely. Aktivní bývá zejména v noci, kdy opouští úkryt a loví kořist.",
     "Patří mezi tzv. Old World sklípkany, kteří na rozdíl od amerických druhů nemají obranné chloupky. Při vyrušení proto spoléhá především na velmi rychlý útěk, výstražný postoj nebo případný obranný útok. Kvůli své rychlosti, temperamentní povaze a poměrně silnému jedu je tento druh doporučován spíše zkušenějším chovatelům.",
-    "Zajímavostí je, že ačkoliv jde o stromový druh, mladí jedinci mohou v raném stádiu života částečně využívat i úkryty v substrátu a postupně přecházejí na plně stromový způsob života. V chovu je také známý svou schopností vytvářet velmi husté a rozsáhlé pavučinové struktury."
+    "Zajímavostí je, že ačkoliv jde o stromový druh, mladí jedinci mohou v raném stádiu života částečně využívat i úkryty v substrátu a postupně přecházejí na plně stromový způsob života. V chovu je také známý svou schopností vytvářet velmi husté a rozsáhlé pavučinové struktury.",
+    "Další zajímavostí je, že Heteroscodra maculata patří mezi nejrychlejší sklípkany vůbec. Její extrémní rychlost není náhodná, ale jde o evoluční adaptaci na stromový způsob života, kde je klíčová pro rychlý únik i lov. V praxi dokáže reagovat během zlomku sekundy, což z ní dělá jeden z nejrychleji reagujících druhů v chovu."
   ],
 
   care: {
@@ -644,11 +1024,141 @@ const speciesData = [
     "Heteroscodra maculata je poměrně žravý druh. Krmí se běžným živým hmyzem, například cvrčky, šváby nebo sarančaty. Mladí jedinci přijímají potravu častěji, obvykle každé 3–5 dní. Dospělci se krmí přibližně jednou za 7–10 dní v závislosti na velikosti kořisti a kondici jedince."
   ]
 },
-  {
-    continent: "Afrika",
-    genus: "Heterothele",
-    species: "Heterothele gabonensis"
+{
+  continent: "Afrika",
+  genus: "Heterothele",
+  species: "Heterothele gabonensis",
+  slug: "heterothele-gabonensis",
+
+  latinName: "Heterothele gabonensis",
+  commonName: "Gabon Blue Dwarf Baboon",
+  origin: "střední Afrika (Gabon a Rovníková Guinea)",
+  type: "pozemní sklípkan (terestriální druh se silnou tvorbou pavučin)",
+  adultSize: "přibližně 4–6 cm rozpětí nohou",
+  lifespan: "samice přibližně 5–8 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/h.gabonensis-logo.webp",
+  image: "img/spiders/heterothele-gabonensis.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🟡 středně pokročilý chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️ středně silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️ spíše klidný",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🕳️ terestriální (pozemní)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀👀 většinou skrytý",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "❌ chybí tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Heterothele gabonensis je drobný africký sklípkan pocházející z Gabonu a Rovníkové Guineje. Patří mezi tzv. trpasličí sklípkany a v dospělosti dosahuje rozpětí nohou přibližně 4–6 cm. Zbarvení je převážně tmavé, doplněné kontrastní kresbou na karapaxu a zadečku. Končetiny mohou zejména při vhodném osvětlení vykazovat jemný namodralý odstín, od kterého je odvozen také používaný anglický název „Gabon Blue Dwarf Baboon“.",
+
+    "Jde o pozemní druh, který ve svém úkrytu velmi intenzivně pracuje s pavučinou. V chovu využívá substrát, kusy korkové kůry, větvičky a další pevné body, mezi nimiž postupně vytváří rozsáhlou soustavu pavučinových tunelů a úkrytů. Může využívat také mělčí prostory v substrátu, zároveň však zapřádá značnou část prostoru nad jeho povrchem. Právě mimořádně silná tvorba pavučin patří mezi nejcharakterističtější vlastnosti tohoto druhu.",
+
+    "Heterothele gabonensis patří mezi africké Old World sklípkany a nemá obranné chloupky typické pro mnoho amerických druhů. Přesto nebývá považován za výrazně defenzivního sklípkana. Při vyrušení zpravidla spoléhá především na svou mimořádnou rychlost a snaží se ukrýt v pavučinovém úkrytu. Právě kombinace malé velikosti a extrémně rychlých reakcí však může značně komplikovat přemisťování nebo údržbu ubikace, a proto je vhodnější pro chovatele, kteří již mají se sklípkany určité zkušenosti.",
+
+    "Zajímavostí tohoto druhu je neobvykle vysoká tolerance vůči jedincům vlastního druhu. V chovu bylo pozorováno soužití několika jedinců využívajících společnou pavučinovou soustavu a Heterothele gabonensis je proto někdy uváděn jako druh s určitými předpoklady pro skupinový chov. Nejde však o skutečně sociálního sklípkana a vzájemná tolerance není zaručena. Kanibalismus zůstává možný, takže případný skupinový chov vždy představuje určité riziko.",
+
+    "Navzdory své malé velikosti jde o velmi zajímavý druh pro pozorování. Vhodně zařízenou ubikaci dokáže postupně přeměnit v hustou síť pavučinových tunelů a úkrytů. Samotný sklípkan přitom může zůstávat velkou část času skrytý a objevovat se především při lovu nebo po setmění. Druh zároveň poměrně rychle roste, takže jeho vývoj od malého mláděte k dospělému jedinci je ve srovnání s mnoha většími sklípkany relativně rychlý."
+  ],
+
+  care: {
+    terrarium: "menší terárium pozemního typu s dostatkem prostoru pro tvorbu pavučin (např. přibližně 20×20×20 cm pro dospělce)",
+    hides: "kus korkové kůry, menší kořeny nebo větvičky poskytující úkryt a pevné body pro rozsáhlou tvorbu pavučin",
+    temperature: "přibližně 23–27 °C",
+    humidity: "mírně vlhký substrát s možností částečného proschnutí povrchu a dobrou ventilací",
+    substrate: "kokosová drť nebo směs terarijní půdy (cca 5–10 cm)"
   },
+
+  feeding: [
+    "Heterothele gabonensis je na svou velikost aktivní lovec a dobře přijímá běžný krmný hmyz odpovídající velikosti jedince, například malé cvrčky, šváby nebo jinou drobnou živou kořist. Velmi malým mláďatům lze nabídnout drobnou kořist nebo část čerstvě usmrceného krmného hmyzu. Mladé jedince lze krmit přibližně každé 3–5 dní, dospělce zpravidla jednou za 7–10 dní podle velikosti kořisti a aktuální kondice pavouka."
+  ]
+},
   {
     continent: "Afrika",
     genus: "Idiothele",
