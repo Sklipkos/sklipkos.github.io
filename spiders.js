@@ -8,21 +8,8 @@ const spiders = [
     continent: "Afrika"
 },
 
-{
-    name: "Psalmopoeus irminia",
-    sex: "Samice",
-    size: "3.5 cm",
-    price: "700 Kč",
-    continent: "Amerika"
-},
 
-{
-    name: "Psalmopoeus reduncus",
-    sex: "Samice",
-    size: "adult",
-    price: "800 Kč",
-    continent: "Amerika"
-},
+
 
 
 
