@@ -212,11 +212,141 @@ const speciesData = [
     genus: "Pamphobeteus",
     species: "Pamphobeteus platyomma"
   },
-  {
-    continent: "Amerika",
-    genus: "Phormictopus",
-    species: "Phormictopus auratus"
+{
+  continent: "Amerika",
+  genus: "Phormictopus",
+  species: "Phormictopus auratus",
+  slug: "phormictopus-auratus",
+
+  latinName: "Phormictopus auratus",
+  commonName: "Cuban Bronze Tarantula",
+  origin: "Kuba (především střední až východní část ostrova)",
+  type: "pozemní sklípkan (terestriální druh)",
+  adultSize: "přibližně 15–18 cm rozpětí nohou",
+  lifespan: "samice přibližně 10–15 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/p.auratus-logo.webp",
+  image: "img/spiders/phormictopus-auratus.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🟡 středně pokročilý chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡ velmi rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️ slabý jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️ defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🕳️ terestriální (pozemní)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️ střední tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀 často viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Phormictopus auratus je velký a robustní pozemní sklípkan pocházející z Kuby, kde je znám především ze střední až východní části ostrova. Charakteristický je zejména výrazným zlatavým až bronzovým ochlupením karapaxu, které kontrastuje s tmavším zbarvením zbytku těla a končetin. Právě zlatavé zbarvení se odráží také v jeho druhovém jménu „auratus“, které lze přeložit jako „zlatý“ nebo „pozlacený“.",
+
+    "V přírodě se vyskytuje především v poloopadavých lesích, ale byl zaznamenán i v dalších typech prostředí. Využívá úkryty pod kameny, přirozené štěrbiny v půdě a kmenech stromů nebo jeskynní prostory. Jde o terestriální druh, který může svůj úkryt dále upravovat hrabáním a pavučinou. V chovu proto ocení dostatečně hlubokou vrstvu substrátu a jednoduchý úkryt, který si může postupně přizpůsobit.",
+
+    "Phormictopus auratus patří mezi sklípkany Nového světa (New World) a disponuje obrannými neboli urtikačními chloupky. Při vyrušení je může vyčesávat ze zadečku, ale může reagovat také rychlým ústupem nebo obranným postojem. Jde o poměrně rychlý a reaktivní druh, přičemž chování jednotlivých jedinců se může výrazně lišit. Kvůli kombinaci velikosti, rychlosti a defenzivního chování je vhodnější pro chovatele, kteří již mají se sklípkany určité zkušenosti.",
+
+    "V chovu bývá Phormictopus auratus často dobře viditelný a po zabydlení může trávit značnou část času na povrchu. Pavučinu využívá především v okolí svého úkrytu a na povrchu substrátu, nejde však o druh, který by běžně zapřádal celé terárium. Typický je také rychlý růst a výrazný krmný reflex, který lze pozorovat již u mladých jedinců.",
+
+    "Zajímavostí je, že Phormictopus auratus byl jako samostatný druh vědecky popsán teprve v roce 2005. Od příbuzných kubánských zástupců rodu Phormictopus se odlišuje kombinací morfologických znaků, přičemž jedním z nápadných znaků je jeho charakteristické zlatavé ochlupení. Dospělí samci mají na prvním páru končetin přítomné tibiální apofýzy neboli tibiální háky, jejichž stavba patří mezi znaky využívané při rozlišování druhů tohoto rodu."
+  ],
+
+  care: {
+    terrarium: "horizontální terárium s dostatečnou plochou dna (např. přibližně 30×30×30 cm nebo větší pro dospělého jedince)",
+    hides: "korková kůra, kořen nebo jiný pozemní úkryt, který si může sklípkan dále upravit",
+    temperature: "přibližně 23–27 °C",
+    humidity: "mírně vlhký substrát s možností částečného proschnutí povrchu, miskou s vodou a dobrou ventilací",
+    substrate: "kokosová drť nebo směs terarijní půdy o hloubce přibližně 8–12 cm umožňující hrabání"
   },
+
+  feeding: [
+    "Phormictopus auratus je žravý druh s výrazným krmným reflexem. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, zatímco dospělci obvykle přijímají potravu přibližně jednou za 7–10 dní. Frekvenci krmení je vhodné přizpůsobit velikosti kořisti, stáří a aktuální kondici jedince."
+  ]
+},
   {
     continent: "Amerika",
     genus: "Phormictopus",
