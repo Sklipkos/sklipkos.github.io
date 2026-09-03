@@ -86,10 +86,21 @@ const groups = {
   "Neurčené": []
 };
 
+function getSpeciesDetail(spider) {
+  if (!window.speciesData) return null;
+
+  return window.speciesData.find(
+    species => species.species === spider.name && species.slug
+  ) || null;
+}
+
 function getSpiderUrl(spider) {
-  if (spider.slug) {
+  const speciesDetail = getSpeciesDetail(spider);
+
+  if (speciesDetail) {
     const returnTo = encodeURIComponent("index.html");
-    return `species-detail.html?slug=${spider.slug}&returnTo=${returnTo}`;
+
+    return `species-detail.html?slug=${speciesDetail.slug}&returnTo=${returnTo}`;
   }
 
   return "coming-soon.html";
@@ -119,18 +130,24 @@ Object.keys(groups).forEach(groupName => {
               sexClass = "male";
             }
 
-            const spiderUrl = getSpiderUrl(spider);
+            const speciesDetail = getSpeciesDetail(spider);
+const spiderUrl = getSpiderUrl(spider);
 
-            return `
-              <a href="${spiderUrl}" class="spider">
-                <div class="name">
-                  <span class="sexIcon ${sexClass}">${sexSymbol}</span>
-                  <span>${spider.name}</span>
-                </div>
-                <div class="info">${spider.size}</div>
-                <div class="price">${spider.price}</div>
-              </a>
-            `;
+const detailIcon = speciesDetail
+  ? `<span class="speciesInfoBadge" title="Zobrazit informace o druhu">i</span>`
+  : "";
+
+return `
+  <a href="${spiderUrl}" class="spider">
+    <div class="name">
+      <span class="sexIcon ${sexClass}">${sexSymbol}</span>
+      <span>${spider.name}</span>
+      ${detailIcon}
+    </div>
+    <div class="info">${spider.size}</div>
+    <div class="price">${spider.price}</div>
+  </a>
+`;
           }).join("")}
         </div>
       </div>
