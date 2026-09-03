@@ -501,11 +501,143 @@ const speciesData = [
     genus: "Psalmopoeus",
     species: "Psalmopoeus pulcher"
   },
-  {
-    continent: "Amerika",
-    genus: "Psalmopoeus",
-    species: "Psalmopoeus reduncus"
+{
+  continent: "Amerika",
+  genus: "Psalmopoeus",
+  species: "Psalmopoeus reduncus",
+  slug: "psalmopoeus-reduncus",
+
+  latinName: "Psalmopoeus reduncus",
+  commonName: "Costa Rican Orange Mouth Tarantula",
+  origin: "Nikaragua",
+  type: "stromový sklípkan (arboreální druh)",
+  adultSize: "přibližně 12–15 cm rozpětí nohou",
+  lifespan: "samice přibližně 8–12 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/p.reduncus-logo.webp",
+  image: "img/spiders/psalmopoeus-reduncus.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️ středně silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️ defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🌳 arboreální (stromový)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️ silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀 občas viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Psalmopoeus reduncus je středně velký stromový sklípkan ze Střední Ameriky. Podle současného taxonomického pojetí je jeho potvrzený výskyt uváděn z Nikaraguy. V chovatelské literatuře se však stále často objevuje pod tradičním anglickým názvem „Costa Rican Orange Mouth Tarantula“, který může být vzhledem k dnešnímu pojetí rozšíření poněkud zavádějící. Druh je převážně tmavě hnědě až hnědočerně zbarvený. Tradiční anglický název „Orange Mouth“ odkazuje na rezavé až oranžové zbarvení ochlupení v oblasti chelicer.",
+
+    "Jde o arboreální druh přizpůsobený životu ve vertikálních úkrytech. V teráriu si obvykle vytváří pavučinový úkryt za korkovou kůrou nebo v jiné štěrbině a okolí postupně propojuje pavučinou. Přestože tráví část času ukrytý, po zabydlení může být poměrně pravidelně pozorován u vstupu do svého úkrytu, především během večera a noci.",
+
+    "Psalmopoeus reduncus patří mezi sklípkany Nového světa, ale na rozdíl od mnoha jihoamerických a středoamerických druhů nemá klasické obranné urtikační chloupky, které by mohl vyčesávat ze zadečku. Při vyrušení se proto spoléhá především na svou mimořádnou rychlost, prudký únik do úkrytu a v krajním případě také obranný postoj nebo kousnutí. Právě kombinace vysoké rychlosti, stromového způsobu života a reaktivního chování je hlavním důvodem, proč je vhodnější pro zkušenější chovatele.",
+
+    "Druh je znám rychlým růstem a dobrým příjmem potravy. Mladí jedinci mohou růst velmi svižně a stejně jako ostatní zástupci rodu Psalmopoeus dokážou být při krmení velmi pohotoví. Silnější tvorba pavučin je soustředěna především kolem hlavního úkrytu, kde si sklípkan vytváří hustěji zapředenou bezpečnou zónu.",
+
+    "Taxonomie Psalmopoeus reduncus prošla v posledních letech výraznými změnami. Starší literatura a chovatelské zdroje často uvádějí jeho výskyt také z Kostariky nebo Panamy, ale část materiálu dříve považovaného za P. reduncus byla při novějších revizích přiřazena k jiným druhům. Současné taxonomické zdroje proto uvádějí P. reduncus pouze z Nikaraguy. Dospělí samci mají na prvním páru končetin vyvinuté tibiální apofýzy neboli tibiální háky, které byly popsány také u typového materiálu tohoto druhu."
+
+    "Zajímavostí je neobvyklá hypotéza o šíření tohoto druhu. V roce 1979 vědec Carlos E. Valerio navrhl možnost, že by se Psalmopoeus reduncus díky svému stromovému způsobu života mohl příležitostně přenášet na ptácích a překonávat tak větší vzdálenosti. Takové chování však nebylo přímo pozorováno ani potvrzeno, a proto zůstává pouze hypotézou."
+  ],
+
+  care: {
+    terrarium: "vertikálně orientované terárium s dostatečnou výškou (např. přibližně 20×20×30 cm až 25×25×35 cm pro dospělého jedince)",
+    hides: "svislá korková kůra nebo jiný vertikální úkryt s prostorem za kůrou a dostatkem kotevních bodů pro tvorbu pavučin",
+    temperature: "přibližně 23–27 °C",
+    humidity: "mírně vlhké prostředí s miskou s vodou, částečně prosýchajícím substrátem a především dobrou ventilací",
+    substrate: "kokosová drť nebo směs terarijní půdy v přibližně 5–8 cm vrstvě; u mladých jedinců může být vrstva hlubší, protože často využívají i prostor při zemi"
   },
+
+  feeding: [
+    "Psalmopoeus reduncus je dobře žravý druh s rychlou reakcí na kořist. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, zatímco větší jedince a dospělce obvykle přibližně jednou za 7–10 dní. Frekvenci krmení je vhodné přizpůsobit velikosti kořisti, stáří, kondici jedince a velikosti zadečku."
+  ]
+},
   {
     continent: "Amerika",
     genus: "Psalmopoeus",
@@ -568,11 +700,143 @@ const speciesData = [
     genus: "Chilobrachys",
     species: "Chilobrachys natanicharum"
   },
-  {
-    continent: "Asie",
-    genus: "Chilobrachys",
-    species: "Chilobrachys sp. Vietnam Blue"
+{
+  continent: "Asie",
+  genus: "Chilobrachys",
+  species: "Chilobrachys sp. Vietnam Blue",
+  slug: "chilobrachys-sp-vietnam-blue",
+
+  latinName: "Chilobrachys sp. „Vietnam Blue“",
+  commonName: "Vietnam Blue Tarantula",
+  origin: "Vietnam",
+  type: "hrabavý sklípkan (fosoriální druh)",
+  adultSize: "přibližně 13–16 cm rozpětí nohou",
+  lifespan: "samice přibližně 10–15 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/c.vietnam-blue-logo.webp",
+  image: "img/spiders/chilobrachys-sp-vietnam-blue.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️🕷️ silně defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "⛏️ fosoriální (hrabavý)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀 občas viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "❌ chybí tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Chilobrachys sp. „Vietnam Blue“ je středně velký až větší asijský sklípkan pocházející z Vietnamu. V chovech je znám především díky tmavému zbarvení s modrým až modrofialovým leskem, který může být výraznější po svleku a při vhodném osvětlení. Nejde tedy o jednolitě modrého sklípkana – intenzita modrého zbarvení se může výrazně měnit podle osvětlení, úhlu pohledu i stáří jedince.",
+
+    "Jde o výrazně fosoriální druh, který většinu svého životního prostoru vytváří pod povrchem substrátu. V teráriu si hloubí nory a postupně kolem nich vytváří rozsáhlé množství pavučiny. Typická je kombinace podzemních chodeb, pavučinových tunelů a hustě zapředeného prostoru kolem vstupu do úkrytu. Při vhodném zařízení tak může sklípkan postupně výrazně přetvořit velkou část svého terária.",
+
+    "Chilobrachys sp. „Vietnam Blue“ patří mezi velmi rychlé a silně defenzivní sklípkany Starého světa. Nemá obranné urtikační chloupky a při vyrušení se spoléhá především na rychlý ústup do nory, může však zaujmout také obranný postoj a v krajním případě kousnout. Kombinace mimořádné rychlosti, defenzivního chování a medicínsky významnějšího jedu rodu Chilobrachys z něj činí druh vhodný především pro zkušené chovatele. Při údržbě terária je vhodné počítat s tím, že jedinec může velmi rychle reagovat na narušení své nory nebo pavučinového systému.",
+
+    "Přestože jde o hrabavého sklípkana, nemusí být v chovu neustále skrytý. Po zabydlení se může objevovat u vstupu do nory a reagovat na pohyb kořisti na povrchu či v pavučině. Druh je znám rychlým růstem, výrazným krmným reflexem a mimořádně intenzivní tvorbou pavučin. Právě možnost vybudovat hlubší noru a rozsáhlý pavučinový systém patří mezi nejdůležitější požadavky při jeho chovu.",
+
+    "Zajímavostí je samotné označení „Vietnam Blue“. Nejde o platný vědecký druhový název, ale o jméno používané v chovech. Tato forma je dlouhodobě spojována s druhem Chilobrachys dyscolus, který byl vědecky popsán již v roce 1886 a jehož současné známé rozšíření zahrnuje Vietnam. V chovech se proto lze setkat s označeními Chilobrachys sp. „Vietnam Blue“, Chilobrachys dyscolus „Blue“ nebo Chilobrachys dyscolus „South Vietnam“. Dokud však není původ konkrétní chovné linie spolehlivě doložen, je vhodné zachovat označení, pod kterým byla získána.",
+
+    "Další zajímavostí je jeho modrý vzhled. Název „Vietnam Blue“ může vytvářet dojem výrazně modrého sklípkana, ve skutečnosti je však základní zbarvení mnohem tmavší a modré až modrofialové odstíny se projevují především jako lesk na těle a končetinách. Jejich intenzita závisí na osvětlení a úhlu pohledu a zvláště výrazné mohou být krátce po svleku."
+  ],
+
+  care: {
+    terrarium: "horizontálně orientované terárium s dostatečnou plochou dna a především prostorem pro hlubší vrstvu substrátu (pro dospělou samici například přibližně 30×30×30 cm nebo podobně velká ubikace)",
+    hides: "korková kůra nebo jiný částečně zapuštěný úkryt, který může sloužit jako počáteční bod pro vybudování nory a pavučinového systému",
+    temperature: "přibližně 23–27 °C",
+    humidity: "spodní vrstvy substrátu je vhodné udržovat mírně vlhké, zatímco povrch může částečně proschnout; samozřejmostí je miska s vodou a dobrá ventilace",
+    substrate: "hlubší vrstva dobře držícího substrátu, například kokosová drť nebo směs terarijní půdy; u dospělého jedince přibližně 12–20 cm podle výšky ubikace, aby měl dostatek prostoru pro vytvoření nory"
   },
+
+  feeding: [
+    "Chilobrachys sp. „Vietnam Blue“ je žravý druh s výrazným a velmi rychlým krmným reflexem. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, zatímco větší jedince a dospělce obvykle přibližně jednou za 7–10 dní. Kořist může být zachycena přímo u vstupu do nory nebo prostřednictvím pavučinového systému, který sklípkan využívá k registraci pohybu v okolí svého úkrytu. Frekvenci krmení je vhodné vždy přizpůsobit velikosti kořisti, stáří a aktuální kondici jedince."
+  ]
+},
   {
     continent: "Asie",
     genus: "Cyriopagopus",
@@ -603,11 +867,147 @@ const speciesData = [
     genus: "Ornithoctoninae",
     species: "Ornithoctoninae sp. Veronica"
   },
-  {
-    continent: "Asie",
-    genus: "Ornithoctonus",
-    species: "Ornithoctonus aureotibialis"
+{
+  continent: "Asie",
+  genus: "Ornithoctonus",
+  species: "Ornithoctonus aureotibialis",
+  slug: "ornithoctonus-aureotibialis",
+
+  latinName: "Ornithoctonus aureotibialis",
+  commonName: "Thailand Golden Fringe Tarantula",
+  origin: "Thajsko",
+  type: "hrabavý sklípkan (fosoriální druh)",
+  adultSize: "přibližně 13–15 cm rozpětí nohou",
+  lifespan: "samice přibližně 12–15 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/o.aureotibialis-logo.webp",
+  image: "img/spiders/ornithoctonus-aureotibialis.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️🕷️ silně defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "⛏️ fosoriální (hrabavý)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️ silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀👀 většinou skrytý",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐇 střední růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "❌ chybí tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Ornithoctonus aureotibialis je středně velký asijský sklípkan pocházející z Thajska. Druh byl vědecky popsán Volkerem von Wirthem a Borisem Strifflerem v roce 2005. Typickým znakem je zlatooranžový lem chloupků na vnější straně patelly a tibie prvního a druhého páru nohou, podle kterého získal také své druhové jméno aureotibialis. Zbytek těla je převážně tmavě hnědý až téměř černý a na zadečku může být patrná světlejší kresba.",
+
+    "Jde o výrazně fosoriální druh, který většinu života tráví ve vlastní noře. Pokud dostane dostatečně hlubokou vrstvu vhodného substrátu, vytváří si hluboké podzemní chodby, jejichž stěny vystýlá pavučinou. Okolí vstupu může být výrazně zapředené a pavouk často využívá pavučinu také k zachycení vibrací způsobených pohybem kořisti. V chovu proto není vhodné nahrazovat hluboký substrát pouze povrchovým úkrytem.",
+
+    "Ornithoctonus aureotibialis patří mezi velmi rychlé a silně defenzivní sklípkany Starého světa. Nemá obranné urtikační chloupky. Při vyrušení se při dostupné únikové cestě často velmi rychle stáhne do nory, při narušení úkrytu nebo zahnaní však může zaujmout výrazný obranný postoj a případně kousnout. Kombinace vysoké rychlosti, fosoriálního způsobu života a významnějšího jedového aparátu z něj činí druh vhodný především pro zkušené chovatele.",
+
+    "Při správně zařízené ubikaci bývá většinu času ukrytý. Často lze pozorovat především jedince čekajícího u vstupu do nory, odkud reaguje na vibrace kořisti. Tvorba pavučin je výrazná zejména uvnitř nory a v jejím bezprostředním okolí, ale hlavní stavební strategií tohoto druhu zůstává hluboké hrabání. Růst lze ve srovnání s řadou jiných sklípkanů hodnotit jako střední.",
+
+    "Zajímavostí je, že Ornithoctonus aureotibialis byl mezi chovateli znám ještě před svým formálním vědeckým popisem. V evropském hobby se objevoval pod označením Haplopelma sp. „aureopilosum“. V roce 2005 byl následně formálně popsán jako nový druh Ornithoctonus aureotibialis. Ve stejné době se pro stejného sklípkana objevilo také jméno Haplopelma chrysothrix, jehož původní zveřejnění však nesplňovalo požadavky zoologické nomenklatury.",
+
+    "Další zajímavostí je samotný zlatooranžový lem, podle kterého druh dostal jméno. Jeho vzhled nemusí zůstat během celého období mezi svleky stejně výrazný. U dospělé samice bylo zdokumentováno, že tentýž jedinec mohl po delší době bez svleku vypadat barevně podstatně odlišně než dříve. Typický zlatý až oranžový kontrast tedy může postupně zeslábnout a po svleku být opět nápadnější.",
+
+    "Velmi zajímavý je také moderní výzkum jedu tohoto druhu. Z jedu Ornithoctonus aureotibialis byl popsán peptid označený Oa1a, který ovlivňuje několik typů lidských napěťově řízených sodíkových kanálů. Mezi nimi je také NaV1.7, který se významně podílí na vedení bolestivých podnětů. Výzkum těchto peptidů není zajímavý pouze z hlediska toxicity pavoučího jedu – podobné molekuly jsou zkoumány také jako možné nástroje pro studium nervového systému a jako výchozí látky pro vývoj nových léčiv.",
+
+    "Pozoruhodné chování bylo popsáno také při odchovu. U jednoho úspěšného rozmnožení byl kokon ponechán samici a mláďata po dosažení prvního nymfálního stadia ještě několik dní společně zůstávala v jejím úkrytu. Následně během jediné noci všechna úkryt opustila a začala si hledat vlastní místa k životu."
+  ],
+
+  care: {
+    terrarium: "terárium zaměřené především na dostatečnou hloubku substrátu (pro dospělou samici například přibližně 25×25×30 cm až 30×30×40 cm podle způsobu zařízení)",
+    hides: "částečně zapuštěný kus korkové kůry nebo jiný jednoduchý úkryt, který může sloužit jako počáteční místo pro vybudování vlastní hluboké nory",
+    temperature: "přibližně 23–27 °C",
+    humidity: "spodní vrstvy substrátu je vhodné udržovat mírně vlhké, zatímco povrch může částečně proschnout; důležitá je dobrá ventilace a stálý přístup k misce s vodou",
+    substrate: "hluboká vrstva soudržného substrátu schopného držet vyhrabané chodby, například směs terarijní zeminy a kokosového substrátu; u dospělého jedince přibližně 15–20 cm nebo více podle možností ubikace"
   },
+
+  feeding: [
+    "Ornithoctonus aureotibialis je dobře žravý fosoriální predátor s rychlou reakcí na pohyb kořisti v blízkosti vstupu do nory. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, větší juvenilní jedince zhruba jednou týdně a dospělce přibližně každých 7–14 dní podle jejich kondice. Kořist není nutné vkládat hluboko do nory – sklípkan obvykle dobře registruje její pohyb na povrchu nebo v pavučině kolem vstupu. Frekvenci krmení je vhodné vždy přizpůsobit velikosti kořisti, stáří jedince, jeho kondici a velikosti zadečku."
+  ]
+},
   {
     continent: "Asie",
     genus: "Poecilotheria",
