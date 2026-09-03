@@ -621,7 +621,7 @@ const speciesData = [
 
     "Druh je znám rychlým růstem a dobrým příjmem potravy. Mladí jedinci mohou růst velmi svižně a stejně jako ostatní zástupci rodu Psalmopoeus dokážou být při krmení velmi pohotoví. Silnější tvorba pavučin je soustředěna především kolem hlavního úkrytu, kde si sklípkan vytváří hustěji zapředenou bezpečnou zónu.",
 
-    "Taxonomie Psalmopoeus reduncus prošla v posledních letech výraznými změnami. Starší literatura a chovatelské zdroje často uvádějí jeho výskyt také z Kostariky nebo Panamy, ale část materiálu dříve považovaného za P. reduncus byla při novějších revizích přiřazena k jiným druhům. Současné taxonomické zdroje proto uvádějí P. reduncus pouze z Nikaraguy. Dospělí samci mají na prvním páru končetin vyvinuté tibiální apofýzy neboli tibiální háky, které byly popsány také u typového materiálu tohoto druhu."
+    "Taxonomie Psalmopoeus reduncus prošla v posledních letech výraznými změnami. Starší literatura a chovatelské zdroje často uvádějí jeho výskyt také z Kostariky nebo Panamy, ale část materiálu dříve považovaného za P. reduncus byla při novějších revizích přiřazena k jiným druhům. Současné taxonomické zdroje proto uvádějí P. reduncus pouze z Nikaraguy. Dospělí samci mají na prvním páru končetin vyvinuté tibiální apofýzy neboli tibiální háky, které byly popsány také u typového materiálu tohoto druhu.",
 
     "Zajímavostí je neobvyklá hypotéza o šíření tohoto druhu. V roce 1979 vědec Carlos E. Valerio navrhl možnost, že by se Psalmopoeus reduncus díky svému stromovému způsobu života mohl příležitostně přenášet na ptácích a překonávat tak větší vzdálenosti. Takové chování však nebylo přímo pozorováno ani potvrzeno, a proto zůstává pouze hypotézou."
   ],
