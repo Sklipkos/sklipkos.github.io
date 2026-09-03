@@ -335,7 +335,7 @@ a {
 
 .spider {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.6fr 0.7fr 0.7fr;
   align-items: center;
   gap: 14px;
   background: #17171b;
@@ -1395,7 +1395,7 @@ a {
 
 .spider {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.6fr 0.7fr 0.7fr;
   align-items: center;
   gap: 14px;
   background: #17171b;
