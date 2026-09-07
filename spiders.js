@@ -15,20 +15,38 @@ const spiders = [
 
 
 
+
 {
-    name: "Phormictopus auratus",
+    name: "Dolichothele diamantinensis",
     sex: "Samec",
     size: "adult",
-    price: "600 Kč",
+    price: "1200 Kč",
+    continent: "Amerika"
+},
+
+
+{
+    name: "Psalmopoeus irminia",
+    sex: "Samec",
+    size: "adult",
+    price: "400 Kč",
     continent: "Amerika"
 },
 
 {
     name: "Psalmopoeus reduncus",
     sex: "Samec",
-    size: "4 cm",
+    size: "adult",
     price: "400 Kč",
-    continent: "Asie"
+    continent: "Amerika"
+},
+
+{
+    name: "Psalmopoeus reduncus",
+    sex: "Samec",
+    size: "sub-adult",
+    price: "300 Kč",
+    continent: "Amerika"
 },
 
 
@@ -36,10 +54,11 @@ const spiders = [
 
 
 
+
 {
-    name: "Chilobrachys sp. Vietnam Blue",
+    name: "Aspinochilus (ex. Phormingochilus) rufus",
     sex: "Neurčené",
-    size: "1.svlek",
+    size: "1. slvek",
     price: "80 Kč/kus",
     continent: "Asie"
 },
@@ -50,6 +69,14 @@ const spiders = [
     size: "5. slvek",
     price: "150 Kč/kus",
     continent: "Afrika"
+},
+
+{
+    name: "Chilobrachys sp. Vietnam Blue",
+    sex: "Neurčené",
+    size: "1.svlek",
+    price: "80 Kč/kus",
+    continent: "Asie"
 },
 
 {
