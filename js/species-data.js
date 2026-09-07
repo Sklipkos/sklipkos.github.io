@@ -50,11 +50,147 @@ const speciesData = [
     genus: "Chromatopelma",
     species: "Chromatopelma cyaneopubescens"
   },
-  {
-    continent: "Amerika",
-    genus: "Dolichothele",
-    species: "Dolichothele diamantinensis"
+{
+  continent: "Amerika",
+  genus: "Dolichothele",
+  species: "Dolichothele diamantinensis",
+  slug: "dolichothele-diamantinensis",
+
+  latinName: "Dolichothele diamantinensis",
+  commonName: "Brazilian Blue Dwarf Beauty",
+  origin: "Brazílie – Minas Gerais (oblast Diamantina)",
+  type: "pozemní sklípkan (terestriální druh vázaný na skalní štěrbiny)",
+  adultSize: "přibližně 6–8 cm rozpětí nohou",
+  lifespan: "samice přibližně 5–8 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/d.diamantinensis-logo.webp",
+  image: "img/spiders/dolichothele-diamantinensis.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🟡 středně pokročilý chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡ velmi rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️ slabý jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️ spíše klidný",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🕳️ terestriální (pozemní)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀 často viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Dolichothele diamantinensis je drobný brazilský sklípkan pocházející ze státu Minas Gerais, konkrétně z oblasti města Diamantina. Vědecky byl popsán v roce 2009 pod názvem Oligoxystre diamantinensis a v roce 2015 byl přeřazen do rodu Dolichothele. Patří mezi výrazně menší sklípkany a dospělí jedinci dosahují přibližně 6–8 cm v rozpětí nohou.",
+
+    "Jedním z nejvýraznějších znaků tohoto druhu je jeho kovově modré zbarvení. Původní vědecký popis přímo uvádí celkovou kovově modrou barvu samců i samic, která kontrastuje s načervenalými chloupky na zadečku. Nejde tedy pouze o chovatelské označení nebo efekt vhodného osvětlení – modré zbarvení patří mezi skutečné morfologické znaky, kterými byl druh při svém popisu odlišován od příbuzných sklípkanů.",
+
+    "V přírodě obývá velmi zajímavé prostředí označované jako campo rupestre. Jde o horskou skalnatou krajinu s množstvím skalních výchozů, mělkou půdou a výraznou sezónností. Jedinci, na jejichž základě byl druh popsán, byli nalezeni v okolí Diamantiny přibližně ve 1 250 metrech nad mořem a využívali především skalnatá místa a štěrbiny mezi kameny. Proto je vhodnější považovat Dolichothele diamantinensis za terestriální druh využívající přirozené přízemní a skalní úkryty než za typického hrabavého sklípkana.",
+
+    "Přírodní podmínky jeho domoviny jsou překvapivě proměnlivé. Oblast má výrazné období dešťů i sucha a klimatické údaje z původní práce uvádějí velmi široké teplotní extrémy přibližně od 4 °C do 35 °C. Tyto hodnoty samozřejmě nepředstavují doporučené chovné teploty, ale ukazují, že druh pochází z prostředí s výraznější sezónností, než by člověk mohl podle jeho brazilského původu očekávat. V chovu proto není vhodné udržovat ubikaci trvale přemokřenou.",
+
+    "Dolichothele diamantinensis je znám mimořádně intenzivní tvorbou pavučin. Po zabydlení dokáže propojit korkovou kůru, kameny, rostlinný materiál i povrch substrátu hustou sítí pavučinových tunelů a úkrytů. Přestože část času tráví uvnitř tohoto systému, dobře zabydlení jedinci bývají poměrně často viditelní na povrchu pavučiny nebo u vstupu do svého úkrytu. Díky kombinaci modrého zbarvení a hustě zapředené ubikace jde o velmi atraktivní druh pro pozorování.",
+
+    "Přestože jde o velmi rychlého sklípkana, jeho rychlost není totéž jako vysoká defenzivita. Při vyrušení zpravidla využívá svou rychlost k ústupu do pavučinového úkrytu a nebývá popisován jako druh, který by běžně vyhledával konfrontaci. Právě drobná velikost a schopnost velmi prudkého pohybu jsou však důvodem, proč je při přemisťování a údržbě ubikace vhodnější pro chovatele, kteří již mají určité zkušenosti.",
+
+    "Zajímavým diagnostickým znakem je také stavba samce. Adultní samci mají na prvním páru končetin přítomnou tibiální apofýzu neboli tibiální hák. U Dolichothele diamantinensis je tato struktura neobvykle orientována přibližně kolmo k podélné ose tibie a právě její postavení bylo použito jako jeden ze znaků při původním vědeckém popisu druhu.",
+
+    "Také samotné druhové jméno „diamantinensis“ má jednoduchý význam – odkazuje na brazilské město Diamantina, v jehož okolí byl druh objeven a odkud pochází jeho typová lokalita. Spojení trpasličí velikosti, skutečně kovově modrého zbarvení a horského skalnatého prostředí dělá z Dolichothele diamantinensis jednoho z nejvýraznějších drobných jihoamerických sklípkanů."
+  ],
+
+  care: {
+    terrarium: "menší horizontálně orientovaná ubikace s dostatečnou plochou dna a množstvím kotevních bodů pro tvorbu pavučin (pro dospělého jedince například přibližně 15×15×15 cm až 20×20×20 cm)",
+    hides: "korková kůra, bezpečně upevněné menší kameny nebo jiné přízemní úkryty vytvářející štěrbiny a pevné body pro tvorbu rozsáhlého pavučinového systému",
+    temperature: "přibližně 22–26 °C",
+    humidity: "část substrátu je vhodné udržovat mírně vlhkou, zatímco povrch může mezi rosením částečně proschnout; vhodná je miska s vodou a dobrá ventilace, protože dlouhodobě přemokřená ubikace není žádoucí",
+    substrate: "kokosová drť nebo směs terarijní půdy v přibližně 5–8 cm vrstvě; vhodné je doplnit korek a lehké nebo pevně zajištěné kameny, mezi nimiž může sklípkan vytvořit pavučinové tunely"
   },
+
+  feeding: [
+    "Dolichothele diamantinensis je žravý a rychle rostoucí druh s pohotovou reakcí na kořist. V teráriu přijímá živý hmyz odpovídající jeho malé velikosti, například menší cvrčky, šváby nebo jiné vhodně velké krmné bezobratlé. Mladé jedince lze krmit přibližně každé 3–5 dní, větší juvenilní jedince zhruba jednou týdně a dospělce obvykle přibližně každých 7–10 dní podle kondice. Kořist často registruje prostřednictvím rozsáhlého pavučinového systému a může na její pohyb reagovat velmi rychle. Frekvenci krmení je vhodné přizpůsobit velikosti kořisti, stáří jedince a velikosti zadečku."
+  ]
+},
   {
     continent: "Amerika",
     genus: "Grammostola",
@@ -491,11 +627,145 @@ const speciesData = [
     "Psalmopoeus cambridgei je poměrně žravý druh. Krmí se běžným živým hmyzem, například cvrčky, šváby nebo sarančaty. Mladí jedinci přijímají potravu častěji, obvykle každé 3–5 dní. Dospělci se krmí přibližně jednou za 7–10 dní v závislosti na velikosti kořisti a kondici jedince."
   ]
 },
-  {
-    continent: "Amerika",
-    genus: "Psalmopoeus",
-    species: "Psalmopoeus irminia"
+{
+  continent: "Amerika",
+  genus: "Psalmopoeus",
+  species: "Psalmopoeus irminia",
+  slug: "psalmopoeus-irminia",
+
+  latinName: "Psalmopoeus irminia",
+  commonName: "Venezuelan Suntiger Tarantula",
+  origin: "Venezuela, Guyana a severní Brazílie",
+  type: "stromový sklípkan (arboreální druh)",
+  adultSize: "přibližně 13–15 cm rozpětí nohou",
+  lifespan: "samice přibližně 10–12 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/p.irminia-logo.webp",
+  image: "img/spiders/psalmopoeus-irminia.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️ středně silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️ defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🌳 arboreální (stromový)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️ silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀 občas viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Psalmopoeus irminia je středně velký stromový sklípkan ze severní části Jižní Ameriky. Současné taxonomické zdroje uvádějí jeho výskyt ve Venezuele, Guyaně a severní Brazílii. Druh je znám především velmi kontrastním zbarvením dospělých samic, u kterých tmavě hnědé až téměř černé tělo doplňují výrazné oranžové až rezavé prvky na končetinách a zadečku. Právě tento kontrastní vzhled stojí za jeho anglickým názvem „Venezuelan Suntiger Tarantula“.",
+
+    "Jde o arboreální druh přizpůsobený životu ve vertikálních úkrytech. V přírodě využívá dutiny, štěrbiny a prostory v dřevinách, které může postupně vystýlat a rozšiřovat pavučinou. V teráriu si obvykle vytváří hlavní úkryt za svislou korkovou kůrou nebo v podobné štěrbině a okolní prostor propojuje pavučinovými tunely a záchytnými vlákny. Dobře zabydlený jedinec může vytvořit poměrně rozsáhlý pavučinový systém.",
+
+    "Psalmopoeus irminia patří mezi mimořádně rychlé a velmi pohotové sklípkany. Při vyrušení se zpravidla snaží prudce ustoupit do svého úkrytu, při zahnaní však může zaujmout obranný postoj a v krajním případě kousnout. Přestože jde o sklípkan Nového světa, nemá klasické obranné urtikační chloupky, které by mohl vyčesávat ze zadečku. Při obraně se proto spoléhá především na rychlost, únik a případně kousnutí. Právě kombinace extrémní rychlosti, stromového způsobu života a defenzivního chování z něj činí druh vhodný především pro zkušené chovatele.",
+
+    "Druh je znám rychlým růstem a výrazným krmným reflexem. Mladí jedinci mohou růst velmi svižně a při dobrých podmínkách dosahují větší velikosti podstatně rychleji než řada pomalu rostoucích amerických sklípkanů. Po zabydlení bývá Psalmopoeus irminia pravidelně pozorován u vstupu do úkrytu, zejména ve večerních a nočních hodinách, přesto však značnou část času tráví uvnitř svého pavučinového útočiště.",
+
+    "Velmi výrazným znakem tohoto druhu je pohlavní dimorfismus. Dospělá samice si zachovává charakteristické tmavé zbarvení s výraznou oranžovou kresbou, zatímco adultní samec se po dospělostním svleku vzhledově výrazně změní. Je podstatně štíhlejší, dlouhonohý a jeho zbarvení je mnohem světlejší, šedohnědé až hnědavé. Rozdíl mezi dospělým samcem a samicí může být natolik výrazný, že by je nezkušený pozorovatel mohl na první pohled považovat za dva různé druhy. Dospělí samci mají na prvním páru končetin vyvinuté tibiální apofýzy neboli tibiální háky.",
+
+    "Zajímavostí je také historie poznávání jeho rozšíření. Psalmopoeus irminia byl dlouhou dobu spojován především s Venezuelou, odkud pochází i původní popis druhu. Teprve v roce 2016 byl publikován první vědecky potvrzený výskyt tohoto druhu v Brazílii, konkrétně ve státě Roraima poblíž venezuelské hranice. Současné taxonomické zdroje dnes uvádějí jeho rozšíření ve Venezuele, Guyaně a Brazílii.",
+
+    "Pozornost si zaslouží také jeho jed. U Psalmopoeus irminia byl publikován druhově specifický případ kousnutí člověka, při kterém se kromě lokální bolesti, zarudnutí a otoku objevily i další přechodné příznaky. Přestože dostupných klinických údajů není dostatek pro přesné určení toxicity tohoto druhu, kousnutí je vhodné považovat za potenciálně medicínsky významnější než u mnoha běžně chovaných amerických sklípkanů."
+  ],
+
+  care: {
+    terrarium: "vertikálně orientované terárium s dostatečnou výškou a prostorem pro šplhání (např. přibližně 20×20×30 cm až 25×25×35 cm pro dospělého jedince; větší samice může využít i přibližně 30×30×40 cm)",
+    hides: "svislá korková kůra, dutý kus dřeva nebo jiný vertikální úkryt s prostorem za kůrou a dostatkem kotevních bodů pro vytvoření pavučinového útočiště",
+    temperature: "přibližně 23–27 °C",
+    humidity: "mírně vlhké prostředí s miskou s vodou, částečně prosýchajícím substrátem a především dobrou ventilací; dlouhodobě přemokřená a špatně větraná ubikace není vhodná",
+    substrate: "kokosová drť nebo směs terarijní půdy v přibližně 5–8 cm vrstvě; mladí jedinci mohou využívat i hlubší substrát a vytvářet kombinované úkryty při zemi"
   },
+
+  feeding: [
+    "Psalmopoeus irminia je velmi dobře žravý druh s rychlým a často prudkým krmným reflexem. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, větší juvenilní jedince přibližně jednou týdně a dospělce zhruba každých 7–14 dní podle jejich kondice. Kořist může být zachycena přímo u vstupu do úkrytu nebo prostřednictvím pavučinového systému, který sklípkan využívá k registraci pohybu ve svém okolí. Frekvenci krmení je vhodné přizpůsobit velikosti kořisti, stáří jedince, jeho kondici a velikosti zadečku."
+  ]
+},
   {
     continent: "Amerika",
     genus: "Psalmopoeus",
@@ -680,11 +950,145 @@ const speciesData = [
   },
 
   // ASIE
-  {
-    continent: "Asie",
-    genus: "Aspinochilus",
-    species: "Aspinochilus (ex. Phormingochilus) rufus"
+{
+  continent: "Asie",
+  genus: "Aspinochilus",
+  species: "Aspinochilus (ex. Phormingochilus) rufus",
+  slug: "aspinochilus-rufus",
+
+  latinName: "Aspinochilus rufus",
+  commonName: "Rufus Tarantula",
+  origin: "Indonésie – východní Jáva (Mount Argopuro)",
+  type: "stromový sklípkan (arboreální druh s výrazným využíváním prostoru u kořenů zejména v mládí)",
+  adultSize: "přibližně 13–15 cm rozpětí nohou",
+  lifespan: "samice přibližně 10–15 let, samci výrazně kratší dobu",
+
+  logo: "img/logos/a.rufus-logo.webp",
+  image: "img/spiders/aspinochilus-rufus.jpg",
+
+  characteristics: [
+    {
+      label: "Náročnost",
+      value: "🔴 zkušený chovatel",
+      options: [
+        "🟢 začátečník",
+        "🟡 středně pokročilý chovatel",
+        "🔴 zkušený chovatel"
+      ]
+    },
+    {
+      label: "Rychlost",
+      value: "⚡⚡⚡⚡⚡ extrémně rychlý",
+      options: [
+        "⚡ pomalý",
+        "⚡⚡ spíše pomalý",
+        "⚡⚡⚡ středně rychlý",
+        "⚡⚡⚡⚡ velmi rychlý",
+        "⚡⚡⚡⚡⚡ extrémně rychlý"
+      ]
+    },
+    {
+      label: "Toxicita",
+      value: "☠️☠️☠️ silný jed",
+      options: [
+        "☠️ slabý jed",
+        "☠️☠️ středně silný jed",
+        "☠️☠️☠️ silný jed"
+      ]
+    },
+    {
+      label: "Temperament",
+      value: "🕷️🕷️🕷️ defenzivní",
+      options: [
+        "🕷️ klidný",
+        "🕷️🕷️ spíše klidný",
+        "🕷️🕷️🕷️ defenzivní",
+        "🕷️🕷️🕷️🕷️ silně defenzivní"
+      ]
+    },
+    {
+      label: "Typ života",
+      value: "🌳 arboreální (stromový)",
+      options: [
+        "🌳 arboreální (stromový)",
+        "🕳️ terestriální (pozemní)",
+        "⛏️ fosoriální (hrabavý)"
+      ]
+    },
+    {
+      label: "Tvorba pavučin",
+      value: "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin",
+      options: [
+        "🕸️ slabá tvorba pavučin",
+        "🕸️🕸️ střední tvorba pavučin",
+        "🕸️🕸️🕸️ silná tvorba pavučin",
+        "🕸️🕸️🕸️🕸️ velmi silná tvorba pavučin"
+      ]
+    },
+    {
+      label: "Viditelnost",
+      value: "👀👀 občas viditelný",
+      options: [
+        "👀 často viditelný",
+        "👀👀 občas viditelný",
+        "👀👀👀 většinou skrytý"
+      ]
+    },
+    {
+      label: "Tempo růstu",
+      value: "🐆 rychlý růst",
+      options: [
+        "🐌 pomalý růst",
+        "🐇 střední růst",
+        "🐆 rychlý růst"
+      ]
+    },
+    {
+      label: "Typ kokonu",
+      value: "⚪ kulovitý kokon",
+      options: [
+        "⚪ kulovitý kokon",
+        "🕸️ plochý kokon (v pavučině)"
+      ]
+    },
+    {
+      label: "Tibiální háky (samec)",
+      value: "✔️ přítomné tibiálky",
+      options: [
+        "✔️ přítomné tibiálky",
+        "❌ chybí tibiálky"
+      ]
+    }
+  ],
+
+  description: [
+    "Aspinochilus rufus je středně velký asijský sklípkan pocházející z Indonésie, konkrétně z oblasti Mount Argopuro na východní Jávě. Druh je charakteristický především teplým červenohnědým až rezavým zbarvením, které bývá výraznější zejména u samic. Na zadečku může být patrná tmavší kresba připomínající rybí kost a končetiny nesou výrazné načervenalé až rezavé ochlupení. Právě červenavé zbarvení stálo také za druhovým jménem „rufus“, které odkazuje na rezavou až načervenalou barvu.",
+
+    "Druh obývá horský tropický les na východní Jávě a jeho způsob života je zajímavější než u typického čistě stromového sklípkana. Dospělé samice byly v přírodě nalezeny v dutinách a rozvětveních stromů přibližně dva metry nad zemí, zatímco mladší jedinci využívali také kořenové systémy při zemi. V těchto místech si vytvářeli pavučinové tubusy, které byly maskovány zeminou, listím a mechem. V chovu je proto vhodné nabídnout kombinaci vertikálního úkrytu a dostatečné vrstvy substrátu, zejména u mladších jedinců.",
+
+    "Aspinochilus rufus patří mezi velmi rychlé sklípkany Starého světa. Nemá obranné urtikační chloupky a při vyrušení se spoléhá především na rychlý ústup do úkrytu, při zahnaní však může zaujmout obranný postoj a případně kousnout. Kombinace extrémní rychlosti, stromového způsobu života a potenciálně významnějšího jedu z něj činí druh vhodný především pro zkušené chovatele. Přesná druhově specifická klinická data o účincích jeho jedu jsou zatím omezená, proto je hodnocení toxicity na této stránce především praktickou chovatelskou kategorií.",
+
+    "Velmi výrazná je také tvorba pavučin. Aspinochilus rufus si vytváří pavučinové tunely a úkryty, které může postupně rozšiřovat kolem korkové kůry, kořenů a dalších pevných bodů. V přírodě bylo pozorováno také maskování pavučinových tubusů okolním materiálem. Druh je převážně aktivní večer a v noci; přes den často zůstává v úkrytu, ale po zabydlení může být pravidelně pozorován u jeho vstupu nebo na okolní pavučině.",
+
+    "Jednou z největších zajímavostí je samotná taxonomická historie tohoto sklípkana. Chovatelé jej znali řadu let pod označením Phormingochilus sp. „Rufus“, ale teprve v roce 2024 byl formálně vědecky popsán jako Aspinochilus rufus. Autoři pro něj zároveň vytvořili úplně nový rod Aspinochilus. Nešlo tedy pouze o popsání nového druhu – jeho morfologické znaky byly natolik odlišné od příbuzných sklípkanů, že dostal vlastní rod. Aspinochilus rufus je zároveň typovým druhem tohoto rodu.",
+
+    "Zajímavý význam má i samotný název rodu Aspinochilus. Odkazuje na nápadně omezené otrnění tibii, tedy částí končetin, které jsou u příbuzných sklípkanů běžně opatřeny větším množstvím trnů. U Aspinochilus rufus jsou tibie makadel a končetin I–IV prakticky bez těchto běžných trnů nebo nesou pouze ojedinělý trn. To však není totéž jako pářicí tibiální apofýza adultního samce – ta je u tohoto druhu přítomná.",
+
+    "Pozoruhodné jsou také rozdíly mezi jednotlivými životními stadii. Terénní pozorování ukázala, že mladí jedinci mohou využívat kořenovou zónu a úkryty nízko nad zemí, zatímco dospělé samice byly nacházeny výše ve stromových dutinách a rozvětveních. Tento posun v mikrohabitatu během růstu je důležitý i pro chov, protože mladému jedinci prospívá možnost kombinovat hrabání, pavučinový tubus a vertikální úkryt namísto čistě vysoké ubikace s minimem substrátu."
+  ],
+
+  care: {
+    terrarium: "vertikálně až polovertikálně orientovaná ubikace s dostatkem prostoru pro šplhání, pavučinové úkryty a současně i rozumnou vrstvou substrátu (pro dospělou samici například přibližně 20×20×30 cm až 25×25×35 cm)",
+    hides: "svislá korková kůra, dutý kus dřeva nebo jiný vertikální úkryt s prostorem za kůrou; vhodné je vytvořit také kontakt úkrytu se substrátem, aby mohl sklípkan podle potřeby kombinovat stromový a přízemní retreat",
+    temperature: "přibližně 23–27 °C",
+    humidity: "část substrátu je vhodné udržovat mírně vlhkou, zatímco povrch může částečně proschnout; důležitá je miska s vodou a dobrá ventilace, protože dlouhodobě přemokřená a nevětraná ubikace není vhodná",
+    substrate: "soudržný substrát schopný držet vlhkost a umožnit částečné hrabání, například směs terarijní zeminy a kokosového substrátu; u dospělého jedince přibližně 8–12 cm, u mladších jedinců může být relativně hlubší vrstva velmi užitečná"
   },
+
+  feeding: [
+    "Aspinochilus rufus je dobře žravý a rychle reagující predátor s výrazným krmným reflexem. V teráriu přijímá běžný živý hmyz odpovídající velikosti jedince, například cvrčky, šváby nebo sarančata. Mladé jedince lze krmit přibližně každé 3–5 dní, větší juvenilní jedince zhruba jednou týdně a dospělce přibližně každých 7–14 dní podle jejich kondice. Kořist sklípkan často registruje prostřednictvím pavučinového systému kolem svého úkrytu a může na ni reagovat velmi prudce. Frekvenci krmení je vhodné vždy přizpůsobit velikosti kořisti, stáří jedince, jeho kondici a velikosti zadečku."
+  ]
+},
   {
     continent: "Asie",
     genus: "Birupes",
