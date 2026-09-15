@@ -1,20 +1,5 @@
 const spiders = [
 
-{
-    name: "Heterothele gabonensis",
-    sex: "Samice",
-    size: "adult",
-    price: "800 Kč",
-    continent: "Afrika"
-},
-
-
-
-
-
-
-
-
 
 {
     name: "Dolichothele diamantinensis",
@@ -24,17 +9,32 @@ const spiders = [
     continent: "Amerika"
 },
 
-
 {
-    name: "Psalmopoeus irminia",
+    name: "Pterinopelma sazimai",
     sex: "Samec",
     size: "adult",
-    price: "400 Kč",
+    price: "500 Kč",
     continent: "Amerika"
 },
 
 {
-    name: "Psalmopoeus reduncus",
+    name: "Pamphobeteus sp. Machala",
+    sex: "Samec",
+    size: "adult",
+    price: "700 Kč",
+    continent: "Amerika"
+},
+
+{
+    name: "Poecilotheria metallica",
+    sex: "Samec",
+    size: "adult",
+    price: "1000 Kč",
+    continent: "Asie"
+},
+
+{
+    name: "Psalmopoeus cambridgei",
     sex: "Samec",
     size: "adult",
     price: "400 Kč",
@@ -74,7 +74,7 @@ const spiders = [
 {
     name: "Chilobrachys sp. Vietnam Blue",
     sex: "Neurčené",
-    size: "1.svlek",
+    size: "2.svlek",
     price: "80 Kč/kus",
     continent: "Asie"
 },
@@ -82,7 +82,7 @@ const spiders = [
 {
     name: "Ornithoctonus aureotibialis",
     sex: "Neurčené",
-    size: "2.svlek",
+    size: "3.svlek",
     price: "100 Kč/kus",
     continent: "Asie"
 },
