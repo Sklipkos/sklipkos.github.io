@@ -5,7 +5,7 @@ const spiders = [
     name: "Dolichothele diamantinensis",
     sex: "Samec",
     size: "adult",
-    price: "1200 Kč",
+    price: "1000 Kč",
     continent: "Amerika"
 },
 
