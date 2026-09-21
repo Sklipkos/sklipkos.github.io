@@ -5,12 +5,12 @@ const spiders = [
     name: "Dolichothele diamantinensis",
     sex: "Samec",
     size: "adult",
-    price: "1000 Kč",
+    price: "900 Kč",
     continent: "Amerika"
 },
 
 {
-    name: "Pterinopelma sazimai",
+    name: "Lasiocyano (ex. Pterinopelma) sazimai",
     sex: "Samec",
     size: "adult",
     price: "500 Kč",
@@ -21,22 +21,30 @@ const spiders = [
     name: "Pamphobeteus sp. Machala",
     sex: "Samec",
     size: "adult",
-    price: "700 Kč",
+    price: "600 Kč",
     continent: "Amerika"
-},
-
-{
-    name: "Poecilotheria metallica",
-    sex: "Samec",
-    size: "adult",
-    price: "1000 Kč",
-    continent: "Asie"
 },
 
 {
     name: "Psalmopoeus cambridgei",
     sex: "Samec",
     size: "adult",
+    price: "400 Kč",
+    continent: "Amerika"
+},
+
+{
+    name: "Psalmopoeus pulcher",
+    sex: "Samec",
+    size: "adult",
+    price: "700 Kč",
+    continent: "Amerika"
+},
+
+{
+    name: "Psalmopoeus pulcher",
+    sex: "Samec",
+    size: "3,5cm",
     price: "400 Kč",
     continent: "Amerika"
 },
@@ -58,7 +66,7 @@ const spiders = [
 {
     name: "Aspinochilus (ex. Phormingochilus) rufus",
     sex: "Neurčené",
-    size: "1. slvek",
+    size: "2. slvek",
     price: "80 Kč/kus",
     continent: "Asie"
 },
@@ -66,15 +74,15 @@ const spiders = [
 {
     name: "Heteroscodra maculata",
     sex: "Neurčené",
-    size: "5. slvek",
-    price: "150 Kč/kus",
+    size: "1. slvek",
+    price: "70 Kč/kus",
     continent: "Afrika"
 },
 
 {
     name: "Chilobrachys sp. Vietnam Blue",
     sex: "Neurčené",
-    size: "2.svlek",
+    size: "3.svlek",
     price: "80 Kč/kus",
     continent: "Asie"
 },
@@ -82,7 +90,7 @@ const spiders = [
 {
     name: "Ornithoctonus aureotibialis",
     sex: "Neurčené",
-    size: "3.svlek",
+    size: "4.svlek",
     price: "100 Kč/kus",
     continent: "Asie"
 },
