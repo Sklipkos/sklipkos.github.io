@@ -778,12 +778,44 @@ section:first-of-type h2 {
     max-width: 380px;
   }
 
-  .tooltip {
-  display: none !important;
+.rating {
+  cursor: pointer;
 }
 
-.rating {
-  cursor: default;
+.tooltip {
+  display: block;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  background: #1c1c21;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+
+  transition:
+    opacity 0.2s ease,
+    max-height 0.25s ease,
+    margin-top 0.25s ease,
+    padding 0.25s ease;
+}
+
+.rating:not(.tooltip-open) .tooltip {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rating.tooltip-open .tooltip {
+  opacity: 1;
+  max-height: 350px;
+  pointer-events: auto;
 }
 
   .genusDetailTop {
@@ -1809,12 +1841,44 @@ header {
     max-width: 380px;
   }
 
-  .tooltip {
-  display: none !important;
+.rating {
+  cursor: pointer;
 }
 
-.rating {
-  cursor: default;
+.tooltip {
+  display: block;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  background: #1c1c21;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+
+  transition:
+    opacity 0.2s ease,
+    max-height 0.25s ease,
+    margin-top 0.25s ease,
+    padding 0.25s ease;
+}
+
+.rating:not(.tooltip-open) .tooltip {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rating.tooltip-open .tooltip {
+  opacity: 1;
+  max-height: 350px;
+  pointer-events: auto;
 }
 
   .genusDetailTop {
