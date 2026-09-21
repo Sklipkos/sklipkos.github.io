@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderSpeciesDetail(species);
   initModal();
+  initMobileRatingTooltips();
 });
 
 function getSlugFromUrl() {
@@ -205,4 +206,38 @@ function closeModal() {
   setTimeout(() => {
     modal.style.display = "none";
   }, 350);
+}
+
+
+function initMobileRatingTooltips() {
+  const ratings = document.querySelectorAll(".rating");
+
+  ratings.forEach(rating => {
+    rating.addEventListener("click", function(e) {
+      if (window.innerWidth > 900) return;
+
+      e.stopPropagation();
+
+      const isOpen = this.classList.contains("tooltip-open");
+
+      // Zavře všechny ostatní tooltipy
+      ratings.forEach(item => {
+        item.classList.remove("tooltip-open");
+      });
+
+      // Pokud tento nebyl otevřený, otevře ho
+      if (!isOpen) {
+        this.classList.add("tooltip-open");
+      }
+    });
+  });
+
+  // Kliknutí mimo charakteristiku tooltip zavře
+  document.addEventListener("click", function() {
+    if (window.innerWidth > 900) return;
+
+    ratings.forEach(item => {
+      item.classList.remove("tooltip-open");
+    });
+  });
 }
