@@ -495,8 +495,8 @@ const speciesData = [
   },
   {
     continent: "Amerika",
-    genus: "Pterinopelma",
-    species: "Pterinopelma sazimai"
+    genus: "Lasiocyano",
+    species: "Lasiocyano (ex. Pterinopelma) sazimai"
   },
 {
   continent: "Amerika",
