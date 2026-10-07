@@ -5,7 +5,7 @@ const spiders = [
     name: "Dolichothele diamantinensis",
     sex: "Samec",
     size: "adult",
-    price: "900 Kč",
+    price: "800 Kč",
     continent: "Amerika"
 },
 
@@ -13,7 +13,7 @@ const spiders = [
     name: "Lasiocyano (ex. Pterinopelma) sazimai",
     sex: "Samec",
     size: "adult",
-    price: "500 Kč",
+    price: "400 Kč",
     continent: "Amerika"
 },
 
@@ -21,7 +21,7 @@ const spiders = [
     name: "Pamphobeteus sp. Machala",
     sex: "Samec",
     size: "adult",
-    price: "600 Kč",
+    price: "500 Kč",
     continent: "Amerika"
 },
 
@@ -33,13 +33,6 @@ const spiders = [
     continent: "Amerika"
 },
 
-{
-    name: "Psalmopoeus pulcher",
-    sex: "Samec",
-    size: "adult",
-    price: "700 Kč",
-    continent: "Amerika"
-},
 
 {
     name: "Psalmopoeus pulcher",
@@ -48,16 +41,6 @@ const spiders = [
     price: "400 Kč",
     continent: "Amerika"
 },
-
-{
-    name: "Psalmopoeus reduncus",
-    sex: "Samec",
-    size: "sub-adult",
-    price: "300 Kč",
-    continent: "Amerika"
-},
-
-
 
 
 
